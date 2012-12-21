@@ -81,11 +81,10 @@ var features = []
 
 		"features": [features]
 	};
-console.log(Buildings)
-var map = new L.Map('map').setView([23.887821630227183, 90.39255035922429], 20);
-
+var map = new L.Map('map').setView([23.87666, 90.40297], 18);
 new L.TileLayer(
-    'http://{s}.tiles.mapbox.com/v3/gfdrr.map-znaz7pyk/{z}/{x}/{y}.png',
-    { attribution: 'Map tiles &copy; <a href="http://mapbox.com">MapBox</a>', maxZoom: 20 }
+   'http://{s}.tiles.mapbox.com/v3/gfdrr.map-znaz7pyk/{z}/{x}/{y}.png',
+   { attribution: 'Map tiles &copy; <a href="http://mapbox.com">MapBox</a>', maxZoom: 20 }
 ).addTo(map);
+ var hash = new L.Hash(map);
 new L.BuildingsLayer().addTo(map).geoJSON(Buildings);
