@@ -1,0 +1,180 @@
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+h3 {
+	color:#344;
+	padding-left:14px;
+}
+   body { margin:0; padding:0; }
+   .map { position:absolute; top:0; bottom:0; width:100%; }
+
+   .map {
+	   background-color:#333;
+       position:relative;
+       height:700px;
+       width:80%;
+       margin-left:10%;
+       margin-right:10%;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 3px 24px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 3px 24px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 3px 24px rgba(50, 50, 50, 0.75);
+   }
+
+  #map-ui {
+    position:absolute;
+    top:10px;left:10px;
+    list-style:none;
+    margin:0;padding:0;
+    z-index:100;
+    }
+    #map-ui a {
+      font:normal 13px/18px 'Helvetica Neue', Helvetica,sans-serif;
+      background:#FFF;
+      color:#3C4E5A;
+      display:block;
+      margin:0;padding:0;
+      border:1px solid #BBB;
+      border-bottom-width:0;
+      min-width:138px;
+      padding:10px;
+      text-decoration:none;
+      }
+    #map-ui a:hover { background:#ECF5FA; }
+    #map-ui li:last-child a {
+      border-bottom-width:1px;
+      -webkit-border-radius:0 0 3px 3px;
+              border-radius:0 0 3px 3px;
+      }
+    #map-ui li:first-child a {
+      -webkit-border-radius:3px 3px 0 0;
+              border-radius:3px 3px 0 0;
+            }
+    #map-ui a.active {
+      background:#3887BE;
+      border-color:#3887BE;
+      border-top-color:#FFF;
+      color:#FFF;
+      }
+
+	  #map-ui {
+	    position:absolute;
+	    top:10px;left:10px;
+	    list-style:none;
+	    margin:0;padding:0;
+	    z-index:100;
+	    }
+	    #map-ui a {
+	      font:normal 13px/18px 'Helvetica Neue',Helvetica,sans-serif;
+	      background:#FFF;
+	      color:#3C4E5A;
+	      display:block;
+	      margin:0;padding:0;
+	      border:1px solid #BBB;
+	      border-bottom-width:0;
+	      min-width:138px;
+	      padding:10px;
+	      text-decoration:none;
+	      }
+	    #map-ui  a:hover { background:#ECF5FA; }
+	    #map-ui li:last-child a {
+	      border-bottom-width:1px;
+	      -webkit-border-radius:0 0 3px 3px;
+	              border-radius:0 0 3px 3px;
+	      }
+	    #map-ui li:first-child a {
+	      -webkit-border-radius:3px 3px 0 0;
+	              border-radius:3px 3px 0 0;
+	            }
+	    #map-ui a.active {
+	      background:#3887BE;
+	      border-color:#3887BE;
+	      border-top-color:#FFF;
+	      color:#333;
+	      }
+	
+
+		/*Wax tooltip reset*/
+		.wax-tooltip h1,
+		.wax-tooltip h2,
+		.wax-tooltip h3,
+		.wax-tooltip h4,
+		.wax-tooltip h5,
+		.wax-tooltip h6 {
+		  font: 13px/20px Helvetica,arial,freesans,clean,sans-serif;
+		  margin: 0;
+		  padding: 0;
+		  }
+		.wax-tooltip h4.int-title,
+		.wax-tooltip h5.int-stat {
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  font-size: 11px;
+		  line-height: 14px;
+		  color: inherit;
+		  }
+		.wax-tooltip h4.int-title {
+		  margin-bottom: 10px;
+		  color: #333;
+		  }
+		.wax-tooltip span.int-value {
+		  display: block;
+		  font-weight: 200;
+		  text-transform: none;
+		  font-size: 20px;
+		  line-height: 24px;
+		  margin: 0 0 10px;
+		  color: #333;
+		  text-transform:capitalize;
+		  }
+
+
+		  .wax-tooltip .range{
+		    right:8px;
+		    float:left;
+		  }
+		  .wax-tooltip h6.int-range {
+		  display:block;
+		  font-size:10px;
+		  position:absolute;
+		  top:70px;
+		  right:146px;
+		  padding-bottom:10px;
+		  text-align:left;
+		  }
+		.wax-tooltip span.int-lable
+
+		  .wax-tooltip .int-table thead tr th{
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    font-size: 11px;
+		    line-height: 14px;
+		    color: inherit;
+		    padding:5px;
+		  }
+		  .wax-tooltip .int-table tbody tr th{
+		    padding:5px;
+		  }
+		  .wax-tooltip .int-table tbody tr td{
+		        font-weight: 200;
+		        text-transform: none;
+		        font-size: 15px;
+		        color: #fff;
+		        text-transform:capitalize;
+		        padding:10px 0 0 10px;
+		  }
+		.wax-legend {
+			color:#344;
+		}
+.map-tooltip {max-height:auto;}

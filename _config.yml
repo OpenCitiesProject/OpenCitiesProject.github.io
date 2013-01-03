@@ -1,0 +1,12 @@
+auto: true
+pygments: true
+server: true
+markdown: rdiscount
+exclude:
+      - README.md
+      - cache
+      - tilemill
+      - export
+      - project
+rdiscount:
+  extensions: [smart]
