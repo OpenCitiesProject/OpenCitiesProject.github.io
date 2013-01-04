@@ -178,3 +178,6 @@ h3 {
 			color:#344;
 		}
 .map-tooltip {max-height:auto;}
+#gfdrr-roads, #bld-labels {
+	background-color:#fff;
+}
