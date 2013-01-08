@@ -578,10 +578,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.1767767"
-     inkscape:cx="3612.6867"
-     inkscape:cy="1355.9675"
+     inkscape:cx="4120.3893"
+     inkscape:cy="1275.0455"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer4"
      showgrid="false"
      units="px"
      inkscape:window-width="1246"
@@ -625,7 +625,7 @@
      height="2040"
      x="2620"
      y="0"
-     inkscape:export-filename="./city.png"
+     inkscape:export-filename="./renders/city.png"
      inkscape:export-xdpi="90"
      inkscape:export-ydpi="90" />
   <rect
@@ -635,7 +635,7 @@
      width="760"
      id="rect12428"
      style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     inkscape:export-filename="./about.png"
+     inkscape:export-filename="./renders/about.png"
      inkscape:export-xdpi="90"
      inkscape:export-ydpi="90" />
   <rect
@@ -647,7 +647,7 @@
      y="160"
      rx="3.5000002"
      ry="3.4999998"
-     inkscape:export-filename="./city.png"
+     inkscape:export-filename="./renders/city.png"
      inkscape:export-xdpi="90"
      inkscape:export-ydpi="90" />
   <rect
@@ -657,7 +657,7 @@
      width="760"
      id="rect12023"
      style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     inkscape:export-filename="./cities.png"
+     inkscape:export-filename="./renders/cities.png"
      inkscape:export-xdpi="90"
      inkscape:export-ydpi="90" />
   <rect
@@ -1194,7 +1194,7 @@
     <g
        transform="matrix(0.74818571,0,0,0.74818571,1765.0363,-1235.4107)"
        id="g11871"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1428,7 +1428,7 @@
        x="2441.2869"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#cccccc;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
@@ -1443,7 +1443,7 @@
        y="-1147.7764"
        id="text11965"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -1460,7 +1460,7 @@
        width="759.13538"
        id="rect11969"
        style="color:#000000;fill:#b6b6b6;fill-opacity:1;stroke:url(#linearGradient12019);stroke-width:0.86464864;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -1470,13 +1470,13 @@
        width="760"
        id="rect11971"
        style="color:#000000;fill:url(#linearGradient12021);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        transform="matrix(0.6333333,0,0,1,1714.8995,-1281.8826)"
        id="g11973"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1517,7 +1517,7 @@
        rx="2.4999998"
        ry="2.5"
        transform="scale(-1,1)"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -1530,7 +1530,7 @@
        width="659.54694"
        id="rect11985"
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ababab;stroke-width:0.8453632;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <flowRoot
@@ -1538,7 +1538,7 @@
        id="flowRoot11987"
        xml:space="preserve"
        transform="translate(1415.9995,-1457.5979)"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion11989"><rect
@@ -1551,7 +1551,7 @@
          id="flowPara11993">http://gfdrr.org/urban-planning/cities</flowPara></flowRoot>    <g
        transform="translate(1693.9995,-1281.8826)"
        id="g11995"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <rect
@@ -1609,7 +1609,7 @@
        d="m 1753.2415,-1246.8826 c -1.2421,0 -2.2419,1.3379 -2.2419,3 l 0,1 c 0,-1.6621 0.9998,-3 2.2419,-3 l 755.5161,0 c 1.2421,0 2.2419,1.3379 2.2419,3 l 0,-1 c 0,-1.6621 -0.9998,-3 -2.2419,-3 l -755.5161,0 z"
        style="opacity:0.4;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -1617,7 +1617,7 @@
        d="m 1779.6558,-1220.3826 -0.6562,-0.5 8,-6 0,1 -7.3438,5.5 z"
        style="color:#000000;fill:#a4a4a4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -1625,7 +1625,7 @@
        style="color:#000000;fill:#a4a4a4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 1811.3433,-1220.3826 0.6563,-0.5 -8,-6 0,1 7.3437,5.5 z"
        id="path12013"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -1637,13 +1637,13 @@
        width="16"
        id="rect12015"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
        d="m 1840.9967,-1227.6396 c -3.8658,0 -6.9967,3.1309 -6.9967,6.9966 0,3.8658 3.1309,7.0034 6.9967,7.0034 3.8657,0 7.0033,-3.1376 7.0033,-7.0034 0,-3.8657 -3.1376,-6.9966 -7.0033,-6.9966 z m 0,0.8058 c 3.4199,0 6.1976,2.7707 6.1976,6.1908 0,3.4197 -2.7777,6.1909 -6.1976,6.1909 -3.4199,0 -6.191,-2.7712 -6.191,-6.1909 0,-3.4201 2.7711,-6.1908 6.191,-6.1908 z m -0.4566,0.8796 c -0.014,6e-4 -0.027,0.01 -0.027,0.01 -0.064,0.043 -0.081,0.06 -0.081,0.06 -0.6809,0.691 -1.2256,1.5102 -1.5981,2.4239 0.5847,0.1733 1.1987,0.2815 1.8331,0.3089 l 0,-2.6254 c 0,-0.1591 -0.086,-0.1772 -0.1276,-0.1746 z m 0.9199,0 c -0.042,0 -0.1234,0.015 -0.1276,0.1745 l 0,2.6255 c 0.6344,-0.027 1.2486,-0.1357 1.8331,-0.3089 -0.3726,-0.9137 -0.9234,-1.7329 -1.6048,-2.424 0,0 -0.013,-0.02 -0.074,-0.06 0,0 -0.013,-0.01 -0.027,-0.01 z m -2.142,0.061 c -0.031,3e-4 -0.071,0.01 -0.1209,0.027 -0.8925,0.3029 -1.6776,0.8328 -2.2964,1.5175 0.4083,0.2586 0.8391,0.4864 1.2959,0.6714 l 0.01,0 c 0.3003,-0.7243 0.7387,-1.37 1.1684,-2.0144 0.03,-0.045 0.04,-0.087 0.04,-0.087 0.014,-0.055 -10e-4,-0.1156 -0.094,-0.1141 z m 3.364,0 c -0.093,0 -0.1081,0.059 -0.094,0.1141 0,0 0.01,0.042 0.04,0.087 0.4295,0.6444 0.8684,1.2901 1.1684,2.0144 0.4569,-0.185 0.8941,-0.4128 1.3026,-0.6714 -0.6193,-0.6847 -1.4033,-1.2146 -2.2964,-1.5175 -0.049,-0.017 -0.09,-0.026 -0.1208,-0.027 z m -6.1976,2.0613 c -0.578,0.8163 -0.9441,1.7934 -1.0072,2.8538 l 2.142,0 c 0.029,-0.7223 0.1571,-1.42 0.3626,-2.0816 -0.5267,-0.2073 -1.0303,-0.4649 -1.4974,-0.7722 z m 9.0245,0 c -0.4671,0.3073 -0.964,0.5649 -1.4907,0.7722 0.2052,0.6616 0.3269,1.3593 0.3559,2.0816 l 2.142,0 c -0.063,-1.0604 -0.4222,-2.0375 -1.0005,-2.8537 l -0.01,0 z m -6.8959,0.9938 c -0.1814,0.5933 -0.2939,1.2143 -0.3224,1.86 l 2.377,0.01 0,-1.5243 c -0.7112,-0.028 -1.4009,-0.1447 -2.0546,-0.3424 z m 4.7741,0 c -0.6538,0.1977 -1.3438,0.3143 -2.0547,0.3425 l 0,1.5242 2.3769,-0.01 c -0.028,-0.6457 -0.1409,-1.2667 -0.3222,-1.86 z m -7.9099,2.5314 c 0.063,1.0607 0.4292,2.0373 1.0072,2.8537 0.4671,-0.3069 0.9707,-0.5648 1.4974,-0.7721 -0.2055,-0.6618 -0.3339,-1.3591 -0.3626,-2.0816 l -2.142,0 z m 2.8134,0 c 0.029,0.646 0.141,1.2672 0.3224,1.86 0.6537,-0.1972 1.3434,-0.3142 2.0546,-0.3425 l 0,-1.5175 -2.377,0 z m 3.0418,0 0,1.5175 c 0.7109,0.028 1.4009,0.1453 2.0547,0.3425 0.1813,-0.5928 0.2938,-1.214 0.3223,-1.86 l -2.377,0 z m 3.0417,0 c -0.029,0.7225 -0.1507,1.4198 -0.3559,2.0816 0.5267,0.2073 1.0236,0.4652 1.4907,0.7722 l 0.01,0 c 0.5782,-0.8165 0.9376,-1.7931 1.0005,-2.8538 l -2.142,0 z m -3.7065,2.1756 c -0.6344,0.027 -1.2484,0.1356 -1.8331,0.3088 0.3726,0.9135 0.9172,1.7335 1.5981,2.424 0,0 0.017,0.024 0.081,0.067 0,0 0.1491,0.044 0.1544,-0.1678 l 0,-2.6322 z m 0.6648,0 0,2.6321 c 0.01,0.2119 0.1544,0.1679 0.1544,0.1679 0.061,-0.041 0.072,-0.065 0.074,-0.067 0.6814,-0.6906 1.2323,-1.5106 1.6048,-2.424 -0.5844,-0.1733 -1.1987,-0.2815 -1.8331,-0.3089 z m -3.1358,0.5304 c -0.4568,0.1851 -0.8876,0.4059 -1.2959,0.6648 0.6188,0.6849 1.4039,1.2212 2.2964,1.5242 0.1982,0.067 0.234,-0.021 0.2149,-0.094 0,0 -0.01,-0.035 -0.04,-0.081 -0.4298,-0.6441 -0.8681,-1.2897 -1.1684,-2.0144 l -0.01,0 z m 5.6001,0 c -0.3,0.7247 -0.7389,1.3703 -1.1684,2.0144 -0.03,0.046 -0.04,0.081 -0.04,0.081 -0.019,0.073 0.017,0.1609 0.2149,0.094 0.893,-0.303 1.677,-0.8393 2.2964,-1.5242 -0.4085,-0.2589 -0.8458,-0.4797 -1.3027,-0.6648 z"
        id="path12017"
@@ -1651,7 +1651,7 @@
     <g
        id="g12061"
        transform="translate(10,0)"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1713,7 +1713,7 @@
     <g
        id="g12074"
        transform="matrix(0.74818571,0,0,0.74818571,2635.0363,-1235.4107)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1947,7 +1947,7 @@
        y="-1147.7764"
        id="text12164"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -1962,7 +1962,7 @@
        x="3254.1865"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#cccccc;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
@@ -1979,7 +1979,7 @@
        y="-1247.4504"
        rx="3.5000002"
        ry="3.5"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -1989,13 +1989,13 @@
        height="33.000008"
        x="2620.9995"
        y="-1227.8826"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        id="g12176"
        transform="matrix(0.6333333,0,0,1,2584.8995,-1281.8826)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -2036,7 +2036,7 @@
        width="660.54755"
        id="rect12186"
        style="opacity:0.25;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.84511214;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -2049,7 +2049,7 @@
        rx="2.5"
        ry="2.5"
        transform="scale(-1,1)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <flowRoot
@@ -2057,7 +2057,7 @@
        xml:space="preserve"
        id="flowRoot12190"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:166.99999571%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#7c7c7c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion12192"><rect
@@ -2070,7 +2070,7 @@
          id="flowPara12196">http://gfdrr.org/urban-planning/cities/dhaka</flowPara></flowRoot>    <g
        id="g12198"
        transform="translate(2563.9995,-1281.8826)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <rect
@@ -2128,7 +2128,7 @@
        style="opacity:0.4;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 2623.2415,-1246.8826 c -1.2421,0 -2.2419,1.3379 -2.2419,3 l 0,1 c 0,-1.6621 0.9998,-3 2.2419,-3 l 755.5161,0 c 1.2421,0 2.2419,1.3379 2.2419,3 l 0,-1 c 0,-1.6621 -0.9998,-3 -2.2419,-3 l -755.5161,0 z"
        id="path12212"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -2136,7 +2136,7 @@
        style="color:#000000;fill:#a4a4a4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 2649.6558,-1220.3826 -0.6562,-0.5 8,-6 0,1 -7.3438,5.5 z"
        id="path12214"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -2144,7 +2144,7 @@
        d="m 2681.3433,-1220.3826 0.6563,-0.5 -8,-6 0,1 7.3437,5.5 z"
        style="color:#000000;fill:#a4a4a4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -2156,7 +2156,7 @@
        y="-1228.6396"
        rx="1"
        ry="1"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -2164,13 +2164,13 @@
        id="path12220"
        d="m 2710.9967,-1227.6396 c -3.8658,0 -6.9967,3.1309 -6.9967,6.9966 0,3.8658 3.1309,7.0034 6.9967,7.0034 3.8657,0 7.0033,-3.1376 7.0033,-7.0034 0,-3.8657 -3.1376,-6.9966 -7.0033,-6.9966 z m 0,0.8058 c 3.4199,0 6.1976,2.7707 6.1976,6.1908 0,3.4197 -2.7777,6.1909 -6.1976,6.1909 -3.4199,0 -6.191,-2.7712 -6.191,-6.1909 0,-3.4201 2.7711,-6.1908 6.191,-6.1908 z m -0.4566,0.8796 c -0.014,6e-4 -0.027,0.01 -0.027,0.01 -0.064,0.043 -0.081,0.06 -0.081,0.06 -0.6809,0.691 -1.2256,1.5102 -1.5981,2.4239 0.5847,0.1733 1.1987,0.2815 1.8331,0.3089 l 0,-2.6254 c 0,-0.1591 -0.086,-0.1772 -0.1276,-0.1746 z m 0.9199,0 c -0.042,0 -0.1234,0.015 -0.1276,0.1745 l 0,2.6255 c 0.6344,-0.027 1.2486,-0.1357 1.8331,-0.3089 -0.3726,-0.9137 -0.9234,-1.7329 -1.6048,-2.424 0,0 -0.013,-0.02 -0.074,-0.06 0,0 -0.013,-0.01 -0.027,-0.01 z m -2.142,0.061 c -0.031,3e-4 -0.071,0.01 -0.1209,0.027 -0.8925,0.3029 -1.6776,0.8328 -2.2964,1.5175 0.4083,0.2586 0.8391,0.4864 1.2959,0.6714 l 0.01,0 c 0.3003,-0.7243 0.7387,-1.37 1.1684,-2.0144 0.03,-0.045 0.04,-0.087 0.04,-0.087 0.014,-0.055 -10e-4,-0.1156 -0.094,-0.1141 z m 3.364,0 c -0.093,0 -0.1081,0.059 -0.094,0.1141 0,0 0.01,0.042 0.04,0.087 0.4295,0.6444 0.8684,1.2901 1.1684,2.0144 0.4569,-0.185 0.8941,-0.4128 1.3026,-0.6714 -0.6193,-0.6847 -1.4033,-1.2146 -2.2964,-1.5175 -0.049,-0.017 -0.09,-0.026 -0.1208,-0.027 z m -6.1976,2.0613 c -0.578,0.8163 -0.9441,1.7934 -1.0072,2.8538 l 2.142,0 c 0.029,-0.7223 0.1571,-1.42 0.3626,-2.0816 -0.5267,-0.2073 -1.0303,-0.4649 -1.4974,-0.7722 z m 9.0245,0 c -0.4671,0.3073 -0.964,0.5649 -1.4907,0.7722 0.2052,0.6616 0.3269,1.3593 0.3559,2.0816 l 2.142,0 c -0.063,-1.0604 -0.4222,-2.0375 -1.0005,-2.8537 l -0.01,0 z m -6.8959,0.9938 c -0.1814,0.5933 -0.2939,1.2143 -0.3224,1.86 l 2.377,0.01 0,-1.5243 c -0.7112,-0.028 -1.4009,-0.1447 -2.0546,-0.3424 z m 4.7741,0 c -0.6538,0.1977 -1.3438,0.3143 -2.0547,0.3425 l 0,1.5242 2.3769,-0.01 c -0.028,-0.6457 -0.1409,-1.2667 -0.3222,-1.86 z m -7.9099,2.5314 c 0.063,1.0607 0.4292,2.0373 1.0072,2.8537 0.4671,-0.3069 0.9707,-0.5648 1.4974,-0.7721 -0.2055,-0.6618 -0.3339,-1.3591 -0.3626,-2.0816 l -2.142,0 z m 2.8134,0 c 0.029,0.646 0.141,1.2672 0.3224,1.86 0.6537,-0.1972 1.3434,-0.3142 2.0546,-0.3425 l 0,-1.5175 -2.377,0 z m 3.0418,0 0,1.5175 c 0.7109,0.028 1.4009,0.1453 2.0547,0.3425 0.1813,-0.5928 0.2938,-1.214 0.3223,-1.86 l -2.377,0 z m 3.0417,0 c -0.029,0.7225 -0.1507,1.4198 -0.3559,2.0816 0.5267,0.2073 1.0236,0.4652 1.4907,0.7722 l 0.01,0 c 0.5782,-0.8165 0.9376,-1.7931 1.0005,-2.8538 l -2.142,0 z m -3.7065,2.1756 c -0.6344,0.027 -1.2484,0.1356 -1.8331,0.3088 0.3726,0.9135 0.9172,1.7335 1.5981,2.424 0,0 0.017,0.024 0.081,0.067 0,0 0.1491,0.044 0.1544,-0.1678 l 0,-2.6322 z m 0.6648,0 0,2.6321 c 0.01,0.2119 0.1544,0.1679 0.1544,0.1679 0.061,-0.041 0.072,-0.065 0.074,-0.067 0.6814,-0.6906 1.2323,-1.5106 1.6048,-2.424 -0.5844,-0.1733 -1.1987,-0.2815 -1.8331,-0.3089 z m -3.1358,0.5304 c -0.4568,0.1851 -0.8876,0.4059 -1.2959,0.6648 0.6188,0.6849 1.4039,1.2212 2.2964,1.5242 0.1982,0.067 0.234,-0.021 0.2149,-0.094 0,0 -0.01,-0.035 -0.04,-0.081 -0.4298,-0.6441 -0.8681,-1.2897 -1.1684,-2.0144 l -0.01,0 z m 5.6001,0 c -0.3,0.7247 -0.7389,1.3703 -1.1684,2.0144 -0.03,0.046 -0.04,0.081 -0.04,0.081 -0.019,0.073 0.017,0.1609 0.2149,0.094 0.893,-0.303 1.677,-0.8393 2.2964,-1.5242 -0.4085,-0.2589 -0.8458,-0.4797 -1.3027,-0.6648 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        transform="translate(885,-220)"
        id="g12222"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -2232,7 +2232,7 @@
     <g
        transform="matrix(0.74818571,0,0,0.74818571,3500.0363,-1235.4107)"
        id="g12252"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -2466,7 +2466,7 @@
        x="4176.2871"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#cccccc;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
@@ -2481,7 +2481,7 @@
        y="-1147.7764"
        id="text12346"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -2498,7 +2498,7 @@
        width="759.13538"
        id="rect12350"
        style="color:#000000;fill:#b6b6b6;fill-opacity:1;stroke:url(#linearGradient12424);stroke-width:0.86464864;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -2508,13 +2508,13 @@
        width="760"
        id="rect12352"
        style="color:#000000;fill:url(#linearGradient12426);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        transform="matrix(0.6333333,0,0,1,3449.8995,-1281.8826)"
        id="g12354"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -2555,7 +2555,7 @@
        rx="2.4999998"
        ry="2.5"
        transform="scale(-1,1)"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -2568,7 +2568,7 @@
        width="659.54694"
        id="rect12366"
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ababab;stroke-width:0.8453632;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <flowRoot
@@ -2576,7 +2576,7 @@
        id="flowRoot12368"
        xml:space="preserve"
        transform="translate(3150.9995,-1457.5979)"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion12370"><rect
@@ -2589,7 +2589,7 @@
          id="flowPara12374">http://gfdrr.org/urban-planning/about</flowPara></flowRoot>    <g
        transform="translate(3428.9995,-1281.8826)"
        id="g12376"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <rect
@@ -2647,7 +2647,7 @@
        d="m 3488.2415,-1246.8826 c -1.2421,0 -2.2419,1.3379 -2.2419,3 l 0,1 c 0,-1.6621 0.9998,-3 2.2419,-3 l 755.5161,0 c 1.2421,0 2.2419,1.3379 2.2419,3 l 0,-1 c 0,-1.6621 -0.9998,-3 -2.2419,-3 l -755.5161,0 z"
        style="opacity:0.4;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -2655,7 +2655,7 @@
        d="m 3514.6558,-1220.3826 -0.6562,-0.5 8,-6 0,1 -7.3438,5.5 z"
        style="color:#000000;fill:#a4a4a4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -2663,7 +2663,7 @@
        style="color:#000000;fill:#a4a4a4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 3546.3433,-1220.3826 0.6563,-0.5 -8,-6 0,1 7.3437,5.5 z"
        id="path12394"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -2675,13 +2675,13 @@
        width="16"
        id="rect12396"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
        d="m 3575.9967,-1227.6396 c -3.8658,0 -6.9967,3.1309 -6.9967,6.9966 0,3.8658 3.1309,7.0034 6.9967,7.0034 3.8657,0 7.0033,-3.1376 7.0033,-7.0034 0,-3.8657 -3.1376,-6.9966 -7.0033,-6.9966 z m 0,0.8058 c 3.4199,0 6.1976,2.7707 6.1976,6.1908 0,3.4197 -2.7777,6.1909 -6.1976,6.1909 -3.4199,0 -6.191,-2.7712 -6.191,-6.1909 0,-3.4201 2.7711,-6.1908 6.191,-6.1908 z m -0.4566,0.8796 c -0.014,6e-4 -0.027,0.01 -0.027,0.01 -0.064,0.043 -0.081,0.06 -0.081,0.06 -0.6809,0.691 -1.2256,1.5102 -1.5981,2.4239 0.5847,0.1733 1.1987,0.2815 1.8331,0.3089 l 0,-2.6254 c 0,-0.1591 -0.086,-0.1772 -0.1276,-0.1746 z m 0.9199,0 c -0.042,0 -0.1234,0.015 -0.1276,0.1745 l 0,2.6255 c 0.6344,-0.027 1.2486,-0.1357 1.8331,-0.3089 -0.3726,-0.9137 -0.9234,-1.7329 -1.6048,-2.424 0,0 -0.013,-0.02 -0.074,-0.06 0,0 -0.013,-0.01 -0.027,-0.01 z m -2.142,0.061 c -0.031,3e-4 -0.071,0.01 -0.1209,0.027 -0.8925,0.3029 -1.6776,0.8328 -2.2964,1.5175 0.4083,0.2586 0.8391,0.4864 1.2959,0.6714 l 0.01,0 c 0.3003,-0.7243 0.7387,-1.37 1.1684,-2.0144 0.03,-0.045 0.04,-0.087 0.04,-0.087 0.014,-0.055 -10e-4,-0.1156 -0.094,-0.1141 z m 3.364,0 c -0.093,0 -0.1081,0.059 -0.094,0.1141 0,0 0.01,0.042 0.04,0.087 0.4295,0.6444 0.8684,1.2901 1.1684,2.0144 0.4569,-0.185 0.8941,-0.4128 1.3026,-0.6714 -0.6193,-0.6847 -1.4033,-1.2146 -2.2964,-1.5175 -0.049,-0.017 -0.09,-0.026 -0.1208,-0.027 z m -6.1976,2.0613 c -0.578,0.8163 -0.9441,1.7934 -1.0072,2.8538 l 2.142,0 c 0.029,-0.7223 0.1571,-1.42 0.3626,-2.0816 -0.5267,-0.2073 -1.0303,-0.4649 -1.4974,-0.7722 z m 9.0245,0 c -0.4671,0.3073 -0.964,0.5649 -1.4907,0.7722 0.2052,0.6616 0.3269,1.3593 0.3559,2.0816 l 2.142,0 c -0.063,-1.0604 -0.4222,-2.0375 -1.0005,-2.8537 l -0.01,0 z m -6.8959,0.9938 c -0.1814,0.5933 -0.2939,1.2143 -0.3224,1.86 l 2.377,0.01 0,-1.5243 c -0.7112,-0.028 -1.4009,-0.1447 -2.0546,-0.3424 z m 4.7741,0 c -0.6538,0.1977 -1.3438,0.3143 -2.0547,0.3425 l 0,1.5242 2.3769,-0.01 c -0.028,-0.6457 -0.1409,-1.2667 -0.3222,-1.86 z m -7.9099,2.5314 c 0.063,1.0607 0.4292,2.0373 1.0072,2.8537 0.4671,-0.3069 0.9707,-0.5648 1.4974,-0.7721 -0.2055,-0.6618 -0.3339,-1.3591 -0.3626,-2.0816 l -2.142,0 z m 2.8134,0 c 0.029,0.646 0.141,1.2672 0.3224,1.86 0.6537,-0.1972 1.3434,-0.3142 2.0546,-0.3425 l 0,-1.5175 -2.377,0 z m 3.0418,0 0,1.5175 c 0.7109,0.028 1.4009,0.1453 2.0547,0.3425 0.1813,-0.5928 0.2938,-1.214 0.3223,-1.86 l -2.377,0 z m 3.0417,0 c -0.029,0.7225 -0.1507,1.4198 -0.3559,2.0816 0.5267,0.2073 1.0236,0.4652 1.4907,0.7722 l 0.01,0 c 0.5782,-0.8165 0.9376,-1.7931 1.0005,-2.8538 l -2.142,0 z m -3.7065,2.1756 c -0.6344,0.027 -1.2484,0.1356 -1.8331,0.3088 0.3726,0.9135 0.9172,1.7335 1.5981,2.424 0,0 0.017,0.024 0.081,0.067 0,0 0.1491,0.044 0.1544,-0.1678 l 0,-2.6322 z m 0.6648,0 0,2.6321 c 0.01,0.2119 0.1544,0.1679 0.1544,0.1679 0.061,-0.041 0.072,-0.065 0.074,-0.067 0.6814,-0.6906 1.2323,-1.5106 1.6048,-2.424 -0.5844,-0.1733 -1.1987,-0.2815 -1.8331,-0.3089 z m -3.1358,0.5304 c -0.4568,0.1851 -0.8876,0.4059 -1.2959,0.6648 0.6188,0.6849 1.4039,1.2212 2.2964,1.5242 0.1982,0.067 0.234,-0.021 0.2149,-0.094 0,0 -0.01,-0.035 -0.04,-0.081 -0.4298,-0.6441 -0.8681,-1.2897 -1.1684,-2.0144 l -0.01,0 z m 5.6001,0 c -0.3,0.7247 -0.7389,1.3703 -1.1684,2.0144 -0.03,0.046 -0.04,0.081 -0.04,0.081 -0.019,0.073 0.017,0.1609 0.2149,0.094 0.893,-0.303 1.677,-0.8393 2.2964,-1.5242 -0.4085,-0.2589 -0.8458,-0.4797 -1.3027,-0.6648 z"
        id="path12398"
@@ -2689,7 +2689,7 @@
     <g
        transform="translate(2605,0)"
        id="g12430"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -3073,7 +3073,7 @@
        height="480"
        x="1750"
        y="115"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3083,7 +3083,7 @@
        width="760"
        id="rect5719"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3095,7 +3095,7 @@
        y="129.33205"
        clip-path="url(#clipPath8428)"
        transform="translate(932.8512,-494.33205)"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3105,7 +3105,7 @@
        x="1788.5312"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3120,7 +3120,7 @@
        y="-230.76562"
        id="text5727"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3138,7 +3138,7 @@
        sodipodi:ry="40"
        d="m 560,180 a 40,40 0 1 1 -80,0 40,40 0 1 1 80,0 z"
        transform="matrix(0.25,0,0,0.25,1985,-180)"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -3151,7 +3151,7 @@
        id="path8399"
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        sodipodi:type="arc"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -3164,7 +3164,7 @@
        id="path8401"
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        sodipodi:type="arc"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3174,7 +3174,7 @@
        x="2384.1865"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
@@ -3187,7 +3187,7 @@
        id="flowRoot5686"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#858585;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        transform="translate(1512.4824,-946.64146)"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion5688"><rect
@@ -3205,7 +3205,7 @@
        x="1786.8594"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3220,7 +3220,7 @@
        width="760"
        id="rect10861"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3230,7 +3230,7 @@
        y="709.54309"
        id="text10676"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan10678"
@@ -3245,7 +3245,7 @@
        width="760"
        id="rect10875"
        style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3255,7 +3255,7 @@
        x="1786.8594"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3272,7 +3272,7 @@
        y="395"
        rx="2"
        ry="2"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3282,7 +3282,7 @@
        y="413.87305"
        id="text10891"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3295,7 +3295,7 @@
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#858585;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        id="flowRoot10919"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion10921"><rect
@@ -3306,12 +3306,12 @@
            width="420.65317"
            id="rect10923" /></flowRegion><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#858585;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         id="flowPara10925">GFDRR, through its Nepal DRM Country Program, has worked alongside the Government of Nepal to proactively manage disaster risks by organizing flood management projects, conducting structural surveys, and providing technical assistance for seismic-resistant modifications to buildings within Kathmandu and greater Nepal.</flowPara></flowRoot>    <flowRoot
+         id="flowPara10925">lProin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet ipsum.</flowPara></flowRoot>    <flowRoot
        transform="translate(1512.4824,21.35854)"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#858585;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        id="flowRoot10929"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion10931"><rect
@@ -3322,7 +3322,7 @@
            width="420.65317"
            id="rect10933" /></flowRegion><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#858585;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         id="flowPara10935">GFDRR, through its Nepal DRM Country Program, has worked alongside the Government of Nepal to proactively manage disaster risks by organizing flood management projects, conducting structural surveys, and providing technical assistance for seismic-resistant modifications to buildings within Kathmandu and greater Nepal.</flowPara></flowRoot>    <rect
+         id="flowPara10935">Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices. Praesent ultricies facilisis nisl. Vivamus luctus elit sit amet mi. Phasellus pellentesque, erat eget elementum volutpat, dolor nisl porta neque, vitae sodales ipsum nibh in ligula. </flowPara></flowRoot>    <rect
        ry="2"
        rx="2"
        y="870"
@@ -3331,7 +3331,7 @@
        width="90"
        id="rect11657"
        style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3341,7 +3341,7 @@
        x="1810.832"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
@@ -3358,7 +3358,7 @@
        y="1360"
        rx="2"
        ry="2"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3368,7 +3368,7 @@
        y="1378.873"
        id="text11665"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./cities.png"
+       inkscape:export-filename="./renders/cities.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3383,7 +3383,7 @@
        y="-400.13672"
        id="text12242"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3405,7 +3405,7 @@
        height="480"
        x="2620"
        y="-364.99997"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3415,7 +3415,7 @@
        y="-270.76562"
        id="text10958"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3430,7 +3430,7 @@
        x="2658.7578"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan10966"
@@ -3453,7 +3453,7 @@
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        id="flowRoot11095"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion11097"><rect
@@ -3470,7 +3470,7 @@
          id="flowPara11105"
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans">Bangladesh(880-2) 8159001</flowPara><flowPara
          id="flowPara11107"
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold">bangladeshinfo@worldbank.org</flowPara><flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold">example@worldbank.org</flowPara><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
          id="flowPara11109" /><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3483,7 +3483,7 @@
        x="3158.9014"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:19px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3498,7 +3498,7 @@
        width="218.5518"
        id="rect11537"
        style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3508,7 +3508,7 @@
        y="432.47504"
        id="text11539"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan11541"
@@ -3523,7 +3523,7 @@
        height="19.999998"
        x="3120"
        y="190"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3533,7 +3533,7 @@
        height="159.99998"
        x="2660"
        y="220"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3543,7 +3543,7 @@
        y="306.29883"
        id="text12714"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan12716"
@@ -3559,7 +3559,7 @@
        x="2786.8369"
        style="font-size:124.37625121999997191px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:30.51080321999999967px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#333333;font-family:Open Sans;-inkscape-font-specification:Open Sans;fill-opacity:1"
@@ -3572,7 +3572,7 @@
        id="flowRoot12746"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        transform="translate(0,-405)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion12748"><rect
@@ -3591,7 +3591,7 @@
        id="text12754"
        sodipodi:linespacing="125%"
        transform="scale(0.95346263,1.0488088)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3609,7 +3609,7 @@
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        id="flowRoot12758"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion12760"><rect
@@ -3628,7 +3628,7 @@
        x="2787.9287"
        style="font-size:124.37625122px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:30.51080322px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#333333;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3646,7 +3646,7 @@
        id="flowRoot12774"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        transform="translate(1.0410156,365.44787)"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion12776"><rect
@@ -3664,7 +3664,7 @@
        width="394.22198"
        id="rect12794"
        style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3674,7 +3674,7 @@
        x="2756.3159"
        style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
        xml:space="preserve"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3689,7 +3689,7 @@
        height="159.99998"
        x="2660"
        y="990"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3699,7 +3699,7 @@
        y="1076.2988"
        id="text12802"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./city.png"
+       inkscape:export-filename="./renders/city.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan12804"
@@ -3721,7 +3721,7 @@
        width="760"
        id="rect10325"
        style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3731,7 +3731,7 @@
        y="-400.13672"
        id="text10348"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3746,7 +3746,7 @@
        x="3528.5312"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3761,7 +3761,7 @@
        width="420"
        id="rect10462"
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3771,7 +3771,7 @@
        height="480"
        x="3485"
        y="115"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <flowRoot
@@ -3779,7 +3779,7 @@
        id="flowRoot10508"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica"
        transform="translate(3465.9687,-381.79549)"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
          id="flowRegion10510"><rect
@@ -3790,13 +3790,11 @@
            y="203.35289"
            style="fill:#4d4d4d;fill-opacity:1" /></flowRegion><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         id="flowPara10688">Plot E 32 Sher-e-Bangla Nagar,</flowPara><flowPara
-         id="flowPara10518"
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans">Agargaon, Dhaka 1207,</flowPara><flowPara
+         id="flowPara10526">1818 H Street, NW</flowPara><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-         id="flowPara10526">Bangladesh(880-2) 8159001</flowPara><flowPara
+         id="flowPara13192">Washington, DC 20433 USA</flowPara><flowPara
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold"
-         id="flowPara10528">bangladeshinfo@worldbank.org</flowPara><flowPara
+         id="flowPara10528">example@worldbank.org</flowPara><flowPara
          id="flowPara10520"
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans" /><flowPara
          id="flowPara10522"
@@ -3809,7 +3807,7 @@
        y="195"
        id="text10538"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3824,7 +3822,7 @@
        y="-325.54834"
        id="text10638"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3836,16 +3834,16 @@
        xml:space="preserve"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Helvetica"
        x="3983.8403"
-       y="-202.6875"
+       y="-187.6875"
        id="text10694"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan10696"
          x="3983.8403"
-         y="-202.6875"
+         y="-187.6875"
          style="font-size:19px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans">Contact</tspan></text>
     <rect
        y="252.90045"
@@ -3854,7 +3852,7 @@
        width="219.86926"
        id="rect11141"
        style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3864,7 +3862,7 @@
        height="183.13664"
        x="3753"
        y="252.90045"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3874,7 +3872,7 @@
        width="218.5518"
        id="rect11145"
        style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3884,7 +3882,7 @@
        y="348.51215"
        id="text11151"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan11153"
@@ -3899,7 +3897,7 @@
        x="3817.7915"
        style="font-size:21.47368431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
        xml:space="preserve"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:21.47368431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3914,7 +3912,7 @@
        y="348.51215"
        id="text11533"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan11535"
@@ -3929,7 +3927,7 @@
        y="-80.13678"
        id="text11612"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
@@ -3944,7 +3942,7 @@
        width="760"
        id="rect11624"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3954,7 +3952,7 @@
        x="3800.5"
        style="font-size:130.44691467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -3969,7 +3967,7 @@
        height="183.13664"
        x="3525"
        y="732.90045"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3979,7 +3977,7 @@
        width="223.6842"
        id="rect11632"
        style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -3989,7 +3987,7 @@
        height="183.13664"
        x="3983"
        y="732.90045"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
@@ -3999,7 +3997,7 @@
        x="4042.7915"
        style="font-size:21.47368431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
        xml:space="preserve"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:21.47368431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
@@ -4014,7 +4012,7 @@
        y="828.51215"
        id="text11640"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          id="tspan11642"
@@ -4029,7 +4027,7 @@
        x="3587.7915"
        style="font-size:21.47368431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
        xml:space="preserve"
-       inkscape:export-filename="./about.png"
+       inkscape:export-filename="./renders/about.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:21.47368431px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Open Sans;-inkscape-font-specification:Open Sans"
