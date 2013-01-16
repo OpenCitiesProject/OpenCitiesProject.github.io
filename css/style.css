@@ -10,20 +10,31 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
-h3 {
-	color:#344;
-	padding-left:14px;
+h1, h2, h3, h4, h5, h6 {
+text-shadow: none;
+color:#333;
+font-weight:400;
 }
-   body { margin:0; padding:0; }
-   .map { position:absolute; top:0; bottom:0; width:100%; }
+.header{
+	color:#000;
+	padding-left:14px;
+	line-height:16pt;
+	
+}
+h2, h3, h4 {
+	color:#000;
+	left:14px;
+	}
+   body { margin:0; padding:0; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; }
 
    .map {
-	   background-color:#333;
-       position:relative;
-       height:700px;
-       width:80%;
-       margin-left:10%;
-       margin-right:10%;
+       position:absolute;
+       bottom:0;
+       left:30px;
+       top:100px;
+       right:30px;
+       bottom:30px;
+
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
@@ -112,72 +123,36 @@ h3 {
 		.wax-tooltip h4,
 		.wax-tooltip h5,
 		.wax-tooltip h6 {
-		  font: 13px/20px Helvetica,arial,freesans,clean,sans-serif;
+		  font: 13px/20px 'Source Sans Pro', Helvetica,arial,freesans,clean,sans-serif;
 		  margin: 0;
 		  padding: 0;
 		  }
 		.wax-tooltip h4.int-title,
 		.wax-tooltip h5.int-stat {
-		  font-weight: bold;
+		  font-weight: 600;
 		  text-transform: uppercase;
-		  font-size: 11px;
-		  line-height: 14px;
-		  color: inherit;
+		  font-size: 12px;
+		  line-height: 8pt;
+		  color: #444;
 		  }
 		.wax-tooltip h4.int-title {
-		  margin-bottom: 10px;
-		  color: #333;
+		  color: #aaa;
 		  }
 		.wax-tooltip span.int-value {
 		  display: block;
-		  font-weight: 200;
+		  font-weight: 300;
 		  text-transform: none;
-		  font-size: 20px;
-		  line-height: 24px;
+		  font-size: 16px;
+		  line-height: 14pt;
 		  margin: 0 0 10px;
 		  color: #333;
 		  text-transform:capitalize;
 		  }
-
-
-		  .wax-tooltip .range{
-		    right:8px;
-		    float:left;
-		  }
-		  .wax-tooltip h6.int-range {
-		  display:block;
-		  font-size:10px;
-		  position:absolute;
-		  top:70px;
-		  right:146px;
-		  padding-bottom:10px;
-		  text-align:left;
-		  }
-		.wax-tooltip span.int-lable
-
-		  .wax-tooltip .int-table thead tr th{
-		    font-weight: bold;
-		    text-transform: uppercase;
-		    font-size: 11px;
-		    line-height: 14px;
-		    color: inherit;
-		    padding:5px;
-		  }
-		  .wax-tooltip .int-table tbody tr th{
-		    padding:5px;
-		  }
-		  .wax-tooltip .int-table tbody tr td{
-		        font-weight: 200;
-		        text-transform: none;
-		        font-size: 15px;
-		        color: #fff;
-		        text-transform:capitalize;
-		        padding:10px 0 0 10px;
-		  }
 		.wax-legend {
 			color:#344;
+			display:block;
 		}
-.map-tooltip {max-height:auto;}
+.map-tooltip {max-height:1000px;}
 #gfdrr-roads, #bld-labels {
 	background-color:#fff;
 }

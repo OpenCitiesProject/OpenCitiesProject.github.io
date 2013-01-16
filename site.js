@@ -12,7 +12,8 @@ mapbox.load('gfdrr.map-n7mlul8g,gfdrr.dhaka-gfdrr-roads,' + maps[0], function(o)
 		lat: 23.8909,
 		lon: 90.464
 	}]);
-	map.setZoomRange(11, 19).interaction.auto();
+	map.ui.legend.add();		
+	map.setZoomRange(11, 18).interaction.auto();
 });
 
 
@@ -28,7 +29,9 @@ mapbox.load('gfdrr.map-n7mlul8g,gfdrr.dhaka-gfdrr-roads,' + maps[1], function(o)
 		lat: 23.8909,
 		lon: 90.464
 	}]);
-	map.setZoomRange(11, 19).interaction.auto();		
+	map.setZoomRange(11, 18).interaction.auto();
+	map.ui.legend.add();		
+	
 });
 
 
@@ -44,7 +47,9 @@ mapbox.load('gfdrr.map-fpb8n04o,' + maps[2], function(o) {
 		lat: 23.8909,
 		lon: 90.464
 	}]);
-	map.setZoomRange(11, 19).interaction.auto();
+	map.setZoomRange(11, 18).interaction.auto();
+	map.ui.legend.add();		
+	
 });
 
 
@@ -60,7 +65,7 @@ mapbox.load('gfdrr.map-fpb8n04o', function(o) {
 		lat: 23.8909,
 		lon: 90.464
 	}]);
-	map.setZoomRange(11, 19).interaction.auto();
+	map.setZoomRange(11, 18).interaction.auto();
 	
 });
 
