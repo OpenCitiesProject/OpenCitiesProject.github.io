@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dhaka, Bangladesh</title>
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+	
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+  </head>
+  <body>
+	<div class='clearfix'></div>
+		  <h2 class='header'>Building Use</h2>
+			<h4 class='header'>Dhaka, Bangladesh</h4>
+<div class='clearfix'></div>
+	<div id='bld-use' class='map'></div>
+	<div class='clearfix'></div>
+
+		   <script type='text/javascript'>
+var maps = ["gfdrr.dhaka-3d-building-use", "gfdrr.dhaka-building-survey-images", "gfdrr.dhaka-building-plans", "gfdrr.dhaka-building-footprints,gfdrr.dhaka-building-labels", "gfdrr.dhaka-gfdrr-roads"]
+var divs = ["bld-use", "bld-img", "bld-plan", "bld-labels", "gfdrr-roads"]
+mapbox.load('gfdrr.map-n7mlul8g,gfdrr.dhaka-gfdrr-roads,' + maps[0], function(o) {
+	var map = mapbox.map(divs[0]);
+	map.addLayer(o.layer).zoom(17).center({
+		lat: 23.7481,
+		lon: 90.3965
+	}).setPanLimits([{
+		lat: 23.6845,
+		lon: 90.3315
+	}, {
+		lat: 23.8909,
+		lon: 90.464
+	}]);
+	map.ui.hash.add();	
+	map.setZoomRange(11, 18);
+	map.interaction.auto();
+    map.ui.legend.add();	
+	map.ui.refresh();
+});
+		</script>
+		  </body>		
+	
+	
+</div>
+</html>

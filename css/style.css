@@ -1,4 +1,6 @@
-
+body{
+	padding:30px;
+}
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -30,10 +32,10 @@ h2, h3, h4 {
    .map {
        position:absolute;
        bottom:0;
-       left:30px;
-       top:100px;
-       right:30px;
-       bottom:30px;
+       left:10px;
+       top:70px;
+       right:10px;
+       bottom:10px;
 
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
@@ -155,4 +157,9 @@ h2, h3, h4 {
 .map-tooltip {max-height:1000px;}
 #gfdrr-roads, #bld-labels {
 	background-color:#fff;
+}
+h4.header{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 12pt;
 }
