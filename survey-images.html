@@ -6,7 +6,6 @@
 	    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
@@ -16,18 +15,20 @@
 	
   </head>
   <body>
-	<div class='clearfix'></div>
-		  <h2 class='header'>Building Use</h2>
-			<h4 class='header'>Dhaka, Bangladesh</h4>
-<div class='clearfix'></div>
-	<div id='bld-use' class='map'></div>
-	<div class='clearfix'></div>
+		<div class='clearfix'></div>
+		  <h2 class='header'>Structure Survey Images</h2>
+			<h4 class='header'>Dhaka, Bangladesh</h4>	<div class='clearfix'></div>
+
+		<div id='bld-img' class='map'></div>
+		<div class='clearfix'></div>
  <script type='text/javascript'>
-mapbox.load('gfdrr.map-nkb1ordy,gfdrr.dhaka-3d-building-use', function(o) {
-	var map = mapbox.map('bld-use');
+
+mapbox.load('gfdrr.map-nkb1ordy,gfdrr.dhaka-building-survey-images', function(o) {
+	var map = mapbox.map('bld-img');
 	map.addLayer(o.layer).zoom(17).center({
-		lat: 23.7481,
-		lon: 90.3965
+		lat: 23.71854,
+		lon: 90.38417
+
 	}).setPanLimits([{
 		lat: 23.6845,
 		lon: 90.3315
@@ -35,12 +36,14 @@ mapbox.load('gfdrr.map-nkb1ordy,gfdrr.dhaka-3d-building-use', function(o) {
 		lat: 23.8909,
 		lon: 90.464
 	}]);
-	map.ui.hash.add();	
+    map.ui.hash.add();	
 	map.setZoomRange(11, 18);
 	map.interaction.auto();
     map.ui.legend.add();	
-	map.ui.refresh();
+	map.ui.refresh();	
 });
+
+
 		</script>
 		  </body>		
 	
