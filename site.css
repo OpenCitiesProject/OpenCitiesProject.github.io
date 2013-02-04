@@ -1,0 +1,189 @@
+body{
+	padding:30px;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+h1, h2, h3, h4, h5, h6 {
+text-shadow: none;
+color:#333;
+font-weight:400;
+}
+.header{
+	color:#000;
+	padding-left:14px;
+	line-height:16pt;
+	
+}
+h2, h3, h4 {
+	color:#000;
+	left:14px;
+	font-weight: 400;
+	}
+   body { margin:0; padding:0; font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; }
+
+   .map {
+       position:absolute;
+       bottom:0;
+       left:10px;
+       top:70px;
+       right:10px;
+       bottom:10px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 3px 24px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 3px 24px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 3px 24px rgba(50, 50, 50, 0.75);
+   }
+
+  #map-ui {
+    position:absolute;
+    top:10px;left:10px;
+    list-style:none;
+    margin:0;padding:0;
+    z-index:100;
+    }
+    #map-ui a {
+      font:normal 13px/18px 'Lato', 'Helvetica Neue', Helvetica,sans-serif;
+      background:#FFF;
+      color:#3C4E5A;
+      display:block;
+      margin:0;padding:0;
+      border:1px solid #BBB;
+      border-bottom-width:0;
+      min-width:138px;
+      padding:10px;
+      text-decoration:none;
+      }
+    #map-ui a:hover { background:#ECF5FA; }
+    #map-ui li:last-child a {
+      border-bottom-width:1px;
+      -webkit-border-radius:0 0 3px 3px;
+              border-radius:0 0 3px 3px;
+      }
+    #map-ui li:first-child a {
+      -webkit-border-radius:3px 3px 0 0;
+              border-radius:3px 3px 0 0;
+            }
+    #map-ui a.active {
+      background:#3887BE;
+      border-color:#3887BE;
+      border-top-color:#FFF;
+      color:#FFF;
+      }
+
+	  #map-ui {
+	    position:absolute;
+	    top:10px;left:10px;
+	    list-style:none;
+	    margin:0;padding:0;
+	    z-index:100;
+	    }
+	    #map-ui a {
+	      font:normal 13px/18px 'Lato', 'Helvetica Neue',Helvetica,sans-serif;
+	      background:#FFF;
+	      color:#3C4E5A;
+	      display:block;
+	      margin:0;padding:0;
+	      border:1px solid #BBB;
+	      border-bottom-width:0;
+	      min-width:138px;
+	      padding:10px;
+	      text-decoration:none;
+	      }
+	    #map-ui  a:hover { background:#ECF5FA; }
+	    #map-ui li:last-child a {
+	      border-bottom-width:1px;
+	      -webkit-border-radius:0 0 3px 3px;
+	              border-radius:0 0 3px 3px;
+	      }
+	    #map-ui li:first-child a {
+	      -webkit-border-radius:3px 3px 0 0;
+	              border-radius:3px 3px 0 0;
+	            }
+	    #map-ui a.active {
+	      background:#3887BE;
+	      border-color:#3887BE;
+	      border-top-color:#FFF;
+	      color:#333;
+	      }
+	
+
+		/*Wax tooltip reset*/
+		.wax-tooltip h1,
+		.wax-tooltip h2,
+		.wax-tooltip h3,
+		.wax-tooltip h4,
+		.wax-tooltip h5,
+		.wax-tooltip h6 {
+		  font: 13px/20px 'Lato', Helvetica,arial,freesans,clean,sans-serif;
+		  margin: 0;
+		  padding: 0;
+		  }
+		.wax-tooltip h4.int-title,
+		.wax-tooltip h5.int-stat {
+		  font-weight: 600;
+		  text-transform: uppercase;
+		  font-size: 12px;
+		  line-height: 8pt;
+		  color: #444;
+		  }
+		.wax-tooltip h4.int-title {
+		  color: #aaa;
+		  }
+		.wax-tooltip span.int-value {
+		  display: block;
+		  font-weight: 300;
+		  text-transform: none;
+		  font-size: 16px;
+		  line-height: 14pt;
+		  margin: 0 0 10px;
+		  color: #333;
+		  text-transform:capitalize;
+		  }
+		.wax-legend {
+			color:#344;
+			display:block;
+		}
+.map-tooltip {max-height:1000px;}
+#gfdrr-roads, #bld-labels {
+	background-color:#fff;
+}
+h4.header{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 12pt;
+}
+div.building-plan,
+div.survey-image{
+	padding:10px;}
+
+div.building-plan img,
+div.survey-image img {
+	   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 3px 10px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 3px 10px rgba(50, 50, 50, 0.75);
+}
+.map-tooltip .close{
+	top: 2px;
+right: 1px;}
+.map-tooltip {
+	padding:14px;
+	max-width:300px;
+}

@@ -1,5 +1,19 @@
-var maps = ["gfdrr.dhaka-3d-building-use", "gfdrr.dhaka-building-survey-images", "gfdrr.dhaka-building-plans", "gfdrr.dhaka-building-footprints,gfdrr.dhaka-building-labels", "gfdrr.dhaka-gfdrr-roads"]
-var divs = ["bld-use", "bld-img", "bld-plan", "bld-labels", "gfdrr-roads"]
+var maps = [
+    'gfdrr.dhaka-3d-building-use',
+    'gfdrr.dhaka-building-survey-images',
+    'gfdrr.dhaka-building-plans',
+    'gfdrr.dhaka-building-footprints,gfdrr.dhaka-building-labels',
+    'gfdrr.dhaka-gfdrr-roads'
+    ]
+
+var divs = [
+    'bld-use',
+    'bld-img',
+    'bld-plan',
+    'bld-labels',
+    'gfdrr-roads'
+]
+
 mapbox.load('gfdrr.map-nkb1ordy,' + maps[0], function(o) {
 	var map = mapbox.map(divs[0]);
 	map.addLayer(o.layer).zoom(17).center({
