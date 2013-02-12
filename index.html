@@ -1,16 +1,36 @@
 ---
 layout: default
-title: 'Site Title'
+slideshow: 
+ - slide: 'frontpage.png'
+   title: 'Open data planning data for proactive disaster risk mitigation'
+   nocover: true
+ - slide: 'dhaka.png'
+   title: 'A picture of Dhaka'
+ - slide: 'frontpage.png'
+   title: 'And another title here'
+   nocover: true
 ---
 
-<div id='projects' class='section'>
+<div class='section animation centered'>
+  <div class='limiter'>
+    <h4 class='title'>Unlease the true possibility for<br /> ground-sourced public data infrastructure.</h4>
+    <div class='viewport'></div>
+  </div>
+</div>
 
-  Projects 
-
-  <div class='limiter page clearfix'>
+<div class='projects'>
+  <div class='projects clearfix'>
     {% for item in site.categories.projects %}
-    <div class='project'>
-      <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+    <div href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
+      <div class='headline'>
+        <span class='label'>Case Study</span>
+        {{item.region}}
+      </div>
+      <a href='{{site.baseurl}}{{item.url}}' class='title-block' alt='' />
+        <h2 class='title'>{{item.title}}</h2>
+        <h4 class='subtitle'>{{item.subtitle}}</h4>
+      </a>
+      <div class='overlay'></div>
     </div>
     {% endfor %}
   </div>

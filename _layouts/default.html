@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title></title>
-<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link href='{{site.baseurl}}/site.css' rel='stylesheet' />
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
-<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
-<script src='{{site.baseurl}}/site.js'></script>
-<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+  <meta charset=utf-8 />
+  <title></title>
+  <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+  <script src='{{site.baseurl}}/site.js'></script>
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
 </head>
 <body>
 
-  <div class='title clearfix'>
-    <h3>{{page.title}}</h3>
-  </div>
-  {{ content }}
+  <div class='header {% if page.id %}{{page.id}}{% endif %}'>
+    {% if page.preview %}
+      <img class='banner' src='{{site.baseurl}}/img/banners/{{page.preview}}' alt='' />
+    {% elsif page.slideshow %}
 
+      <a href='#prev' class='slide-control prev'>
+        <span href='#previous' class='icon prev'>Previous</span>
+      </a>
+      <a href='#next' class='slide-control next'>
+        <span href='#next' class='icon next'>Next</span>
+      </a>
+
+      {% for item in page.slideshow %}
+      <div class='slide {% if forloop.first %}active{% endif %}' data-index='slide-{{forloop.index}}'>
+        <img class='banner  {% if item.nocover %}no-cover{% endif %}' src='{{site.baseurl}}/img/banners/{{item.slide}}' alt='' />
+        <div class='limiter'>
+          <div class='title-block'>
+            <h2>{{item.title}}</h2>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      <script>
+        $(function() {
+          gfdrr.slideShow($('.header'));
+        });
+      </script>
+    {% endif %}
+
+    <div class='limiter'>
+      <a href='{{site.baseurl}}/' class='title icon logo'>Title of the site here</a>
+      <div class='nav'>
+        <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
+        <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>Cities</a>
+      </div>
+
+      {% if page.preview %}
+        <div class='title-block'>
+          <h2>{{page.title}}</h2>
+          {% if page.subtitle %}
+            <div class='subtitle'>{{page.subtitle}}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {{content}}
+
+  <div class='footer blue'>
+    <div class='limiter centered'>
+      <h4>Our Partners</h4>
+      <div class='partners'>
+        <a href='https://gfdrr.org' class='icon gfdrr'>Global Facility for Disaster Reduction and Recovery</a>
+        <a href='http://worldbank.org' class='icon wb'>WorldBank</a>
+      </div>
+      <small>Additional Information goes here along with and legal ledger</small>
+    </div>
+  </div>
 </body>
 </html>

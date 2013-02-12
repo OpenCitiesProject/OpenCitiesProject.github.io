@@ -1,17 +1,16 @@
 ---
 layout: default
-category: projects
-title: 'Building Labels and Roads'
-subtitle: 'Dhaka, Bangladesh'
+permalink: /
 ---
 
-<div id='bld-roads' class='map'></div>
+<div id='city-map' class='map'></div>
 <script>
-  mapbox.load('gfdrr.map-nkb1ordy', function(o) {
-    var map = mapbox.map('bld-roads');
+  mapbox.load('gfdrr.map-nkb1ordy,gfdrr.dhaka-building-survey-images', function(o) {
+    var map = mapbox.map('bld-img');
     map.addLayer(o.layer).zoom(17).center({
-      lat: 23.74348,
-      lon: 90.41046
+      lat: 23.71854,
+      lon: 90.38417
+
     }).setPanLimits([{
       lat: 23.6845,
       lon: 90.3315
@@ -20,7 +19,7 @@ subtitle: 'Dhaka, Bangladesh'
       lon: 90.464
     }]);
       map.ui.hash.add();	
-    map.setZoomRange(16, 19);
+    map.setZoomRange(11, 18);
     map.interaction.auto();
       map.ui.legend.add();	
     map.ui.refresh();	
