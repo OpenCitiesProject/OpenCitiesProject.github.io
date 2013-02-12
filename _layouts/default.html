@@ -9,12 +9,13 @@
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
   <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+  <script src='{{site.baseurl}}/cities.js'></script>
   <script src='{{site.baseurl}}/site.js'></script>
   <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
 </head>
 <body>
 
-  <div class='header {% if page.id %}{{page.id}}{% endif %}'>
+  <div id='header' class='header {% if page.id %}{{page.id}}{% endif %}'>
     {% if page.preview %}
       <img class='banner' src='{{site.baseurl}}/img/banners/{{page.preview}}' alt='' />
     {% elsif page.slideshow %}
@@ -40,6 +41,13 @@
       <script>
         $(function() {
           gfdrr.slideShow($('.header'));
+        });
+      </script>
+    {% elsif page.map %}
+      <script>
+        var header = document.getElementById('header');
+        $(function() {
+          gfdrr.renderMap(header, '{{page.map}}');
         });
       </script>
     {% endif %}
