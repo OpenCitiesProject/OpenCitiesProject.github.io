@@ -19,8 +19,6 @@
                 if ($(this).hasClass('next')) {
                    slideIndex = (slideIndex + 1);
                 } else {
-
-                    console.log(slideIndex);
                     if (slideIndex <= 1) {
                         slideIndex = slides;
                     } else {
@@ -35,32 +33,31 @@
     };
 
     gfdrr.renderMap = function(el, mapId) {
-        var map = mapbox.map(el);
-        map.addLayer(mapbox.layer().id(mapId));
+        var map = mapbox.map(el, mapbox.layer().id(mapId), null, [
+            easey_handlers.TouchHandler(),
+            easey_handlers.DragHandler(),
+            easey_handlers.DoubleClickHandler()
+        ]);
 
-        //// Create and add marker layer
-        //var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
-            //var p = document.createElement('div');
-            //p.className = 'marker marker-' + f.properties.klass;
-            //p.innerHTML = f.properties.klass;
+        // Zoom Controls
+        map.ui.zoomer.add();
 
-            //var up = document.createElement('div');
-                //up.className = 'm-popup';
-                //up.innerHTML = '<span class="date">' + f.properties.dates + '</span>' +
-                        //'<h3>' + f.properties.title + '</h3>' +
-                        //'<p>' + f.properties.description + '</p>';
+        // Create and add marker layer
+        var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
+            var p = document.createElement('div');
+                p.className = 'marker marker-' + f.properties.klass;
+                p.innerHTML = '<a href="{{site.baseurl}}/cities/' + f.properties.klass + '</a>';
 
-                //p.appendChild(up);
+                var up = document.createElement('div');
+                    up.className = 'popup';
+                    up.innerHTML = f.properties.title;
 
-                //// Center marker on click
-                //MM.addEvent(p, 'hover', function(e) {
-                    //// Display the project count here.
-                //});
+                p.appendChild(up);
+            return p;
+        });
 
-            //return p;
-        //});
-        //map.addLayer(markerLayer);
-        map.setZoomRange(3, 6);
+        map.addLayer(markerLayer);
+        map.setZoomRange(3, 17);
 
         var mapDefaults = {
             lat: 18.46,

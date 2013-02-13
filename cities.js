@@ -5,10 +5,10 @@ var poi = [
     {
         "geometry": {
         "type": "Point",
-        "coordinates": [{{item.lat}},{{item.lon}}]
+        "coordinates": [{{item.lon}}, {{item.lat}}]
     },
     "properties": {
-        "klass": "{{item.title | downcase | replace:' ','-'}}",
+        "klass": "{{item.title | downcase | replace: ',', ''| replace:' ','-'}}",
         "title": "{{item.title}}",
         "projects": 2
     }

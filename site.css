@@ -176,6 +176,7 @@ small {
   font-size:13px;
   }
 
+.label,
 .subtitle {
   color:#ccc;
   }
@@ -198,12 +199,12 @@ small {
     margin-top:-30px;
     }
     .icon.next {
-      right:20px;
+      right:15px;
       background-position:0 -90px;
       }
     .icon.prev {
-      left:20px;
-      background-position:-70px -90px;
+      left:0;
+      background-position:-80px -90px;
       }
 
   .icon.logo {
@@ -238,7 +239,6 @@ small {
     height:440px;
     color:#fff;
     text-shadow:0 1px 2px rgba(0,0,0,0.5);
-    margin-bottom:20px;
     position:relative;
     }
     .banner {
@@ -389,6 +389,66 @@ small {
     }
   .footer .icon {
     display:inline-block;
+    }
+
+/*-----------------------------------
+  Page: Cities
+-------------------------------------*/
+.marker {
+  background:transparent url(img/sprite.png) no-repeat 0 -155px;
+  height:60px;
+  width:60px;
+  }
+  .marker.marker-dhaka-bangladesh {
+    background-position:-65px -155px;
+    }
+  .marker.marker-columbo-sri-lanka {
+    background-position:-130px -155px;
+    }
+
+.popup {
+  font:500 13px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border:1px solid #ccc;
+  background:#fff;
+  color:#303030;
+  position:absolute;
+  right:-5px;
+  top:34px;
+  width:220px;
+  margin-left:-120px;
+  display:none;
+  padding:10px;
+  text-align:left;
+  -webkit-animation-duration:150ms;
+     -moz-animation-duration:150ms;
+       -o-animation-duration:150ms;
+          animation-duration:150ms;
+  -webkit-animation-fill-mode:both;
+     -moz-animation-fill-mode:both;
+       -o-animation-fill-mode:both;
+          animation-fill-mode:both;
+  -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
+          box-shadow:0 2px 4px rgba(0,0,0,0.25);
+  -webkit-border-radius:4px;
+          border-radius:4px;
+  }
+  .popup:after {
+    bottom:100%;
+    border:solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    right:10px;
+    position:absolute;
+    border-bottom-color:#fff;
+    border-width:10px;
+    }
+  .active .popup {
+    display:block;
+    -webkit-animation-name:fadeUpIn;
+       -moz-animation-name:fadeUpIn;
+         -o-animation-name:fadeUpIn;
+            animation-name:fadeUpIn;
     }
 
 /*-----------------------------------
