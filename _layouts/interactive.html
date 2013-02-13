@@ -4,23 +4,34 @@
 {% include head.html %}
 </head>
 <body>
-  <div class='limiter'>
-    <a href='{{site.baseurl}}/' class='title icon logo'>Title of the site here</a>
-    <div class='nav'>
-      <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
-      <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>Cities</a>
-    </div>
 
-    {% if page.preview %}
-      <div class='title-block'>
-        <h2>{{page.title}}</h2>
-        {% if page.subtitle %}
-          <div class='subtitle'>{{page.subtitle}}</div>
-        {% endif %}
+  <div class='interactive-heading'>
+    <div class='limiter'>
+      <a href='{{site.baseurl}}/' class='title icon logo'>Title of the site here</a>
+      <div class='nav'>
+        <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
+        <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>Cities</a>
       </div>
-    {% endif %}
+
+      {% if page.preview %}
+        <div class='title-block'>
+          <h2>{{page.title}}</h2>
+          {% if page.subtitle %}
+            <div class='subtitle'>{{page.subtitle}}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
   </div>
 
-  {{ content }}
+  <div id='map'></div>
+
+  <script>
+    var map = document.getElementById('map');
+    $(function() {
+      gfdrr.renderMap(map, '{{page.map}}');
+    });
+  </script>
+
 </body>
 </html>

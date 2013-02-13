@@ -41,6 +41,28 @@
 
         // Zoom Controls
         map.ui.zoomer.add();
+        var mapDefaults = {
+            lat: 18.46,
+            lon: 81.65,
+            zoom: 4
+        };
+
+        // Set iniital center and zoom
+        map.centerzoom({
+            lat: mapDefaults.lat,
+            lon: mapDefaults.lon
+        }, mapDefaults.zoom);
+    };
+
+    gfdrr.citiesMap = function(mapId) {
+        var map = mapbox.map('header', mapbox.layer().id(mapId), null, [
+            easey_handlers.TouchHandler(),
+            easey_handlers.DragHandler(),
+            easey_handlers.DoubleClickHandler()
+        ]);
+
+        // Zoom Controls
+        map.ui.zoomer.add();
 
         // Create and add marker layer
         var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
