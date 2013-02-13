@@ -3,3 +3,7 @@ layout: default
 permalink: /cities
 map: 'tristen.map-szd2bwqq'
 ---
+
+{% for item in site.categories.city %}
+  {{item.preview}}
+{% endfor %}
