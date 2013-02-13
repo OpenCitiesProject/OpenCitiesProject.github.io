@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  <div id='header' class='header {% if page.id %}{{page.id}}{% endif %}'>
+  <div id='header' class='header {% if page.no-header %}no-header {% endif %}{% if page.id %}{{page.id | replace "/" ""}}{% endif %}'>
     {% if page.preview %}
       <img class='banner' src='{{site.baseurl}}/img/banners/{{page.preview}}' alt='' />
     {% elsif page.slideshow %}
