@@ -259,10 +259,16 @@ small {
         }
 
       .slide {
-        display:none;
+        display:none\9; /* target < ie9 */
+        opacity:0;
+        -webkit-transition:opacity 0.3s;
+           -moz-transition:opacity 0.3s;
+             -o-transition:opacity 0.3s;
+                transition:opacity 0.3s;
         }
         .slide.active {
-          display:block;
+          display:block\9; /* target < ie9 */
+          opacity:1;
           }
 
     .header .limiter {
@@ -272,7 +278,7 @@ small {
       }
     .header .title-block {
       position:absolute;
-      left:40px;
+      left:0;
       top:185px;
       width:600px;
       }
@@ -396,6 +402,9 @@ small {
           position:relative;
           text-shadow:none;
           }
+          .project .activities li a.city-page {
+            background:#255d91;
+            }
           .project .activities li a .more {
             background:#255d91;
             color:#fff;
@@ -404,8 +413,10 @@ small {
             bottom:0;
             right:0;
             display:inline-block;
-            padding:5px 20px;
+            padding:0 20px;
             font-size:13px;
+            height:40px;
+            line-height:40px;
             }
           .project .activities li a:hover {
             background:#255d91;
@@ -429,6 +440,9 @@ small {
   background:transparent url(img/sprite.png) no-repeat 0 -155px;
   height:60px;
   width:60px;
+  margin:-60px 0px 0px -30px;
+  display:block;
+  pointer-events:auto;
   }
   .marker.marker-dhaka-bangladesh {
     background-position:-65px -155px;
@@ -436,20 +450,22 @@ small {
   .marker.marker-columbo-sri-lanka {
     background-position:-130px -155px;
     }
+  .marker:hover .popup {
+    display:block;
+    }
 
 .popup {
-  font:500 13px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border:1px solid #ccc;
-  background:#fff;
-  color:#303030;
+  font-family:'Merriweather Bold', Georgia, 'Times New Roman', 'Hoefler Text';
+  background:#000;
+  color:#fff;
   position:absolute;
-  right:-5px;
-  top:34px;
+  left:50%;
+  bottom:55px;
   width:220px;
-  margin-left:-120px;
+  height:45px;
+  margin-left:-110px;
   display:none;
   padding:10px;
-  text-align:left;
   -webkit-animation-duration:150ms;
      -moz-animation-duration:150ms;
        -o-animation-duration:150ms;
@@ -460,19 +476,17 @@ small {
           animation-fill-mode:both;
   -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
           box-shadow:0 2px 4px rgba(0,0,0,0.25);
-  -webkit-border-radius:4px;
-          border-radius:4px;
   }
   .popup:after {
-    bottom:100%;
-    border:solid transparent;
+    bottom:-10px;
     content:'';
     height:0;
     width:0;
-    right:10px;
+    right:50%;
     position:absolute;
-    border-bottom-color:#fff;
-    border-width:10px;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid #000;
     }
   .active .popup {
     display:block;

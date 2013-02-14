@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% include head.html %}
+  {% include dochead.html %}
 </head>
 <body>
 
   <div id='header' class='header {% if page.no-header %}no-header {% endif %}{% if page.id %}{{page.id | replace "/" ""}}{% endif %}'>
     {% if page.preview %}
+      {% include header.html %}
       <img class='banner' src='{{site.baseurl}}/img/banners/{{page.preview}}' alt='' />
     {% elsif page.slideshow %}
-
+      {% include header.html %}
       <a href='#prev' class='slide-control prev'>
         <span href='#previous' class='icon prev'>Previous</span>
       </a>
@@ -43,29 +44,13 @@
       </script>
     {% endif %}
 
-    <div class='limiter'>
-      <a href='{{site.baseurl}}/' class='title icon logo'>Title of the site here</a>
-      <div class='nav'>
-        <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
-        <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>Cities</a>
-      </div>
-
-      {% if page.preview %}
-        <div class='title-block'>
-          <h2>{{page.title}}</h2>
-          {% if page.subtitle %}
-            <div class='subtitle'>{{page.subtitle}}</div>
-          {% endif %}
-        </div>
-      {% endif %}
-    </div>
   </div>
 
   {{content}}
 
   <div class='footer blue'>
     <div class='limiter centered'>
-      <h4>Our Partners</h4>
+      <h4 class='title'>Our Partners</h4>
       <div class='partners'>
         <a href='https://gfdrr.org' class='icon gfdrr'>Global Facility for Disaster Reduction and Recovery</a>
         <a href='http://worldbank.org' class='icon wb'>WorldBank</a>

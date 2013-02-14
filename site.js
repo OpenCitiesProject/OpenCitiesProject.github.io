@@ -1,3 +1,5 @@
+---
+---
 ;(function(context) {
 
     var gfdrr = {}
@@ -54,8 +56,8 @@
         }, mapDefaults.zoom);
     };
 
-    gfdrr.citiesMap = function(mapId) {
-        var map = mapbox.map('header', mapbox.layer().id(mapId), null, [
+    gfdrr.citiesMap = function(el, mapId) {
+        var map = mapbox.map(el, mapbox.layer().id(mapId), null, [
             easey_handlers.TouchHandler(),
             easey_handlers.DragHandler(),
             easey_handlers.DoubleClickHandler()
@@ -66,16 +68,16 @@
 
         // Create and add marker layer
         var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
-            var p = document.createElement('div');
-                p.className = 'marker marker-' + f.properties.klass;
-                p.innerHTML = '<a href="{{site.baseurl}}/cities/' + f.properties.klass + '</a>';
+            var a = document.createElement('a');
+                a.className = 'marker marker-' + f.properties.klass;
+                a.href = '{{site.baseurl}}' + f.properties.url;
 
                 var up = document.createElement('div');
                     up.className = 'popup';
                     up.innerHTML = f.properties.title;
 
-                p.appendChild(up);
-            return p;
+                a.appendChild(up);
+            return a;
         });
 
         map.addLayer(markerLayer);
