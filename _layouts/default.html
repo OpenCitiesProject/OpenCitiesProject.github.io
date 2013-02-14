@@ -7,10 +7,9 @@
 
   <div id='header' class='header {% if page.no-header %}no-header {% endif %}{% if page.id %}{{page.id | replace "/" ""}}{% endif %}'>
     {% if page.preview %}
-      {% include header.html %}
       <img class='banner' src='{{site.baseurl}}/img/banners/{{page.preview}}' alt='' />
+    {% include header.html %}
     {% elsif page.slideshow %}
-      {% include header.html %}
       <a href='#prev' class='slide-control prev'>
         <span href='#previous' class='icon prev'>Previous</span>
       </a>
@@ -34,6 +33,7 @@
           gfdrr.slideShow($('.header'));
         });
       </script>
+      {% include header.html %}
 
     {% elsif page.map %}
       <script>
