@@ -8,7 +8,7 @@
     {% if page.no-header %}
     <div id='header' class='header no-header'></div>
     {% elsif page.preview %}
-    <div id='header' class='header' style='background-image:url("{{site.baseurl}}/img/banners/{{page.preview}}")'>
+    <div id='header' class='header' style='background-image:url("{{site.baseurl}}/img/banners/{{page.preview}}");'>
       <div class='overlay'></div>
       {% include header.html %}
     </div>
@@ -22,11 +22,12 @@
         <span href='#next' class='icon next'>Next</span>
       </a>
       {% for item in page.slideshow %}
-      <div class='slide {% if forloop.first %}active{% endif %}' data-index='slide-{{forloop.index}}'>
-        <img class='banner  {% if item.nocover %}no-cover{% endif %}' src='{{site.baseurl}}/img/banners/{{item.slide}}' alt='' />
+      <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active{% endif %}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
+      <div class='overlay'></div>
         <div class='limiter'>
           <div class='title-block'>
             <h2>{{item.title}}</h2>
+            <p class='subtitle'>{{item.subtitle}}</p>
           </div>
         </div>
       </div>

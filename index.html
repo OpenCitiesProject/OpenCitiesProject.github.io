@@ -2,13 +2,17 @@
 layout: default
 slideshow:
  - slide: 'frontpage.png'
-   title: 'Open data planning data for proactive disaster risk mitigation'
    nocover: true
- - slide: 'dhaka.png'
-   title: 'A picture of Dhaka'
+   title: 'Urban and Open'
+   subtitle: 'Making urban planning data better by making it more open'
  - slide: 'frontpage.png'
-   title: 'And another title here'
    nocover: true
+   title: 'Disaster Risk Mitigation'
+   subtitle: 'Leveraging open data sets for disaster risk mitigation modeling and rescue and relief efforts'
+ - slide: 'frontpage.png'
+   nocover: true
+   title: 'Your World, Your Map'
+   subtitle: 'Adding society-critical datasets to the the free, citizen-powered OpenStreetMap, with global coverage and street level detail'
 ---
 
   <div id='video-area'>
@@ -37,14 +41,12 @@ slideshow:
       <div class='headline'>
         <span class='label'>City</span>
         <h2 class='title'>{{item.title}}</h2>
-        <h4 class='subtitle'>{{item.subtitle}}</h4>
       </div>
       <div class='overlay'></div>
       <ul class='activities'>
         <li>
           <a href='{{site.baseurl}}{{item.url}}' class='city-page' alt='' />
-              <h4 class='title'>All Case Studies</h4>
-              <span class='more'>Explore Country</span>
+              <h4 class='title'>Explore All</h4>
           </a>
         </li>
         {% for case in site.categories.casestudy %}
