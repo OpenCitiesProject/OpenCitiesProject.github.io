@@ -10,9 +10,14 @@ permalink: /cities/kathmandu
 ---
 
 <div id='container'>
-	{% for item in site.categories.casestudy %}
-  		<a href='{{site.baseurl}}{{item.url}}'>
-  			<p>{{item.title}}</p>
-		</a>
-	{% endfor %}
+  {% for item in site.tags.colombo %}
+  <li class='square-wrapper' >
+      <a href='{{site.baseurl}}{{item.url}}'>
+        <div class='square-title' style="background-image:url('http://static4.demotix.com/sites/default/files/imagecache/a_scale_large/1300-1/photos/1342448365-air-pollution-rising-in-dhaka_1338091.jpg')">
+        <h1>{{item.title}}</h1>
+        <p class='square-description'>{{item.description}}</p>
+        </div>
+    </a>
+  </li>
+  {% endfor %}
 </div>
