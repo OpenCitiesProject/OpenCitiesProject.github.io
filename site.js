@@ -1,6 +1,7 @@
 ---
 ---
 ;(function(context) {
+    
 
     var gfdrr = {}
 
@@ -95,7 +96,7 @@
             lon: mapDefaults.lon
         }, mapDefaults.zoom);
     };
-    console.log("hello")
+
     $('ul.tabs').each(function(){
         // For each set of tabs, we want to keep track of
         // which tab is active and it's associated content
@@ -130,6 +131,8 @@
             e.preventDefault();
         });
     });
+
+    
 
     window.gfdrr = gfdrr;
 })(window);

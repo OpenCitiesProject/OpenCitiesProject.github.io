@@ -1,0 +1,30 @@
+---
+layout: interactive
+category: casestudy
+title: 'Health Infrastructure'
+subtitle: 'Health infrastructure is important to a growng population'
+description: 'Health infrastructure is very well mapped, and stakeholders need to invest in OSM as a concrete source of community input/local knowledge into DRR decisions making. This is important framing for decision makers because this is community-generated data, this is where people will go for medical attention in disaster situations and and where people go for medicine.'
+preview: 'kathmandu.png'
+map: 'villeda.map-494cqapd,villeda.kathmandu'
+tags:
+- colombo
+- featured
+---
+<div id='map' class='map'></div>
+
+<script>
+
+mapbox.load('{{page.map}}', function(o) {
+  var map = mapbox.map('map');
+  map.addLayer(o.layer).zoom(13).center({
+    lat: 27.7143,
+    lon: 85.3266
+  });
+  map.ui.hash.add();  
+  map.setZoomRange(7, 17);
+  map.interaction.auto();
+  map.ui.legend.add();  
+  map.ui.refresh();
+});
+
+</script>

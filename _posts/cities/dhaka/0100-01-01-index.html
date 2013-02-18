@@ -8,3 +8,11 @@ lon: 90.40934868615305
 preview: 'dhaka.png'
 permalink: /cities/dhaka
 ---
+
+<div id='container'>
+	{% for item in site.categories.casestudy %}
+  		<a href='{{site.baseurl}}{{item.url}}'>
+  			<p>{{item.title}}</p>
+		</a>
+	{% endfor %}
+</div>

@@ -8,3 +8,11 @@ lon: 85.31551502358228
 preview: 'kathmandu.png'
 permalink: /cities/kathmandu
 ---
+
+<div id='container'>
+	{% for item in site.categories.casestudy %}
+  		<a href='{{site.baseurl}}{{item.url}}'>
+  			<p>{{item.title}}</p>
+		</a>
+	{% endfor %}
+</div>

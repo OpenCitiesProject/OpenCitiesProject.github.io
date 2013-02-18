@@ -1,0 +1,2 @@
+* if(Modernizer.video) {}
+* move to local version of modernizer

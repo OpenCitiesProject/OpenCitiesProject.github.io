@@ -9,14 +9,25 @@
     {% include header.html %}
   </div>
 
-  <div id='map'></div>
 
-  <script>
-    var map = document.getElementById('map');
-    $(function() {
-      gfdrr.renderMap(map, '{{page.map}}');
-    });
-  </script>
+  
+  <div class='interactive-heading description'>
+      <div class='limiter'>
+      <div class='title-block'>
+        <div class='subtitle'>
+             {% if page.description %}
+            <p>{{page.description}}</p>
+          {% endif %}
+          </div>
+        
+      </div>
+    
+  </div>
+
+    </div>
+   
+
+  {{content}}
 
 </body>
 </html>
