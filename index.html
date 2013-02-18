@@ -9,10 +9,9 @@ slideshow:
    nocover: true
    title: 'Disaster Risk Mitigation'
    subtitle: 'Leveraging open data sets for disaster risk mitigation modeling and rescue and relief efforts'
- - slide: 'frontpage.png'
-   nocover: true
+ - slide: 'frontpage-osm.png'
    title: 'Your World, Your Map'
-   subtitle: 'Adding society-critical datasets to the the free, citizen-powered OpenStreetMap, with global coverage and street level detail'
+   subtitle: 'Adding society-critical datasets to the the free, citizen-powered <a href="http://openstreetmap.org">OpenStreetMap</a>, with global coverage and street level detail'
 ---
 
   <div id='video-area'>
@@ -40,26 +39,27 @@ slideshow:
     <div href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
       <div class='headline'>
         <span class='label'>City</span>
-        <h2 class='title'>{{item.title}}</h2>
+        <h2 class='title'>{{item.title}}</h2><br />
+        <a href='{{site.baseurl}}{{item.url}}' class='button'>Explore All</a>
       </div>
+      <div class='dot-matrix'></div>
       <div class='overlay'></div>
       <ul class='activities'>
-        <li>
-          <a href='{{site.baseurl}}{{item.url}}' class='city-page' alt='' />
-              <h4 class='title'>Explore All</h4>
-          </a>
-        </li>
         {% for case in site.categories.casestudy %}
-          {% if item.city == case.city %}
-            {% if case.featured == true %}
-            <li>
-              <a href='{{site.baseurl}}/{{case.url}}'>
-                <h4 class='title'>{{case.title}}</h4>
-                <span class='more'>More</span>
-              </a>
-            </li>
+          {% for tag in case.tags %}
+            {% if tag == item.city %}
+              {% for tag in case.tags %}
+                {% if tag == 'featured' %}
+                <li>
+                  <a href='{{site.baseurl}}/{{case.url}}'>
+                    <h4 class='title'>{{case.title}}</h4>
+                    <span class='more'>More</span>
+                  </a>
+                </li>
+                {% endif %}
+              {% endfor %}
             {% endif %}
-          {% endif %}
+          {% endfor %}
         {% endfor %}
       </ul>
     </div>

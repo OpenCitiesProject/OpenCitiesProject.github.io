@@ -9,7 +9,7 @@
     <div id='header' class='header no-header'></div>
     {% elsif page.preview %}
     <div id='header' class='header' style='background-image:url("{{site.baseurl}}/img/banners/{{page.preview}}");'>
-      <div class='overlay'></div>
+      <div class='dot-matrix'></div>
       {% include header.html %}
     </div>
 
@@ -23,7 +23,7 @@
       </a>
       {% for item in page.slideshow %}
       <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active{% endif %}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
-      <div class='overlay'></div>
+        <div class='dot-matrix'></div>
         <div class='limiter'>
           <div class='title-block'>
             <h2>{{item.title}}</h2>
