@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title></title>
-<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<link href='{{site.baseurl}}/site.css' rel='stylesheet' />
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
-<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
-<script src='{{site.baseurl}}/site.js'></script>
-<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+  {% include dochead.html %}
 </head>
 <body>
 
-  <div class='title clearfix'>
-    <h3>{{page.title}}</h3>
-  </div>
-  {{ content }}
+    {% if page.no-header %}
+    <div id='header' class='header no-header'></div>
+    {% elsif page.preview %}
+    <div id='header' class='header' style='background-image:url("{{site.baseurl}}/img/banners/{{page.preview}}");'>
+      <div class='dot-matrix'></div>
+      {% include header.html %}
+    </div>
 
+    {% elsif page.slideshow %}
+    <div id='header' class='header'>
+      <a href='#prev' class='slide-control prev'>
+        <span href='#previous' class='icon prev'>Previous</span>
+      </a>
+      <a href='#next' class='slide-control next'>
+        <span href='#next' class='icon next'>Next</span>
+      </a>
+      {% for item in page.slideshow %}
+      <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active{% endif %}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
+        <div class='dot-matrix'></div>
+        <div class='limiter'>
+          <div class='title-block'>
+            <h2>{{item.title}}</h2>
+            <p class='subtitle'>{{item.subtitle}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <script>
+        $(function() {
+          gfdrr.slideShow($('.header'));
+        });
+      </script>
+      {% include header.html %}
+    </div>
+    {% elsif page.map %}
+    <div id='header' class='header'>
+      <script>
+        var header = document.getElementById('header');
+        $(function() {
+          gfdrr.citiesMap(header, '{{page.map}}');
+        });
+      </script>
+    </div>
+    {% endif %}
+
+  {{content}}
+
+  <div class='footer blue'>
+    <div class='limiter centered'>
+      <h4 class='title'>Our Partners</h4>
+      <div class='partners'>
+        <a href='https://gfdrr.org' class='icon gfdrr'>Global Facility for Disaster Reduction and Recovery</a>
+        <a href='http://worldbank.org' class='icon wb'>WorldBank</a>
+      </div>
+      <small>Additional Information goes here along with and legal ledger</small>
+    </div>
+  </div>
 </body>
 </html>

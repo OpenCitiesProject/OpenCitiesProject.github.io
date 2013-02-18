@@ -1,4 +1,4 @@
 auto: true
 server: true
 baseurl: /dhaka
-permalink: /:title
+permalink: /:categories/:title

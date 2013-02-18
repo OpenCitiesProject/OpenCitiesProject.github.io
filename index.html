@@ -1,16 +1,67 @@
 ---
 layout: default
-title: 'Site Title'
+slideshow:
+ - slide: 'frontpage.png'
+   nocover: true
+   title: 'Urban and Open'
+   subtitle: 'Making urban planning data better by making it more open'
+ - slide: 'frontpage.png'
+   nocover: true
+   title: 'Disaster Risk Mitigation'
+   subtitle: 'Leveraging open data sets for disaster risk mitigation modeling and rescue and relief efforts'
+ - slide: 'frontpage-osm.png'
+   title: 'Your World, Your Map'
+   subtitle: 'Adding society-critical datasets to the the free, citizen-powered <a href="http://openstreetmap.org">OpenStreetMap</a>, with global coverage and street level detail'
 ---
 
-<div id='projects' class='section'>
+  <div id='video-area'>
+    <h4 class='title-video'>Unleash the true possibility for<br /><br /> ground-sourced public data infrastructure.</h4>
+    
+     <div id="video-embed"><video autoplay="autoplay" poster="img/bboxes.jpg" width="100%" height="100%" title="bboxes" loop="loop">
+     <source src="img/bboxes.m4v" type="video/mp4" />
+     <source src="img/bboxes.webm" type="video/webm" />
+     <source src="img/bboxes.ogv" type="video/ogg" />
+     <source src="img/bboxes.mp4" />
+     <object type="application/x-shockwave-flash" data="flashfox.swf" width="100%" height="100%" style="position:relative;">
+     <param name="movie" value="flashfox.swf" />
+     <param name="allowFullScreen" value="true" />
+     <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=true&amp;poster=bboxes.jpg&amp;src=img/bboxes.m4v" />
+      <embed src="img/flashfox.swf" width="100%" height="100%" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=true&amp;poster=bboxes.jpg&amp;src=img/bboxes.m4v"  allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+     <img alt="bboxes" src="img/bboxes.jpg" style="position:absolute;left:0;" width="100%" height="100%" title="Video playback is not supported by your browser" />
+     </object>
+     </video>
+  </div>
 
-  Projects 
 
-  <div class='limiter page clearfix'>
-    {% for item in site.categories.projects %}
-    <div class='project'>
-      <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+<div class='projects'>
+  <div class='projects clearfix'>
+    {% for item in site.categories.cities %}
+    <div href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
+      <div class='headline'>
+        <span class='label'>City</span>
+        <h2 class='title'>{{item.title}}</h2><br />
+        <a href='{{site.baseurl}}{{item.url}}' class='button'>Explore All</a>
+      </div>
+      <div class='dot-matrix'></div>
+      <div class='overlay'></div>
+      <ul class='activities'>
+        {% for case in site.categories.casestudy %}
+          {% for tag in case.tags %}
+            {% if tag == item.city %}
+              {% for tag in case.tags %}
+                {% if tag == 'featured' %}
+                <li>
+                  <a href='{{site.baseurl}}/{{case.url}}'>
+                    <h4 class='title'>{{case.title}}</h4>
+                    <span class='more'>More</span>
+                  </a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
     </div>
     {% endfor %}
   </div>
