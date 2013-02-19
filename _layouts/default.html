@@ -22,13 +22,11 @@
         <span href='#next' class='icon next'>Next</span>
       </a>
       {% for item in page.slideshow %}
-      <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active{% endif %}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
-        <div class='dot-matrix'></div>
-        <div class='limiter'>
-          <div class='title-block'>
-            <h2>{{item.title}}</h2>
-            <p class='subtitle'>{{item.subtitle}}</p>
-          </div>
+      <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active {% endif %} slide-{{forloop.index}}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
+        {% include header.html %}
+        <div class='title-block'>
+          <h2>{{item.title}}</h2>
+          <p class='subtitle'>{{item.subtitle}}</p>
         </div>
       </div>
       {% endfor %}
@@ -37,7 +35,6 @@
           gfdrr.slideShow($('.header'));
         });
       </script>
-      {% include header.html %}
     </div>
     {% elsif page.map %}
     <div id='header' class='header'>

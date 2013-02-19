@@ -69,25 +69,6 @@ table { border-collapse: collapse; border-spacing:0; }
   }
 
 @font-face {
-  font-family:Opensans;
-  font-weight:200;
-  src: url('fonts/opensans/opensans-light.eot') format('eot');
-  src: url('fonts/opensans/opensans-light.eot?#iefix') format('embedded-opentype'),
-       url('fonts/opensans/opensans-light.woff') format('woff'),
-       url('fonts/opensans/opensans-light.ttf') format('truetype');
-  }
-
-@font-face {
-  font-family:Opensans;
-  font-weight:200;
-  font-style:italic;
-  src: url('fonts/opensans/opensans-lightitalic.eot') format('eot');
-  src: url('fonts/opensans/opensans-lightitalic.eot?#iefix') format('embedded-opentype'),
-       url('fonts/opensans/opensans-lightitalic.woff') format('woff'),
-       url('fonts/opensans/opensans-lightitalic.ttf') format('truetype');
-  }
-
-@font-face {
   font-family:'Merriweather Bold';
   src: url('fonts/merriweather/merriweather-bold.eot') format('eot');
   src: url('fonts/merriweather/merriweather-bold.eot?#iefix') format('embedded-opentype'),
@@ -246,6 +227,14 @@ small {
     width:132px;
     height:70px;
     }
+    .interactive-heading .icon.logo {
+      width:66px;
+      height:32px;
+      background-position:-140px -328px;
+      }
+    .slide-3 .icon.logo {
+      background-position:0 -295px;
+      }
 
 /* ------------------------------------------
   Global layout & styling ♥
@@ -300,9 +289,10 @@ small {
       }
     .header .title-block {
       position:absolute;
-      left:20px;
+      left:130px;
       top:160px;
       width:480px;
+      z-index:100;
       }
     .header a {
       color:#fff;
@@ -460,14 +450,18 @@ small {
         width:25%;
         }
         .project .activities li a {
-          background:#327dbd;
+          background:#000;
           display:block;
           padding:20px;
-          color:#f0f0f0;
+          color:#F0F0F0;
           height:180px;
-          border-left:1px solid #255d91;
           position:relative;
           text-shadow:none;
+          opacity:0.75;
+          -webkit-transition:opacity 300ms;
+             -moz-transition:opacity 300ms;
+               -o-transition:opacity 300ms;
+                  transition:opacity 300ms;
           }
           .project .activities li a .more {
             background:#255d91;
@@ -483,7 +477,7 @@ small {
             line-height:40px;
             }
           .project .activities li a:hover {
-            background:#255d91;
+            opacity:1;
             }
 
 .footer {
@@ -608,24 +602,16 @@ small {
   .interactive-heading .limiter {
     position:relative;
     }
-  .description {
-    position:absolute;
-    bottom:0;
-    padding:0;
-    }
-    .interactive-heading .description {
-      padding:0;
-      }
-    .description p {
-      margin:0;
-      font-size:17px;
-      }
 
-  #map {
-    position:absolute;
-    top:0;left:0;
-    width:100%;
-    height:100%;
+#map {
+  position:absolute;
+  top:0;left:0;
+  width:100%;
+  height:100%;
+  }
+  .map-tooltip {
+    bottom:20px;
+    left:20px;
     }
 
 #video-area{

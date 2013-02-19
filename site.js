@@ -11,21 +11,17 @@
 
         $('a.slide-control').click(function() {
             $slide.removeClass('active');
-
-            if (slideIndex === slides) {
-                slideIndex = 1;
-            } else if ((slideIndex - 1) === 1) {
-                slideIndex = slides;
-            } else {
-                // Adjust the counter
-                if ($(this).hasClass('next')) {
-                   slideIndex = (slideIndex + 1);
+            if ($(this).hasClass('next')) {
+                if (slideIndex >= slides) {
+                    slideIndex = 1; 
                 } else {
-                    if (slideIndex <= 1) {
-                        slideIndex = slides;
-                    } else {
-                        slideIndex = (slideIndex - 1);
-                    }
+                    slideIndex++;
+                }
+            } else {
+                if (slideIndex <= 1) {
+                    slideIndex = slides;
+                } else {
+                    slideIndex--;
                 }
             }
 
