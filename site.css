@@ -721,3 +721,35 @@ padding-right: 20px;
   background-color: rgba(245, 245, 245, 0.81);
   padding:25px 0 25px 54px;
 }
+/*About Section */
+#contact{
+ float:right;
+ text-align: right;
+ padding-right: 40px;
+}
+
+.about-section{
+  padding-top:100px;
+}
+
+.partner-grid {
+    list-style:none;
+    margin:0;
+    padding: 75px;
+}
+.partner-grid li {
+    float:left;
+    padding: 20px;
+}
+.partner li {
+    border-left:1px solid #ccc;
+
+}
+.partner-grid a {
+    display:block;
+    padding:60px;
+    
+    color:#222;
+    background:#eee;
+    text-decoration:none;
+}

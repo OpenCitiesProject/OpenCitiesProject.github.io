@@ -1,25 +1,52 @@
 ---
 layout: default
 permalink: /about
-no-header: true
----
-<ul class='tabs about'>
-    <li><a href='#tab1'>Tab 1</a></li>
-    <li><a href='#tab2'>Tab 2</a></li>
-    <li><a href='#tab3'>Tab 3</a></li>
-</ul>
 
-	<div class='limiter'>
-		<div id='tab1' class='partner'>
-		    <p>Hi, this is the first tab.</p>
-		</div>
-		<div id='tab2' class='section partners'>
-		    <p>This is the 2nd tab.</p>
-		</div>
-		<div id='tab3' class='section press'>
-		    <p>And this is the 3rd tab.</p>
-		</div>
-	</div>
+---
+<div class='interactive-heading'>
+    {% include header.html %}
+    <div class='limiter'>
+        <div class='title-block'>
+            <ul class='tabs about'>
+                <li><a href='#tab1'>About</a></li>
+                <li><a href='#tab2'>Press Resources</a></li>
+                <li><a href='#tab3'>Partners</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+<div class='limiter'>
+        <div id='tab1' class='partner'>
+            <h1>About</h1>
+        <iframe width='500' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/gfdrr.map-usrz41h4.html#3/0/0'></iframe>
+        <div id='contact'>
+            <h1>Contact</h1>
+            <h4>1818 H Street, NW</h4>
+            <h4>Washington, DC 20009</h4>
+            <h4>example@gmail.com</h4>
+    </div>
+        </div>
+        <div id='tab2' class='section partners'>
+            <ul class='partner-grid'>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id='tab3' class='section partners'>
+            <p>And this is the 3rd tab.</p>
+        </div>
+    </div>
+
+
+    
 
 <script type="text/javascript">
 
