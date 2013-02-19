@@ -1,0 +1,29 @@
+---
+layout: interactive
+category: casestudy
+title: 'Road Networks'
+subtitle: 'OpenStreet Contributions in Colombo'
+preview: 'colombo.png'
+tags:
+- colombo
+- featured
+---
+
+Strong level of community of people already contributing to OSM in Colombo - there are a lot people doing a lot of work in OSM, but not on the level of Kathmandu.
+
+<script>
+
+var opts = {
+  lat: 6.9386,
+  lon: 79.8700,
+  zoom: {
+    defaultZoom:15,
+    max:15,
+    min:7
+    }
+  };
+
+$(function() {
+  gfdrr.generateMap('villeda.map-494cqapd,villeda.col-roads', opts);
+});
+</script>

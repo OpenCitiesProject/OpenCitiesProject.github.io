@@ -3,28 +3,26 @@ layout: interactive
 category: casestudy
 title: 'Places of Worship and Schools'
 subtitle: 'Strong Point of interest data'
-description: 'These are locations that people gather, are likely to be well known and can accommodate displaced or injured people in disaster situations. In OSM there are precise locations for: 231 places of worship and 238 schools'
 preview: 'kathmandu.png'
-map: 'villeda.map-494cqapd,villeda.kat-poi'
 tags:
 - kathmandu
 - featured
 ---
-<div id='map' class='map'></div>
+
+These are locations that people gather, are likely to be well known and can accommodate displaced or injured people in disaster situations. In OSM there are precise locations for: 231 places of worship and 238 schools
 
 <script>
+var opts = {
+  lat: 27.7062,
+  lon: 85.3210,
+  zoom: {
+    defaultZoom:15,
+    max:17,
+    min:7
+    }
+  };
 
-mapbox.load('{{page.map}}', function(o) {
-  var map = mapbox.map('map');
-  map.addLayer(o.layer).zoom(15).center({
-    lat: 27.7062,
-    lon: 85.3210
-  });
-  map.ui.hash.add();  
-  map.setZoomRange(7, 17);
-  map.interaction.auto();
-  map.ui.legend.add();  
-  map.ui.refresh();
+$(function() {
+  gfdrr.generateMap('villeda.map-494cqapd,villeda.kat-poi', opts);
 });
-
 </script>

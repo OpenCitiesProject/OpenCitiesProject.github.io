@@ -4,30 +4,17 @@
 {% include dochead.html %}
 </head>
 <body>
+<div class='interactive-heading'>
+  {% include header.html %}
+</div>
 
-  <div class='interactive-heading'>
-    {% include header.html %}
+<div class='map' id='map'></div>
+
+<div class='prose'>
+  <div class='limiter'>
+    {{content}}
   </div>
-
-
-  
-  <div class='interactive-heading description'>
-      <div class='limiter'>
-      <div class='title-block'>
-        <div class='subtitle'>
-             {% if page.description %}
-            <p>{{page.description}}</p>
-          {% endif %}
-          </div>
-        
-      </div>
-    
-  </div>
-
-    </div>
-   
-
-  {{content}}
+</div>
 
 </body>
 </html>

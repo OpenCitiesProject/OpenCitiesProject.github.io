@@ -344,26 +344,9 @@ small {
 .inner {
   padding:20px;
   }
-
 .footer {
   padding:40px 0;
   }
-
-.description{
-  position: absolute;
-  bottom: 0px;
-  padding: 0px;
-
-
-}
-.interactive-heading .description{
-  padding: 0px!important;
-}
-.description p{
-  color:rgb(75, 75, 75);
-  margin: 0px;
-  font-size: 17px;
-}
 
 /* ------------------------------------------
   Site styling ♥
@@ -619,12 +602,57 @@ small {
   .interactive-heading .limiter {
     position:relative;
     }
+  .description {
+    position:absolute;
+    bottom:0;
+    padding:0;
+    }
+    .interactive-heading .description {
+      padding:0;
+      }
+    .description p {
+      margin:0;
+      font-size:17px;
+      }
+
   #map {
     position:absolute;
     top:0;left:0;
     width:100%;
     height:100%;
     }
+
+#video-area{
+  position: relative; 
+  top: -83px;
+  width: 100%;
+  height:100%;
+  }
+
+.tabs{
+  text-align: center
+  }
+.tabs li{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  }
+
+.wax-tooltip{
+  top:196px;
+  }
+.square-wrapper{
+  padding:30px 30px 0 30px;
+  max-width:800px;
+  }
+.square-title h1{
+  padding:40px 40px 40px 40px;
+  padding-top:90px;
+  }
+.square-description{
+  background-color: rgba(245, 245, 245, 0.81);
+  padding:25px 0 25px 54px;
+  }
 
 /*-----------------------------------
   Lil Helpers
@@ -670,54 +698,3 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
   }
 
 
-#video-area{
-  position: relative; 
-  top: -83px;
-  width: 100%;
-  height:100%;
-  
-  
-
-}
-.title-video{
-  position: relative;
-  text-align: center;
-  top: 200px;
-  z-index: 100;
-  color:white;
-  font-size: 30px;
-  opacity: .7;
-  text-shadow:0px 0px 6px white;
-
-}
-
-.tabs li{
-  display: inline;
-list-style-type: none;
-padding-right: 20px;
-}
-
-.tabs{
-  text-align: center
-}
-
-.wax-tooltip{
-  top:196px!important;
-}
-.square-wrapper{
-  padding: 30px 30px 0px 30px;
-  max-width: 800px;
-}
-.square-title h1{
-  padding: 40px 40px 40px 40px;
-  padding-top: 90px;
-  font-size: 40px;
-  color:whitesmoke;
-  line-height: 40px;
-}
-
-
-.square-description{
-  background-color: rgba(245, 245, 245, 0.81);
-  padding:25px 0 25px 54px;
-}

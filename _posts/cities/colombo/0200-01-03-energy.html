@@ -1,0 +1,29 @@
+---
+layout: interactive
+category: casestudy
+title: 'Energy Infrastructure'
+subtitle: 'description text goes here. Is short, concise and should encourage a user to click.'
+preview: 'colombo.png'
+tags:
+- colombo
+- featured
+---
+
+There are dozens of power plants throughout Sri Lanka fueling it is citizens. An overwhelming number of these power plants are concentrated around Sri Lankas largest city, Colombo. Although the power plants are close to their consumers, their proximity has associated risks. Open spatial data makes it possible to realize relationships like this and could aid in planning future power generators.
+
+<script>
+
+var opts = {
+  lat: 6.9451,
+  lon: 79.9975,
+  zoom: {
+    defaultZoom:11,
+    max:15,
+    min:7
+    }
+  };
+
+$(function() {
+  gfdrr.generateMap('gfdrr.map-l97akyeb,gfdrr.infrastructure', opts);
+});
+</script>

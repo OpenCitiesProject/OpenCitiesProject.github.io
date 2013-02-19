@@ -1,7 +1,6 @@
 ---
 ---
 ;(function(context) {
-    
 
     var gfdrr = {}
 
@@ -35,26 +34,33 @@
         });
     };
 
-    gfdrr.renderMap = function(el, mapId) {
-        var map = mapbox.map(el, mapbox.layer().id(mapId), null, [
-            easey_handlers.TouchHandler(),
-            easey_handlers.DragHandler(),
-            easey_handlers.DoubleClickHandler()
-        ]);
+    gfdrr.generateMap = function(layer, options, callback) {
 
-        // Zoom Controls
-        map.ui.zoomer.add();
-        var mapDefaults = {
-            lat: 18.46,
-            lon: 81.65,
-            zoom: 4
+        var o = {
+            lat: options.lat || 18.46,
+            lon: options.lon || 81.65,
+            zoom: options.zoom.defaultZoom || 4,
+            max: options.zoom.max || 17,
+            min: options.zoom.min || 7
         };
 
-        // Set iniital center and zoom
-        map.centerzoom({
-            lat: mapDefaults.lat,
-            lon: mapDefaults.lon
-        }, mapDefaults.zoom);
+        mapbox.load(layer, function(l) {
+            var map = mapbox.map('map');
+            map.addLayer(l.layer).zoom(o.zoom).center({
+                lat: o.lat,
+                lon: o.lon
+            });
+
+            map.setZoomRange(o.min, o.max);
+            map.ui.zoomer.add();
+            // map.ui.hash.add();
+            map.interaction.auto();
+            map.ui.legend.add();
+            map.ui.refresh();
+
+            // If a callback was provided trigger it here.
+            callback;
+        });
     };
 
     gfdrr.citiesMap = function(el, mapId) {
@@ -132,7 +138,7 @@
         });
     });
 
-    
+
 
     window.gfdrr = gfdrr;
 })(window);

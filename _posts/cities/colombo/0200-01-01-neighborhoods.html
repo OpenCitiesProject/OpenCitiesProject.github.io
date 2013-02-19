@@ -1,0 +1,30 @@
+---
+layout: interactive
+category: casestudy
+title: 'Neighborhoods'
+subtitle: 'Huge opportunity to increase neighborhood data information through OpenStreetMap'
+preview: 'colombo.png'
+tags:
+- colombo
+- featured
+---
+
+Using this neighborhood data it is possible to create a custom geocoder that would allow for neighborhood level search. This application could be used in the wake of a natural disaster to allow relief personal to understand where neighborhoods are located fast. The current neighborhood data in Colombo is poor and the addition of this set would help greatly.
+
+<script>
+
+var opts = {
+  lat: 6.927079,
+  lon: 79.861243,
+  zoom: {
+    defaultZoom:15,
+    max:18,
+    min:7
+    }
+  };
+
+$(function() {
+  gfdrr.generateMap('gfdrr.map197akyeb,gfdrr.admin', opts);
+});
+
+</script>
