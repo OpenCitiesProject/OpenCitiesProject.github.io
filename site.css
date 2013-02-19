@@ -236,6 +236,11 @@ small {
     width:198px;
     height:45px;
     }
+  .icon.ds {
+    background-position:-205px 0;
+    width:172px;
+    height:40px;
+    }
   .icon.logo {
     background-position:0 -220px;
     width:132px;
@@ -488,9 +493,10 @@ small {
   .footer .partners {
     margin:20px 0;
     }
-  .footer .icon {
-    display:inline-block;
-    }
+    .footer .icon {
+      display:inline-block;
+      margin:0 5px;
+      }
 
 @-webkit-keyframes fadeOutLeft {
   0%    { opacity: 1; -webkit-transform:translateX(0); }

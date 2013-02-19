@@ -138,8 +138,6 @@
         });
     });
 
-
-
     window.gfdrr = gfdrr;
 })(window);
 
