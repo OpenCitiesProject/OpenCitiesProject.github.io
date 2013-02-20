@@ -80,11 +80,13 @@ table { border-collapse: collapse; border-spacing:0; }
   Inline Element Styling ♥
 ---------------------------------------------*/
 body {
-  background:#fff;
+  background:#fefefe;
   font:16px/22px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:#404040;
   margin:0; padding:0;
   -webkit-font-smoothing:antialiased;
+  max-width:1600px;
+  margin:0px auto;
   }
 
 h1, h2, h3, .title {
@@ -285,7 +287,6 @@ small {
     .header .limiter {
       height:100%;
       position:relative;
-      z-index:10;
       }
     .header .title-block {
       position:absolute;
@@ -295,12 +296,18 @@ small {
       z-index:100;
       }
     .header a {
-      color:#fff;
+      color:#999;
       }
+      .header a:hover,
+      .header a.active {
+        color:#fff;
+        }
+
     .header .logo {
       position:absolute;
       top:40px;
       left:20px;
+      z-index:100;
       }
     .slide-control {
       background:transparent;
@@ -329,6 +336,7 @@ small {
   position:absolute;
   top:40px;
   right:0;
+  z-index:100;
   }
   .nav a {
     font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -424,7 +432,7 @@ small {
       opacity:0;
       }
     .project:hover .button {
-      display:inline-block; 
+      display:inline-block;
       opacity:1;
       -webkit-animation-delay:300ms;
          -moz-animation-delay:300ms;
@@ -540,7 +548,7 @@ small {
   .marker.marker-dhaka-bangladesh {
     background-position:-65px -155px;
     }
-  .marker.marker-columbo-sri-lanka {
+  .marker.marker-colombo-sri-lanka {
     background-position:-130px -155px;
     }
   .marker:hover .popup {
@@ -548,17 +556,17 @@ small {
     }
 
 .popup {
-  font-family:'Merriweather Bold', Georgia, 'Times New Roman', 'Hoefler Text';
   background:#000;
   color:#fff;
+  font-weight:bold;
   position:absolute;
   left:50%;
   bottom:55px;
-  width:220px;
-  height:45px;
+  width:240px;
+  height:65px;
   margin-left:-110px;
   display:none;
-  padding:10px;
+  text-shadow:none;
   -webkit-animation-duration:150ms;
      -moz-animation-duration:150ms;
        -o-animation-duration:150ms;
@@ -589,6 +597,26 @@ small {
             animation-name:fadeUpIn;
     }
 
+  .popup .name {
+    font-family:'Merriweather Bold', Georgia, 'Times New Roman', 'Hoefler Text';
+    float:left;
+    padding:10px;
+    }
+    .popup small {
+      display:block;
+      color:#999;
+      }
+  .popup .val {
+    background:#3b96cb;
+    float:right;
+    padding:10px;
+    height:45px;
+    }
+    .popup .val p {
+      position:relative;
+      top:10px;
+      }
+
 /*-----------------------------------
   Page: Interactives
 -------------------------------------*/
@@ -615,7 +643,7 @@ small {
     }
 
 #video-area{
-  position: relative; 
+  position: relative;
   top: -83px;
   width: 100%;
   height:100%;

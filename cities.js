@@ -11,8 +11,8 @@ var poi = [
         "url": "{{item.url}}",
         "klass": "{{item.title | downcase | replace: ',', ''| replace:' ','-'}}",
         "title": "{{item.title}}",
-        "projects": 2
-    }
+        "projects": [{% for case in site.categories.casestudy %}{% for tag in case.tags %}{% if tag == item.city %}'{{tag}}'{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endfor %}
+        ]}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
 ];

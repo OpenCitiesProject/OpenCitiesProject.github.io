@@ -37,7 +37,8 @@
       </script>
     </div>
     {% elsif page.map %}
-    <div id='header' class='header'>
+    <div id='header' class='map header'>
+      {% include header.html %}
       <script>
         var header = document.getElementById('header');
         $(function() {

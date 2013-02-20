@@ -13,7 +13,7 @@
             $slide.removeClass('active');
             if ($(this).hasClass('next')) {
                 if (slideIndex >= slides) {
-                    slideIndex = 1; 
+                    slideIndex = 1;
                 } else {
                     slideIndex++;
                 }
@@ -75,9 +75,13 @@
                 a.className = 'marker marker-' + f.properties.klass;
                 a.href = '{{site.baseurl}}' + f.properties.url;
 
+                var city = f.properties.title.split(',')[0],
+                    country = f.properties.title.split(',')[1],
+                    projects = f.properties.projects.length;
+
                 var up = document.createElement('div');
                     up.className = 'popup';
-                    up.innerHTML = f.properties.title;
+                    up.innerHTML = '<div class="clearfix"><div class="name centered">' + city + '<small>' + country + '</small></div><div class="val"><p>Projects ' + projects + '</p></div></div>';
 
                 a.appendChild(up);
             return a;
@@ -87,8 +91,8 @@
         map.setZoomRange(3, 17);
 
         var mapDefaults = {
-            lat: 18.46,
-            lon: 81.65,
+            lat: 22.25,
+            lon: 84.99,
             zoom: 4
         };
 
