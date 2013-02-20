@@ -299,11 +299,11 @@ small {
         }
 
     .header a {
-      color:#999;
+      color:#fff;
       }
-      .header a:hover,
+      .header a:active,
       .header a.active {
-        color:#fff;
+        color:#3B96CB;
         }
 
     .header .logo {
@@ -468,6 +468,7 @@ small {
           height:180px;
           position:relative;
           text-shadow:none;
+          margin-left:2px;
           opacity:0.75;
           -webkit-transition:opacity 300ms;
              -moz-transition:opacity 300ms;
@@ -475,17 +476,18 @@ small {
                   transition:opacity 300ms;
           }
           .project .activities li a .more {
-            background:#255d91;
+            background:#255D91;
             color:#fff;
             font-weight:bold;
             position:absolute;
-            bottom:0;
+            top:50%;
             right:0;
             display:inline-block;
-            padding:0 20px;
             font-size:13px;
             height:40px;
             line-height:40px;
+            text-align:center;
+            width:80px;
             }
           .project .activities li a:hover {
             opacity:1;
@@ -599,9 +601,7 @@ small {
          -o-animation-name:fadeUpIn;
             animation-name:fadeUpIn;
     }
-
   .popup .name {
-    font-family:'Merriweather Bold', Georgia, 'Times New Roman', 'Hoefler Text';
     float:left;
     padding:10px;
     }
@@ -645,38 +645,6 @@ small {
     left:20px;
     }
 
-#video-area{
-  position: relative;
-  top: -83px;
-  width: 100%;
-  height:100%;
-  }
-
-.tabs{
-  text-align: center
-  }
-.tabs li{
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
-  }
-
-.wax-tooltip{
-  top:196px;
-  }
-.square-wrapper{
-  padding:30px 30px 0 30px;
-  max-width:800px;
-  }
-.square-title h1{
-  padding:40px 40px 40px 40px;
-  padding-top:90px;
-  }
-.square-description{
-  background-color: rgba(245, 245, 245, 0.81);
-  padding:25px 0 25px 54px;
-  }
-
 /*-----------------------------------
   Lil Helpers
 -------------------------------------*/
@@ -716,7 +684,7 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
     }
   .icon {
     background-image:url(img/sprite@2x.png);
-    background-size:480px 480px;
+    background-size:480px 360px;
     }
   }
 

@@ -4,36 +4,4 @@ permalink: /cities
 citiesMap: 'tristen.map-2wjrklq0'
 ---
 
-<div class='projects'>
-  <div class='projects clearfix'>
-    {% for item in site.categories.cities %}
-    <div id='{{item.city}}' href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
-      <div class='headline'>
-        <span class='label'>City</span>
-        <h2 class='title'>{{item.title}}</h2><br />
-        <a href='{{site.baseurl}}{{item.url}}' class='button'>Explore All</a>
-      </div>
-      <div class='dot-matrix'></div>
-      <div class='overlay'></div>
-      <ul class='activities'>
-        {% for case in site.categories.casestudy %}
-          {% for tag in case.tags %}
-            {% if tag == item.city %}
-              {% for tag in case.tags %}
-                {% if tag == 'featured' %}
-                <li>
-                  <a href='{{site.baseurl}}/{{case.url}}'>
-                    <h4 class='title'>{{case.title}}</h4>
-                    <span class='more'>More</span>
-                  </a>
-                </li>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+{% include city-listing.html %}

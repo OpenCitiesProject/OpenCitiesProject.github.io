@@ -43,9 +43,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.453125"
-     inkscape:cx="115.85155"
-     inkscape:cy="231.50803"
+     inkscape:zoom="8"
+     inkscape:cx="95.641024"
+     inkscape:cy="179.28664"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -340,13 +340,12 @@
          width="2"
          id="rect22182"
          style="color:#000000;fill:#ff5335;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-      <rect
+      <path
          style="color:#000000;fill:#ff5335;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 479.99997,858 0.97544,0 1.02456,0 0,2 -2,0 z"
          id="rect22184"
-         width="2"
-         height="2"
-         x="479.99997"
-         y="858" />
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
       <rect
          style="color:#000000;fill:#ff5335;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect22220"
@@ -815,17 +814,6 @@
            d="m -8.3914815,232.97 c -2.65e-5,3.76002 -1.1154896,6.62668 -3.3463935,8.6 -2.122125,1.89334 -4.822361,3.03259 -8.712866,3.0326 l -1.205926,0 0,9.64741 -10.853333,0 0,-32.56001 12.120474,0 c 3.591233,3e-5 6.488718,1.01336 8.692461,3.04 2.2036967,2.00003 3.305557,4.74669 3.3055835,8.24 m -9.6474075,-0.42666 c 0,-2.41185 -2.411852,-2.41185 -4.823703,-2.41185 l 0,6.02963 c 2.411851,0 4.823703,0 4.823703,-2.41186" />
       </g>
     </g>
-    <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="/Users/tristen/Desktop/branding.png"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect9019"
-       width="190"
-       height="90"
-       x="-100"
-       y="-1606.8622"
-       transform="scale(1,-1)" />
     <g
        id="g9047"
        transform="matrix(0.5,0,0,0.5,175.5,373.43108)"
