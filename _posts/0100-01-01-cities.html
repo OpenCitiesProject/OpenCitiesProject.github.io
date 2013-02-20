@@ -7,7 +7,7 @@ citiesMap: 'tristen.map-2wjrklq0'
 <div class='projects'>
   <div class='projects clearfix'>
     {% for item in site.categories.cities %}
-    <div href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
+    <div id='{{item.city}}' href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
       <div class='headline'>
         <span class='label'>City</span>
         <h2 class='title'>{{item.title}}</h2><br />

@@ -36,6 +36,7 @@
         });
       </script>
     </div>
+
     {% elsif page.citiesMap %}
     <div id='header' class='map header'>
       {% include header.html %}
@@ -50,7 +51,7 @@
             {% assign casestudy = forloop.length %}
           {% endfor %}
 
-          <h2>{{cities}} Cities, {{casestudy}} current projects</h2>
+          <h2>{{cities}} Cities, {{casestudy}} projects</h2>
           <p class='subtitle'>Explore current ground work operations</p>
         </div>
       </div>
@@ -77,5 +78,10 @@
       <small>Additional Information goes here along with and legal ledger</small>
     </div>
   </div>
+  <script>
+    $(function() {
+      gfdrr.global();
+    });
+  </script>
 </body>
 </html>

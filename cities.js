@@ -8,7 +8,7 @@ var poi = [
         "coordinates": [{{item.lon}}, {{item.lat}}]
     },
     "properties": {
-        "url": "{{item.url}}",
+        "url": "{{item.city}}",
         "klass": "{{item.title | downcase | replace: ',', ''| replace:' ','-'}}",
         "title": "{{item.title}}",
         "projects": [{% for case in site.categories.casestudy %}{% for tag in case.tags %}{% if tag == item.city %}'{{tag}}'{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endfor %}

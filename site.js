@@ -4,6 +4,20 @@
 
     var gfdrr = {}
 
+    gfdrr.global = function() {
+        var scroll = function(el){
+            $('html, body').animate({
+                scrollTop: $(el).offset().top
+            }, 500);
+        }
+
+        $('a[data-scroll]').click(function () {
+            var to = $(this).attr('href');
+            scroll(to);
+            return false;
+        });
+    };
+
     gfdrr.slideShow = function(context) {
         var slideIndex = 1,
             $slide = $('[data-index]', context),
@@ -73,7 +87,8 @@
         var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
             var a = document.createElement('a');
                 a.className = 'marker marker-' + f.properties.klass;
-                a.href = '{{site.baseurl}}' + f.properties.url;
+                a.href = '#' + f.properties.url;
+                a.setAttribute('data-scroll', true);
 
                 var city = f.properties.title.split(',')[0],
                     country = f.properties.title.split(',')[1],
@@ -91,8 +106,8 @@
         map.setZoomRange(3, 17);
 
         var mapDefaults = {
-            lat: 20.01,
-            lon: 71.81,
+            lat: 22.14,
+            lon: 79.63,
             zoom: 4
         };
 
@@ -102,41 +117,6 @@
             lon: mapDefaults.lon
         }, mapDefaults.zoom);
     };
-
-    $('ul.tabs').each(function(){
-        // For each set of tabs, we want to keep track of
-        // which tab is active and it's associated content
-        var $active, $content, $links = $(this).find('a');
-
-        // If the location.hash matches one of the links, use that as the active tab.
-        // If no match is found, use the first link as the initial active tab.
-        $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
-        $active.addClass('active');
-        $content = $($active.attr('href'));
-
-        // Hide the remaining content
-        $links.not($active).each(function () {
-            $($(this).attr('href')).hide();
-        });
-
-        // Bind the click event handler
-        $(this).on('click', 'a', function(e){
-            // Make the old tab inactive.
-            $active.removeClass('active');
-            $content.hide();
-
-            // Update the variables with the new link and content
-            $active = $(this);
-            $content = $($(this).attr('href'));
-
-            // Make the tab active.
-            $active.addClass('active');
-            $content.show();
-
-            // Prevent the anchor's default click action
-            e.preventDefault();
-        });
-    });
 
     window.gfdrr = gfdrr;
 })(window);
