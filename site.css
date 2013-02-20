@@ -285,16 +285,22 @@ small {
       }
 
     .header .limiter {
-      height:100%;
       position:relative;
       }
     .header .title-block {
       position:absolute;
-      left:130px;
+      left:20px;
       top:160px;
       width:480px;
       z-index:100;
       }
+      .header.slideshow .title-block {
+        left:130px;
+        }
+      .header.map .title-block {
+        top:310px;
+        }
+
     .header a {
       color:#999;
       }

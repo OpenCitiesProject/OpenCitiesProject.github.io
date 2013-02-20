@@ -91,8 +91,8 @@
         map.setZoomRange(3, 17);
 
         var mapDefaults = {
-            lat: 22.25,
-            lon: 84.99,
+            lat: 20.01,
+            lon: 71.81,
             zoom: 4
         };
 

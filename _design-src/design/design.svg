@@ -2434,9 +2434,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="-611.42689"
-     inkscape:cy="1278.0418"
+     inkscape:zoom="0.25"
+     inkscape:cx="-706.33021"
+     inkscape:cy="1123.7272"
      inkscape:document-units="px"
      inkscape:current-layer="layer12"
      showgrid="false"
@@ -2480,7 +2480,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -8272,7 +8272,7 @@
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="Cities Page"
-     style="display:none">
+     style="display:inline">
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -8579,7 +8579,7 @@
        inkscape:export-ydpi="90">
       <path
          transform="matrix(0.96774194,0,0,1.2631579,-1102.4032,565.26316)"
-         d="m 1576.25,236.5 c 0,13.11676 -13.8792,23.75 -31,23.75 -17.1208,0 -31,-10.63324 -31,-23.75 0,-13.11676 13.8792,-23.75 31,-23.75 17.1208,0 31,10.63324 31,23.75 z"
+         d="m 1576.25,236.5 a 31,23.75 0 1 1 -62,0 31,23.75 0 1 1 62,0 z"
          sodipodi:ry="23.75"
          sodipodi:rx="31"
          sodipodi:cy="236.5"
@@ -8646,7 +8646,7 @@
          sodipodi:cy="236.5"
          sodipodi:rx="31"
          sodipodi:ry="23.75"
-         d="m 1576.25,236.5 c 0,13.11676 -13.8792,23.75 -31,23.75 -17.1208,0 -31,-10.63324 -31,-23.75 0,-13.11676 13.8792,-23.75 31,-23.75 17.1208,0 31,10.63324 31,23.75 z"
+         d="m 1576.25,236.5 a 31,23.75 0 1 1 -62,0 31,23.75 0 1 1 62,0 z"
          transform="matrix(0.96774194,0,0,1.2631579,-1014.4032,564.26316)" />
       <path
          style="opacity:0.5;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -8861,7 +8861,7 @@
          style="display:inline">
         <path
            transform="matrix(0.96774194,0,0,1.2631579,-1190.4032,563.26316)"
-           d="m 1576.25,236.5 c 0,13.11676 -13.8792,23.75 -31,23.75 -17.1208,0 -31,-10.63324 -31,-23.75 0,-13.11676 13.8792,-23.75 31,-23.75 17.1208,0 31,10.63324 31,23.75 z"
+           d="m 1576.25,236.5 a 31,23.75 0 1 1 -62,0 31,23.75 0 1 1 62,0 z"
            sodipodi:ry="23.75"
            sodipodi:rx="31"
            sodipodi:cy="236.5"
@@ -11688,16 +11688,6 @@
          x="119.37598"
          y="1550.3418"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#f0f0f0;fill-opacity:1;font-family:Merriweather;-inkscape-font-specification:Merriweather Bold">Project Title</tspan></text>
-    <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="/Users/tristen/dev/devseed/dhaka/img/banners/frontpage-osm.png"
-       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.25"
-       id="rect26475"
-       width="960"
-       height="480"
-       x="-1112"
-       y="752" />
   </g>
   <g
      inkscape:groupmode="layer"
