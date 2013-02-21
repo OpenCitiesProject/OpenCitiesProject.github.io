@@ -84,6 +84,7 @@
   top:10px;
   left:10px;
   z-index:2;
+  border:1px solid #202020;
   }
 
 .zoomin {
@@ -112,6 +113,7 @@
   left:74px;
   z-index:2;
   }
+.map-fade { opacity:0; }
 
 .map-fullscreen-map {
   position:fixed!important;

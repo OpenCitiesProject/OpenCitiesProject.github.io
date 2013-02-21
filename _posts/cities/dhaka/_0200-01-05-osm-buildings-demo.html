@@ -1,6 +1,7 @@
 ---
 layout: interactive
 category: casestudy
+city: 'dhaka'
 title: 'OSM Buildings'
 subtitle: 'description text goes here. Is short, concise and should encourage a user to click.'
 description: "Dhaka buildings are visualized based on their primary use categorization: education, government/services, industrial, commercial, residential, or agriculture/open space."
@@ -15,7 +16,7 @@ tags:
 <script>
   var features = []
    for (var i = 0; i < geoJSONData.features.length; i++) {
-      var entry =  geoJSONData.features[i] 
+      var entry =  geoJSONData.features[i]
       var color = ''
       switch(entry.properties.building_use) {
       case 'recreationalfacilities':
@@ -79,7 +80,7 @@ tags:
             break;
       }
       var feature = {
-        'type': 'Feature', 
+        'type': 'Feature',
         'geometry': {
           type: "Polygon",
           coordinates: entry.geometry.coordinates

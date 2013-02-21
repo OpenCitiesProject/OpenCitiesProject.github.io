@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +7,34 @@
 </head>
 <body>
 <div class='interactive-heading'>
-  {% include header.html %}
+  <div class='globals'>
+    <div class='limiter'>
+      <div class='nav'>
+        <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>All Cities</a>
+        <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
+      </div>
+      <a href='{{site.baseurl}}/' class='title icon logo'>Open Cities</a> in <a href='{{site.baseurl}}/cities/{{page.city}}'>{{page.city | capitalize}}</a>
+    </div>
+  </div>
+
+  <div class='limiter'>
+    <div class='title-block'>
+      <h2>{{page.title}}</h2>
+        {% if page.subtitle %}
+        <div class='subtitle'>{{page.subtitle}}</div>
+      {% endif %}
+    </div>
+  </div>
 </div>
 
-<div class='map' id='map'></div>
+<div class='map-containment'>
+  <div class='map' id='map'></div>
+</div>
 
-<div class='prose limiter'>
-  {{content}}
+<div class='prose'>
+  <div class='limiter'>
+    {{content}}
+  </div>
 </div>
 
 </body>

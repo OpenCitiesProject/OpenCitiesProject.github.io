@@ -238,6 +238,23 @@ small {
       background-position:0 -295px;
       }
 
+.prose {
+  font:15px/26px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background:#eee;
+  color:#475259;
+  padding:40px 0;
+  }
+.prose h2,
+.prose h3,
+.prose .title {
+  font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight:bold;
+  }
+.prose h2 {
+  font-size:15px;
+  line-height:22px;
+  }
+
 /* ------------------------------------------
   Global layout & styling ♥
 ---------------------------------------------*/
@@ -306,11 +323,14 @@ small {
         color:#3B96CB;
         }
 
+    .interactive-heading .logo,
     .header .logo {
-      position:absolute;
-      top:40px;
-      left:20px;
+      position:relative;
+      display:inline-block;
       z-index:100;
+      }
+    .header .logo {
+      top:40px;
       }
     .slide-control {
       background:transparent;
@@ -345,7 +365,6 @@ small {
     font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:bold;
     margin-left:10px;
-    text-shadow:0 1px 2px rgba(0,0,0,0.5);
     }
 
 .inner {
@@ -378,7 +397,7 @@ small {
   }
   .section .title {
     font-size:28px;
-    color:#999;
+    color:#475259;
     line-height:36px;
     margin-bottom:40px;
     }
@@ -450,7 +469,7 @@ small {
 /*Case study blocks*/
 .activities {
   width:800px;
-  margin:0 auto;  
+  margin:0 auto;
   }
   .activities li {
     display:block;
@@ -627,6 +646,7 @@ small {
 -------------------------------------*/
 .interactive-heading {
   background:#fff;
+  color:#255d91;
   padding:0 0 15px;
   position:absolute;
   z-index:5000;
@@ -663,12 +683,17 @@ small {
 .globals {
   position:relative;
   }
+
+.map-containment {
+  position:relative;
+  height:600px;
+  }
 #map {
   background:#101010;
   position:absolute;
   top:0;left:0;
   width:100%;
-  height:600px;
+  height:100%;
   }
 
 /*-----------------------------------
