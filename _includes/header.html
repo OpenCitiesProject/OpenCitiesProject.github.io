@@ -1,10 +1,14 @@
-<div class='limiter'>
-  <a href='{{site.baseurl}}/' class='title icon logo'>Open Cities</a>
-  <div class='nav'>
-    <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>All Cities</a>
-    <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
+<div class='globals'>
+  <div class='limiter'>
+    <div class='nav'>
+      <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>All Cities</a>
+      <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
+    </div>
+    <a href='{{site.baseurl}}/' class='title icon logo'>Open Cities</a>
   </div>
+</div>
 
+<div class='limiter'>
   {% if page.preview %}
     <div class='title-block'>
       <h2>{{page.title}}</h2>

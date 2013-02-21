@@ -96,7 +96,7 @@
 
                 var up = document.createElement('div');
                     up.className = 'popup';
-                    up.innerHTML = '<div class="clearfix"><div class="name">' + city + '<small>' + country + '</small></div><div class="val"><p>Projects ' + projects + '</p></div></div>';
+                    up.innerHTML = '<div class="clearfix"><div class="name">' + city + '<small>' + country + '</small></div><div class="val"><p>' + projects + ' Projects</p></div></div>';
 
                 a.appendChild(up);
             return a;
