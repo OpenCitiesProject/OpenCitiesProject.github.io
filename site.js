@@ -80,9 +80,6 @@
             easey_handlers.DoubleClickHandler()
         ]);
 
-        // Zoom Controls
-        map.ui.zoomer.add();
-
         // Create and add marker layer
         var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
             var a = document.createElement('a');
