@@ -488,6 +488,7 @@ small {
   margin:0 auto;
   }
   .activities li {
+    background-color:#202020;
     display:block;
     width:33.3333%;
     float:left;
