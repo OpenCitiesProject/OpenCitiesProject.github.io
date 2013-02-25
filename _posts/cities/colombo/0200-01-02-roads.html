@@ -6,6 +6,10 @@ subtitle: 'OpenStreet Contributions in Colombo'
 city: 'colombo'
 preview: 'colombo.png'
 map: 'villeda.map-494cqapd,villeda.col-roads'
+center:
+  - lat: 6.9386
+    lon: 79.8700
+    zoom: 15
 tags:
 - colombo
 - featured
@@ -16,10 +20,10 @@ Strong level of community of people already contributing to OSM in Colombo - the
 <script>
 
 var opts = {
-  lat: 6.9386,
-  lon: 79.8700,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:15,
+    defaultZoom:{{ page.center[0].zoom }},
     max:15,
     min:13
     }

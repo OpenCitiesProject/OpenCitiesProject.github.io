@@ -3,9 +3,13 @@ layout: interactive
 category: casestudy
 city: 'kathmandu'
 title: 'Health Infrastructure'
-subtitle: 'Health infrastructure is important to a growng population'
+subtitle: 'Health infrastructure is important to a growing population'
 preview: 'kathmandu.png'
 map: 'villeda.map-494cqapd,villeda.kathmandu'
+center:
+  - lat: 27.7143
+    lon: 85.3266
+    zoom: 13
 tags:
 - kathmandu
 - featured
@@ -15,16 +19,16 @@ Health infrastructure is very well mapped, and stakeholders need to invest in OS
 
 <script>
 var opts = {
-  lat: 27.7143,
-  lon: 85.3266,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:13,
+    defaultZoom:{{ page.center[0].zoom }},
     max:17,
     min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap({{page.map}}, opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

@@ -6,6 +6,10 @@ subtitle: 'description text goes here. Is short, concise and should encourage a 
 city: 'colombo'
 preview: 'colombo.png'
 map: 'gfdrr.map-l97akyeb,gfdrr.infrastructure'
+center:
+  - lat: 6.9451
+    lon: 79.9975
+    zoom: 11
 tags:
 - colombo
 - featured
@@ -16,10 +20,10 @@ There are dozens of power plants throughout Sri Lanka fueling it is citizens. An
 <script>
 
 var opts = {
-  lat: 6.9451,
-  lon: 79.9975,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:11,
+    defaultZoom:{{ page.center[0].zoom }},
     max:15,
     min:10
     }

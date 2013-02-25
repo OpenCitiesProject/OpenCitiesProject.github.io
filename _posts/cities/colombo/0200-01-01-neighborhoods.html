@@ -6,6 +6,10 @@ subtitle: 'Huge opportunity to increase neighborhood data information through Op
 preview: 'colombo.png'
 city: 'colombo'
 map: 'gfdrr.map-l97akyeb,gfdrr.admin'
+center:
+  - lat: 6.927079
+    lon: 79.861243
+    zoom: 15
 tags:
 - colombo
 - featured
@@ -16,10 +20,10 @@ Using this neighborhood data it is possible to create a custom geocoder that wou
 <script>
 
 var opts = {
-  lat: 6.927079,
-  lon: 79.861243,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:15,
+    defaultZoom:{{ page.center[0].zoom }},
     max:18,
     min:13
     }
