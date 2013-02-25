@@ -5,6 +5,7 @@ title: 'Neighborhoods'
 subtitle: 'Huge opportunity to increase neighborhood data information through OpenStreetMap'
 preview: 'colombo.png'
 city: 'colombo'
+map: 'gfdrr.map-l97akyeb,gfdrr.admin'
 tags:
 - colombo
 - featured
@@ -20,12 +21,11 @@ var opts = {
   zoom: {
     defaultZoom:15,
     max:18,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('gfdrr.map197akyeb,gfdrr.admin', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
-
 </script>

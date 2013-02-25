@@ -5,6 +5,7 @@ city: 'dhaka'
 title: 'Structure Survey Images'
 subtitle: 'Building condition, inhabitants, and associated risks'
 preview: 'dhaka.png'
+map: 'gfdrr.map-nkb1ordy,gfdrr.building-survey'
 tags:
 - dhaka
 - featured
@@ -19,11 +20,11 @@ var opts = {
   zoom: {
     defaultZoom:15,
     max:18,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('gfdrr.map-nkb1ordy,gfdrr.building-survey', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

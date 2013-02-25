@@ -494,7 +494,6 @@ small {
     float:left;
     }
     .activities li a {
-      background:#000;
       display:block;
       padding:20px;
       color:#F0F0F0;
@@ -542,6 +541,12 @@ small {
       display:inline-block;
       margin:0 5px;
       }
+
+.city-desc{
+  background-color: rgba(240, 240, 240, 0.67);
+  padding:0 10px 0 10px;
+  margin: 0px;
+}
 
 @-webkit-keyframes fadeOutLeft {
   0%    { opacity: 1; -webkit-transform:translateX(0); }

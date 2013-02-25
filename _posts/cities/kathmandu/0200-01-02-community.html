@@ -5,6 +5,7 @@ city: 'kathmandu'
 title: 'Community Involvement'
 subtitle: 'A healthy community of OpenStreetMap contributors'
 preview: 'kathmandu.png'
+map: 'villeda.map-494cqapd,villeda.kat-osm'
 tags:
 - kathmandu
 - featured
@@ -21,11 +22,11 @@ var opts = {
   zoom: {
     defaultZoom:14,
     max:16,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('villeda.map-494cqapd,villeda.kat-osm', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

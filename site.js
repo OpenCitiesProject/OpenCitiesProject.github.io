@@ -113,6 +113,8 @@
             lat: mapDefaults.lat,
             lon: mapDefaults.lon
         }, mapDefaults.zoom);
+
+        map.setZoomRange(mapDefaults.min,mapDefaults.max);
     };
 
     gfdrr.tabs = function() {
