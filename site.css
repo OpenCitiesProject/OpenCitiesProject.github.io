@@ -253,6 +253,23 @@ small {
   font-size:15px;
   line-height:22px;
   }
+.prose-about{
+  line-height: 30px;
+}
+
+.prose-about li{
+  list-style-type:circle;
+  margin-left: 72px;
+}
+
+.prose-about ul{
+  padding-bottom: 40px;
+}
+.tabs li{
+  display: inline;
+  float: left;
+  padding: 50px 20px 50px 0px;
+}
 
 /* ------------------------------------------
   Global layout & styling ♥
@@ -476,7 +493,6 @@ small {
     float:left;
     }
     .activities li a {
-      background:#000;
       display:block;
       padding:20px;
       color:#F0F0F0;
@@ -524,6 +540,12 @@ small {
       display:inline-block;
       margin:0 5px;
       }
+
+.city-desc{
+  background-color: rgba(240, 240, 240, 0.67);
+  padding:0 10px 0 10px;
+  margin: 0px;
+}
 
 @-webkit-keyframes fadeOutLeft {
   0%    { opacity: 1; -webkit-transform:translateX(0); }

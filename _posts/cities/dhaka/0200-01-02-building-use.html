@@ -5,8 +5,10 @@ city: 'dhaka'
 title: 'Building Use'
 subtitle: "3D Dhaka buildings showing primary building use"
 preview: 'dhaka.png'
+map: 'gfdrr.map-nkb1ordy,gfdrr.Building-use'
 tags:
 - dhaka
+- featured
 ---
 
 Dhaka buildings are visualized based on their primary use categorization: education, government/services, industrial, commercial, residential, or agriculture/open space.
@@ -18,11 +20,11 @@ var opts = {
   zoom: {
     defaultZoom:15,
     max:18,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('gfdrr.map-nkb1ordy,gfdrr.Building-use', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

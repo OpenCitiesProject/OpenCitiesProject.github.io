@@ -14,7 +14,7 @@
           {% if tag == item.city %}
             {% for tag in case.tags %}
               {% if tag == 'featured' %}
-              <li>
+              <li style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{item.geom[1].lon}},{{item.geom[0].lat}},13/400x300.png");'>
                 <a href='{{site.baseurl}}/{{case.url}}'>
                   <h4 class='title'>{{case.title}}</h4>
                   <span class='more'>More</span>
