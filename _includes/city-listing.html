@@ -3,7 +3,7 @@
   <div id='{{item.city}}' href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
     <div class='headline'>
       <span class='label'>City</span>
-      <h2 class='title'>{{item.title}}</h2><br />
+      <h2>{{item.title}}</h2><br />
       <a href='{{site.baseurl}}{{item.url}}' class='button'>Explore All</a>
     </div>
     <div class='dot-matrix'></div>
@@ -16,7 +16,7 @@
               {% if tag == 'featured' %}
               <li style='background-image:url("//api.tiles.mapbox.com/v3/{{case.map}}/{{item.geom[1].lon}},{{item.geom[0].lat}},13/400x300.png");'>
                 <a href='{{site.baseurl}}/{{case.url}}'>
-                  <h4 class='title'>{{case.title}}</h4>
+                  <h4>{{case.title}}</h4>
                   <span class='more'>More</span>
                 </a>
               </li>

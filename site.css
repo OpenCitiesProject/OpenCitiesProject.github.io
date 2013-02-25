@@ -43,7 +43,7 @@ table { border-collapse: collapse; border-spacing:0; }
   Typography ♥
 ---------------------------------------------*/
 @font-face {
-  font-family:Opensans;
+  font-family:'Opensans';
   src: url('fonts/opensans/opensans-regular.eot') format('eot');
   src: url('fonts/opensans/opensans-regular.eot?#iefix') format('embedded-opentype'),
        url('fonts/opensans/opensans-regular.woff') format('woff'),
@@ -51,7 +51,7 @@ table { border-collapse: collapse; border-spacing:0; }
   }
 
 @font-face {
-  font-family:Opensans;
+  font-family:'Opensans';
   font-weight:bold;
   src: url('fonts/opensans/opensans-bold.eot') format('eot');
   src: url('fonts/opensans/opensans-bold.eot?#iefix') format('embedded-opentype'),
@@ -60,7 +60,7 @@ table { border-collapse: collapse; border-spacing:0; }
   }
 
 @font-face {
-  font-family:Opensans;
+  font-family:'Opensans';
   font-style:italic;
   src: url('fonts/opensans/opensans-italic.eot') format('eot');
   src: url('fonts/opensans/opensans-italic.eot?#iefix') format('embedded-opentype'),
@@ -69,11 +69,13 @@ table { border-collapse: collapse; border-spacing:0; }
   }
 
 @font-face {
-  font-family:'Merriweather Bold';
-  src: url('fonts/merriweather/merriweather-bold.eot') format('eot');
-  src: url('fonts/merriweather/merriweather-bold.eot?#iefix') format('embedded-opentype'),
-       url('fonts/merriweather/merriweather-bold.woff') format('woff'),
-       url('fonts/merriweather/merriweather-bold.ttf') format('truetype');
+  font-family:'Bitter';
+  font-style:normal;
+  font-weight:700;
+  src: url('fonts/bitter/bitter-bold.eot') format('eot');
+  src: url('fonts/bitter/bitter-bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/bitter/bitter-bold.woff') format('woff'),
+       url('fonts/bitter/bitter-bold.ttf') format('truetype');
   }
 
 /* ------------------------------------------
@@ -83,14 +85,17 @@ body {
   background:#fefefe;
   font:15px/22px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:#404040;
-  margin:0; padding:0;
   -webkit-font-smoothing:antialiased;
+  margin:0; padding:0;
   max-width:1600px;
   margin:0px auto;
   }
 
-h1, h2, h3, .title, .case-title {
-  font-family:'Merriweather Bold', Georgia, 'Times New Roman', 'Hoefler Text';
+h1, h2, h3, h4, h5, h6, .case-title {
+  font-family:'Bitter', 'Georgia', 'Times New Roman', 'Hoefler Text', serif;
+  }
+.title {
+  font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 h2 {
   font-size:28px;
@@ -232,6 +237,7 @@ small {
       width:66px;
       height:32px;
       background-position:-140px -328px;
+      margin-right:10px;
       }
     .slide-3 .icon.logo {
       background-position:0 -295px;
@@ -239,8 +245,9 @@ small {
 
 .prose {
   font:15px/26px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background:#eee;
-  color:#475259;
+  -webkit-font-smoothing:subpixel-antialiased;
+  background:#000;
+  color:#5C676F;
   padding:40px 0;
   }
 .prose h2,
@@ -248,6 +255,7 @@ small {
 .prose .title {
   font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight:bold;
+  color:#fff;
   }
 .prose h2 {
   font-size:15px;
@@ -371,13 +379,15 @@ small {
         opacity:1;
         }
 
-.nav {
+.interactive-heading .nav,
+.header .nav {
   position:absolute;
   top:40px;
   right:0;
   z-index:100;
   }
-  .nav a {
+  .interactive-heading .nav a,
+  .header .nav a {
     font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:bold;
     margin-left:10px;
@@ -411,11 +421,16 @@ small {
 .section {
   padding:40px 0;
   }
+  .section.data-coverage {
+    background:#000;
+    height:440px;
+    }
   .section .title {
     font-size:28px;
-    color:#475259;
     line-height:36px;
-    margin-bottom:40px;
+    color:#5C676F;
+    width:600px;
+    margin:0 auto 40px;
     }
   .section .viewport {
     background:#101010;
@@ -493,19 +508,38 @@ small {
     width:33.3333%;
     float:left;
     }
-    .activities li a {
+    .activities .city-desc {
+      padding:10px;
       display:block;
-      padding:20px;
+      height:70px;
+      overflow:hidden;
+      }
+    .activities.grid li {
+      background-color:transparent;
+      }
+    .activities li a {
+      background:transparent url(img/overlay.png) repeat 0 0;
+      display:block;
+      padding:20px 10px;
       color:#F0F0F0;
       height:180px;
       position:relative;
       text-shadow:none;
-      margin-left:2px;
-      -webkit-transition:opacity 300ms;
-         -moz-transition:opacity 300ms;
-           -o-transition:opacity 300ms;
-              transition:opacity 300ms;
+      margin:0 1px;
       }
+      .activities.grid .overlay {
+        opacity:0.5;
+        -webkit-transition:opacity 600ms;
+           -moz-transition:opacity 600ms;
+             -o-transition:opacity 600ms;
+                transition:opacity 600ms;
+        }
+      .activities.grid a:hover .overlay {
+        opacity:0;
+        }
+      .activities li a .case-title {
+        position:relative;
+        }
       .activities li a .more {
         background:#255D91;
         color:#fff;
@@ -533,20 +567,23 @@ small {
 .footer {
   background:#3b96cb;
   color:#f0f0f0;
+  font-weight:bold;
   }
-  .footer .partners {
-    margin:20px 0;
+  .footer .icon.logo {
+    width:66px;
+    height:32px;
+    background-position:-140px -328px;
     }
-    .footer .icon {
+  .footer a {
+    color:#fff;
+    }
+  .footer .partners {
+    margin:0 0 20px;
+    }
+    .footer .partners .icon {
       display:inline-block;
       margin:0 5px;
       }
-
-.city-desc{
-  background-color: rgba(240, 240, 240, 0.67);
-  padding:0 10px 0 10px;
-  margin: 0px;
-}
 
 @-webkit-keyframes fadeOutLeft {
   0%    { opacity: 1; -webkit-transform:translateX(0); }
