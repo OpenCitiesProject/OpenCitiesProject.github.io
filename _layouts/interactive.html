@@ -13,7 +13,7 @@
         <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>All Cities</a>
         <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>
       </div>
-      <a href='{{site.baseurl}}/' class='title icon logo'>Open Cities</a> in <a href='{{site.baseurl}}/cities/{{page.city}}'>{{page.city | capitalize}}</a>
+      <a href='{{site.baseurl}}/' class='title icon logo'>Open Cities</a><a href='{{site.baseurl}}/cities/{{page.city}}'>in {{page.city | capitalize}}</a>
     </div>
   </div>
 
