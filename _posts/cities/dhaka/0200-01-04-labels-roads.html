@@ -5,7 +5,11 @@ city: 'dhaka'
 title: 'Building Labels and Roads'
 subtitle: 'Increasing the infrastructure data in Dhaka'
 preview: 'dhaka.png'
-map: 'gfdrr.map-nkb1ordy'
+map: 'gfdrr.map-zyekuz6n'
+center:
+  - lat: 23.7910
+    lon: 90.3583
+    zoom: 15
 tags:
 - dhaka
 ---
@@ -14,10 +18,10 @@ OpenStreetMap's road data coverage for Dhaka does not include many smaller roads
 
 <script>
 var opts = {
-  lat: 23.7910,
-  lon: 90.3583,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:15,
+    defaultZoom:{{ page.center[0].zoom }},
     max:18,
     min:13
     }
