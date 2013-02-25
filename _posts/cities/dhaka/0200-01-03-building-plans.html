@@ -1,9 +1,11 @@
 ---
 layout: interactive
 category: casestudy
+city: 'dhaka'
 title: 'Building Plans'
 subtitle: 'GFDRR Survey database, including building plans and photos'
 preview: 'dhaka.png'
+map: 'gfdrr.dhaka-building-plans'
 tags:
 - dhaka
 - featured
@@ -18,11 +20,11 @@ var opts = {
   zoom: {
     defaultZoom:17,
     max:18,
-    min:10
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('gfdrr.map-nkb1ordy,gfdrr.dhaka-building-plans', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

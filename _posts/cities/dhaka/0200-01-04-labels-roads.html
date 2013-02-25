@@ -1,12 +1,13 @@
 ---
 layout: interactive
 category: casestudy
+city: 'dhaka'
 title: 'Building Labels and Roads'
 subtitle: 'Increasing the infrastructure data in Dhaka'
 preview: 'dhaka.png'
+map: 'gfdrr.map-zyekuz6n'
 tags:
 - dhaka
-- featured
 ---
 
 OpenStreetMap's road data coverage for Dhaka does not include many smaller roads and recently updated roads. With the inclusion of this newer, highly detailed dataset, OpenStreetMap would become much stronger.
@@ -18,11 +19,11 @@ var opts = {
   zoom: {
     defaultZoom:15,
     max:18,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('gfdrr.map-nkb1ordy', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

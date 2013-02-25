@@ -1,9 +1,11 @@
 ---
 layout: interactive
 category: casestudy
+city: 'kathmandu'
 title: 'Places of Worship and Schools'
-subtitle: 'Strong points of interest data'
+subtitle: 'Strong Point of interest data found in OpenStreetMap'
 preview: 'kathmandu.png'
+map: 'villeda.map-494cqapd,villeda.kat-poi'
 tags:
 - kathmandu
 - featured
@@ -18,11 +20,11 @@ var opts = {
   zoom: {
     defaultZoom:15,
     max:17,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('villeda.map-494cqapd,villeda.kat-poi', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

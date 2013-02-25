@@ -3,7 +3,9 @@ layout: interactive
 category: casestudy
 title: 'Road Networks'
 subtitle: 'OpenStreet Contributions in Colombo'
+city: 'colombo'
 preview: 'colombo.png'
+map: 'villeda.map-494cqapd,villeda.col-roads'
 tags:
 - colombo
 - featured
@@ -19,11 +21,11 @@ var opts = {
   zoom: {
     defaultZoom:15,
     max:15,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('villeda.map-494cqapd,villeda.col-roads', opts);
+  gfdrr.generateMap('{{page.map}}', opts);
 });
 </script>

@@ -1,7 +1,7 @@
 dhaka
 =====
 
-World Bank GFDRR Dhaka, Bangladesh
+World Bank GFDRR
 
 Mapbox Account: https://tiles.mapbox.com/gfdrr
 

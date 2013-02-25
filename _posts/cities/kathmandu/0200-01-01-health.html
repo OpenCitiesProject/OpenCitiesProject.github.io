@@ -1,9 +1,11 @@
 ---
 layout: interactive
 category: casestudy
+city: 'kathmandu'
 title: 'Health Infrastructure'
 subtitle: 'Health infrastructure is important to a growng population'
 preview: 'kathmandu.png'
+map: 'villeda.map-494cqapd,villeda.kathmandu'
 tags:
 - kathmandu
 - featured
@@ -18,11 +20,11 @@ var opts = {
   zoom: {
     defaultZoom:13,
     max:17,
-    min:7
+    min:13
     }
   };
 
 $(function() {
-  gfdrr.generateMap('villeda.map-494cqapd,villeda.kathmandu', opts);
+  gfdrr.generateMap({{page.map}}, opts);
 });
 </script>
