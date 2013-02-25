@@ -6,6 +6,10 @@ title: 'Structure Survey Images'
 subtitle: 'Building condition, inhabitants, and associated risks'
 preview: 'dhaka.png'
 map: 'gfdrr.map-zyekuz6n,gfdrr.building-survey'
+center: 
+  - lat: 23.74120
+    lon: 90.41128
+    zoom: 17
 tags:
 - dhaka
 - featured
@@ -14,11 +18,12 @@ tags:
 Although viewing buildings from above is useful, allowing users to see what the building looks like at ground level, helps them understand more of the picture. The tooltips reveal additional structural and background information on the building's condition, inhabitants, and associated risk.
 
 <script>
+
 var opts = {
-  lat: 23.74120,
-  lon:90.41128,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:17,
+    defaultZoom:{{ page.center[0].zoom }},
     max:17,
     min:10
     }

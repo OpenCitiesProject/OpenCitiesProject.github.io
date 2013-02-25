@@ -5,7 +5,11 @@ city: 'dhaka'
 title: 'Building Use'
 subtitle: "3D Dhaka buildings showing primary building use"
 preview: 'dhaka.png'
-map: 'ggfdrr.map-zyekuz6n,gfdrr.Building-use'
+map: 'gfdrr.map-zyekuz6n,gfdrr.Building-use'
+center:
+  - lat: 23.70818
+    lon: 90.41512
+    zoom: 17
 tags:
 - dhaka
 - featured
@@ -15,10 +19,10 @@ Dhaka buildings are visualized based on their primary use categorization: educat
 
 <script>
 var opts = {
-  lat: 23.7910,
-  lon: 90.3583,
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
   zoom: {
-    defaultZoom:15,
+    defaultZoom:{{ page.center[0].zoom }},
     max:18,
     min:13
     }
