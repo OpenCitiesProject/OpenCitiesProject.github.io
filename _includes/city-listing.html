@@ -16,7 +16,8 @@
               {% if tag == 'featured' %}
               <li style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/400x300.png");'>
                 <a href='{{site.baseurl}}/{{case.url}}'>
-                  <h4>{{case.title}}</h4>
+                  <div class='overlay'></div>
+                  <h4 class='case-title'>{{case.title}}</h4>
                   <span class='more'>More</span>
                 </a>
               </li>

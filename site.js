@@ -89,7 +89,7 @@
 
                 var city = f.properties.title.split(',')[0],
                     country = f.properties.title.split(',')[1],
-                    projects = f.properties.projects.length;
+                    projects = f.properties.projects.length - 1;
 
                 var up = document.createElement('div');
                     up.className = 'popup';

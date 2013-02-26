@@ -11,6 +11,14 @@
     <div id='header' class='header' style='background-image:url("{{site.baseurl}}/img/banners/{{page.preview}}");'>
       <div class='dot-matrix'></div>
       {% include header.html %}
+      <div class='limiter'>
+        <div class='title-block'>
+          <h2>{{page.title}}</h2>
+            {% if page.subtitle %}
+            <div class='subtitle'>{{page.subtitle}}</div>
+          {% endif %}
+        </div>
+      </div>
     </div>
 
     {% elsif page.slideshow %}
@@ -24,9 +32,11 @@
       {% for item in page.slideshow %}
       <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active {% endif %} slide-{{forloop.index}}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
         {% include header.html %}
-        <div class='title-block'>
-          <h2>{{item.title}}</h2>
-          <p class='subtitle'>{{item.subtitle}}</p>
+        <div class='limiter'>
+          <div class='title-block'>
+            <h2>{{item.title}}</h2>
+            <p class='subtitle'>{{item.subtitle}}</p>
+          </div>
         </div>
       </div>
       {% endfor %}
@@ -51,7 +61,7 @@
             {% assign casestudy = forloop.length %}
           {% endfor %}
 
-          <h2>{{cities}} Cities, {{casestudy}} projects</h2>
+          <h2>{{cities}} Cities, {{casestudy}} Case Studies</h2>
           <p class='subtitle'>Explore current ground work operations</p>
         </div>
       </div>

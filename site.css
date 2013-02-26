@@ -344,19 +344,12 @@ small {
       position:relative;
       }
     .header .title-block {
-      position:absolute;
-      left:20px;
-      bottom:60px;
+      float:left;
+      position:relative;
+      margin-top:120px;
       width:480px;
       z-index:100;
       }
-      .header.map .title-block {
-        top:120px;
-        }
-      .header.slideshow .title-block {
-        left:150px;
-        }
-
     .header a {
       color:#fff;
       }
@@ -401,7 +394,7 @@ small {
   position:absolute;
   top:40px;
   right:0;
-  z-index:100;
+  z-index:2000;
   }
   .interactive-heading .nav a,
   .header .nav a {
@@ -464,6 +457,9 @@ small {
     width:100%;
     height:360px;
     margin:0 auto;
+    }
+  .section.grey {
+    background:#eee;
     }
 
 /* Partners Section on page: About */
@@ -561,7 +557,6 @@ small {
         margin:0 1px;
         }
     .activities li a {
-      background:transparent url(img/overlay.png) repeat 0 0;
       display:block;
       padding:20px 10px;
       color:#F0F0F0;
@@ -570,15 +565,17 @@ small {
       text-shadow:none;
       text-shadow:0 1px 2px rgba(0,0,0,0.5);
       }
-      .activities.grid .overlay {
-        opacity:0.5;
+      .projects .activities .overlay,
+      .activities .overlay {
+        opacity:1;
         -webkit-transition:opacity 600ms;
            -moz-transition:opacity 600ms;
              -o-transition:opacity 600ms;
                 transition:opacity 600ms;
         }
-      .activities.grid a:hover .overlay {
-        opacity:0;
+      .projects .activities a:hover .overlay,
+      .activities a:hover .overlay {
+        opacity:0.5;
         }
       .activities li a .case-title {
         position:relative;
