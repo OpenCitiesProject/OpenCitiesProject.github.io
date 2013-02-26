@@ -129,6 +129,9 @@ a {
     color:#28679b;
     }
 
+.tabs {
+  margin-bottom:40px;
+  }
 .tabs a,
 .button {
   display:inline-block;
@@ -184,7 +187,6 @@ em {
   font-style:italic;
   }
 small {
-  font-weight:bold;
   font-size:13px;
   }
 
@@ -464,13 +466,17 @@ small {
 
 /* Partners Section on page: About */
 .section .partners a {
-  display:block;
-  float:left;
-  width:33.3333%;
+  display:inline-block;
   font-weight:bold;
+  padding:10px;
+  margin:0 5px;
+  border:1px solid #eee;
   }
+  .section .partners a:hover {
+    border-color:#404040;
+    }
   .section .partners img {
-    width:240px;
+    width:200px;
     display:block;
     margin:0 auto 10px;
     }
@@ -544,10 +550,12 @@ small {
     float:left;
     }
     .activities .city-desc {
+      background:#fff;
       padding:10px;
       display:block;
-      height:70px;
+      height:80px;
       overflow:hidden;
+      margin:0 1px 20px 1px;
       }
     .activities.grid li {
       background-color:transparent;
@@ -609,9 +617,7 @@ small {
   }
 
 .footer {
-  background:#3b96cb;
-  color:#f0f0f0;
-  font-weight:bold;
+  background:#f6f6f6;
   }
   .footer .icon.logo {
     width:66px;

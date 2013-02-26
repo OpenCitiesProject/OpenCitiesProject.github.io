@@ -134,6 +134,8 @@
   }
   .map-legends .map-legend {
     padding:10px;
+    height:240px;
+    overflow:scroll;
     }
 
 .map-tooltip {
