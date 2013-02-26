@@ -117,7 +117,7 @@ p {
   margin:0 0 20px;
   }
 a {
-  color:#3b96cb;
+  color:#28679b;
   text-decoration:none;
   -webkit-transition:color 50ms linear;
      -moz-transition:color 50ms linear;
@@ -126,7 +126,7 @@ a {
   }
   a.active,
   a:hover {
-    color:#28679b;
+    color:#3b96cb;
     }
 
 .tabs {
@@ -355,7 +355,6 @@ small {
     .header a {
       color:#fff;
       }
-      .header a:active,
       .header a.active {
         color:#3B96CB;
         }
@@ -624,9 +623,6 @@ small {
     width:66px;
     height:32px;
     background-position:-140px -328px;
-    }
-  .footer a {
-    color:#fff;
     }
   .footer .partners {
     margin:0 0 20px;
