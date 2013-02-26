@@ -1,31 +1,37 @@
 ---
 layout: default
 slideshow:
- - slide: 'frontpage.png'
-   nocover: true
+ - slide: 'frontpage-dhaka.png'
    title: 'Urban and Open'
    subtitle: 'Making urban planning data better by making it more open'
- - slide: 'frontpage.png'
-   nocover: true
+ - slide: 'frontpage-dhaka2.png'
    title: 'Disaster Risk Mitigation'
    subtitle: 'Leveraging open data sets for disaster risk mitigation modeling and rescue and relief efforts'
  - slide: 'frontpage-osm.png'
    title: 'Your World, Your Map'
-   subtitle: 'Adding society-critical datasets to the the free, citizen-powered <a href="http://openstreetmap.org">OpenStreetMap</a>, with global coverage and street level detail'
+   subtitle: 'Adding society-critical datasets to the the free, citizen-powered <a href="//openstreetmap.org/?lat=19.5&lon=88&zoom=5&layers=M">OpenStreetMap</a>, with global coverage and street level detail'
 ---
 
-<div id='data-coverage' class='section data-coverage centered'>
-  <h4 class='title'>Unleash the true possibility for ground-sourced public data infrastructure.</h4>
+<div class='section data-coverage'>
+  <h4 class='title centered'>Unleash the true possibility for ground-sourced public data infrastructure.</h4>
+  <div class='map' id='data-coverage'></div>
 </div>
-  
+
 <div class='section'>
   <div class='limiter'>
     <h4 class='title centered'>Case Studies</h4>
     <ul class='activities grid clearfix'>
       {% for case in site.categories.casestudy %}
       <li>
-        <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{page.geom[1].lon}},{{page.geom[0].lat}},13/400x300.png");'>
+        <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/400x300.png");'>
           <div class='overlay'></div>
+          <div class='label'>
+            {% for name in site.categories.cities %}
+              {% if name.city == case.city %}
+                {{name.title}}
+              {% endif %}
+            {% endfor %}
+          </div>
           <h4 class='case-title'>{{case.title}}</h4>
           <span class='more'>More</span>
         </a>
@@ -37,18 +43,17 @@ slideshow:
 </div>
 
 <script>
-  mapbox.load('saman.map-nzxr8zw8', function(o) {
-    var map = mapbox.map('data-coverage');
-    map.addLayer(o.layer)
-    map.setZoomRange(2, 8);
-    map.zoom(2).center({
-      lat:34.880,
-      lon: 65.797
-    }).setPanLimits([{
-      lat: 24.4587,
-      lon: 33.6885
-    }, {
-      lat: 45.5482,
-      lon: 95.7402
-  }]);
+  var map = mapbox.map('data-coverage', mapbox.layer().id('saman.map-nzxr8zw8'), null, [
+        easey_handlers.TouchHandler(),
+        easey_handlers.DragHandler(),
+        easey_handlers.DoubleClickHandler()
+  ]);
+
+  map.ui.zoomer.add();
+  map.setZoomRange(4, 6);
+  map.zoom(5).center({
+    lat:22.384,
+    lon:90.055
+  });
+
 </script>

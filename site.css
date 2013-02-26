@@ -129,6 +129,7 @@ a {
     color:#28679b;
     }
 
+.tabs a,
 .button {
   display:inline-block;
   background:#3b96cb;
@@ -139,9 +140,18 @@ a {
   padding:0 20px;
   text-shadow:none;
   }
+  .tabs a:hover,
   .button:hover {
     background:#28679b;
     color:#fff;
+    }
+  .tabs .first {
+    -webkit-border-radius:3px 0 0 3px;
+            border-radius:3px 0 0 3px;
+    }
+  .tabs .last {
+    -webkit-border-radius:0 3px 3px 0;
+            border-radius:0 3px 3px 0;
     }
 
 table {
@@ -150,11 +160,10 @@ table {
   border-collapse:collapse;
   border-spacing:0;
   margin-bottom:20px;
-  table-layout:fixed;
   }
   th,
   td {
-    padding:8px;
+    padding:2px 8px;
     line-height:20px;
     text-align:left;
     vertical-align:top;
@@ -183,10 +192,20 @@ small {
   font-size:22px;
   line-height:28px;
   color:#8897a0;
+  font-weight:normal;
   }
+  .header.map .subtitle {
+    color:#8897a0;
+    }
+  .header .subtitle {
+    color:#fff;
+    }
+
 .label {
   display:block;
   font-weight:bold;
+  position:relative;
+  z-index:10;
   }
 
 .icon {
@@ -229,7 +248,7 @@ small {
     height:40px;
     }
   .icon.logo {
-    background-position:0 -220px;
+    background-position:0 -295px;
     width:132px;
     height:70px;
     }
@@ -239,45 +258,39 @@ small {
       background-position:-140px -328px;
       margin-right:10px;
       }
-    .slide-3 .icon.logo {
-      background-position:0 -295px;
-      }
 
-.prose {
-  font:15px/26px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing:subpixel-antialiased;
+.dark {
   background:#000;
-  color:#5C676F;
   padding:40px 0;
   }
-.prose h2,
-.prose h3,
-.prose .title {
-  font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight:bold;
-  color:#fff;
+.prose {
+  font:15px/24px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing:subpixel-antialiased;
+  color:#5C676F;
   }
-.prose h2 {
-  font-size:15px;
-  line-height:22px;
-  }
-.prose-about{
-  line-height: 30px;
-}
-
-.prose-about li{
-  list-style-type:circle;
-  margin-left: 72px;
-}
-
-.prose-about ul{
-  padding-bottom: 40px;
-}
-.tabs li{
-  display: inline;
-  float: left;
-  padding: 50px 20px 50px 0px;
-}
+  .prose h2,
+  .prose h3 {
+    font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    color:#fff;
+    }
+  .prose h2 {
+    font-size:15px;
+    line-height:22px;
+    }
+  .prose ul {
+    list-style:disc;
+    margin:0 0 10px 40px;
+    }
+  .prose ol {
+    list-style:decimal;
+    }
+  .prose p {
+    margin:0 0 10px;
+    }
+  .prose img {
+    max-width:100%;
+    }
 
 /* ------------------------------------------
   Global layout & styling ♥
@@ -287,7 +300,10 @@ small {
   margin:0 auto;
   padding:0 20px;
   }
-  .header {
+  .col800 {
+    width:800px;
+    }
+  #header {
     background-color:#101010;
     background-repeat:no-repeat;
     height:440px;
@@ -318,7 +334,6 @@ small {
     }
     .slide.no-cover {
       background-size:auto;
-      background-position:right top;
       }
     .slide.active {
       display:block\9; /* target < ie9 */
@@ -331,10 +346,13 @@ small {
     .header .title-block {
       position:absolute;
       left:20px;
-      top:160px;
+      bottom:60px;
       width:480px;
       z-index:100;
       }
+      .header.map .title-block {
+        top:120px;
+        }
       .header.slideshow .title-block {
         left:150px;
         }
@@ -364,7 +382,6 @@ small {
       top:0;
       left:0;
       z-index:2000;
-      opacity:0.20;
       -webkit-transition:all 100ms linear;
          -moz-transition:all 100ms linear;
            -o-transition:all 100ms linear;
@@ -423,14 +440,23 @@ small {
   }
   .section.data-coverage {
     background:#000;
-    height:440px;
+    height:360px;
+    position:relative;
+    -webkit-box-shadow:0 -2px 4px rgba(0,0,0,0.25);
+            box-shadow:0 -2px 4px rgba(0,0,0,0.25);
+    }
+  .section.data-coverage .title {
+    color:#fff;
+    text-shadow:0 1px 2px rgba(0,0,0,0.5);
     }
   .section .title {
     font-size:28px;
     line-height:36px;
-    color:#5C676F;
+    color:#404040;
     width:600px;
     margin:0 auto 40px;
+    position:relative;
+    z-index:10;
     }
   .section .viewport {
     background:#101010;
@@ -438,6 +464,19 @@ small {
     width:100%;
     height:360px;
     margin:0 auto;
+    }
+
+/* Partners Section on page: About */
+.partners a {
+  display:block;
+  float:left;
+  width:33.3333%;
+  font-weight:bold;
+  }
+  .partners img {
+    width:240px;
+    display:block;
+    margin:0 auto 10px;
     }
 
 .project {
@@ -517,6 +556,10 @@ small {
     .activities.grid li {
       background-color:transparent;
       }
+      .activities.grid li a {
+        background:#202020;
+        margin:0 1px;
+        }
     .activities li a {
       background:transparent url(img/overlay.png) repeat 0 0;
       display:block;
@@ -525,7 +568,7 @@ small {
       height:180px;
       position:relative;
       text-shadow:none;
-      margin:0 1px;
+      text-shadow:0 1px 2px rgba(0,0,0,0.5);
       }
       .activities.grid .overlay {
         opacity:0.5;
@@ -544,6 +587,7 @@ small {
         background:#255D91;
         color:#fff;
         font-weight:bold;
+        text-shadow:none;
         position:absolute;
         top:50%;
         right:0;
@@ -551,8 +595,11 @@ small {
         font-size:13px;
         height:40px;
         line-height:40px;
+        margin-top:20px;
         text-align:center;
         width:80px;
+        -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+                box-shadow:0 1px 2px rgba(0,0,0,0.5);
         }
       .activities li a:hover {
         opacity:1;
@@ -664,15 +711,16 @@ small {
           box-shadow:0 2px 4px rgba(0,0,0,0.25);
   }
   .popup:after {
-    bottom:-10px;
+    bottom:-5px;
     content:'';
     height:0;
     width:0;
     right:50%;
+    margin-right:8px;
     position:absolute;
-    border-left:10px solid transparent;
-    border-right:10px solid transparent;
-    border-top:10px solid #000;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #000;
     }
   .active .popup {
     display:block;
@@ -706,7 +754,7 @@ small {
 .interactive-heading {
   background:#fff;
   color:#255d91;
-  padding:0 0 15px;
+  padding:0 0 20px;
   position:absolute;
   z-index:5000;
   width:100%;
@@ -744,10 +792,11 @@ small {
   }
 
 .map-containment {
-  position:relative;
-  height:600px;
+  position:absolute;
+  height:100%;
+  width:100%;
   }
-#map {
+.map {
   background:#101010;
   position:absolute;
   top:0;left:0;
@@ -796,6 +845,9 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
   .icon {
     background-image:url(img/sprite@2x.png);
     background-size:480px 360px;
+    }
+  .prose img {
+    display:block;
     }
   }
 

@@ -19,25 +19,19 @@
 
   <div class='limiter'>
     <div class='title-block'>
-      <h2>{{page.title}}</h2>
+      <h2>
+        {{page.title}}
         {% if page.subtitle %}
-        <div class='subtitle'>{{page.subtitle}}</div>
-      {% endif %}
+          <span class='subtitle'>{{page.subtitle}}</span>
+        {% endif %}
+      </h2>
+      <div class='prose'>{{content}}</div>
     </div>
   </div>
 </div>
 
 <div class='map-containment'>
-  <div class='map' id='map'></div>
+  <div id='map' class='map'></div>
 </div>
-
-<div class='prose'>
-  <div class='limiter'>
-    {{content}}
-  </div>
-</div>
-
-{% include footer.html %}
-
 </body>
 </html>
