@@ -467,13 +467,13 @@ small {
     }
 
 /* Partners Section on page: About */
-.partners a {
+.section .partners a {
   display:block;
   float:left;
   width:33.3333%;
   font-weight:bold;
   }
-  .partners img {
+  .section .partners img {
     width:240px;
     display:block;
     margin:0 auto 10px;
