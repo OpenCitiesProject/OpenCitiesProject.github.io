@@ -469,7 +469,7 @@ small {
   display:inline-block;
   font-weight:bold;
   padding:10px;
-  margin:0 5px;
+  margin:0 5px 10px 5px;
   border:1px solid #eee;
   }
   .section .partners a:hover {
