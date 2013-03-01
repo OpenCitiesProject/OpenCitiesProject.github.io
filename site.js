@@ -1,5 +1,7 @@
 ---
 ---
+{% include ext/jquery.min.js %}
+
 ;(function(context) {
 
     var gfdrr = {}
@@ -11,9 +13,19 @@
             }, 500);
         }
 
-        $('a[data-scroll]').click(function () {
+        $('a[data-scroll]').click(function() {
             var to = $(this).attr('href');
             scroll(to);
+            return false;
+        });
+
+        var $toggle = $('#toggle');
+
+        // On mobile view this toggles the
+        // navigation from the right.
+        $toggle.click(function() {
+            console.log('hihi');
+            $('body').toggleClass('active-nav');
             return false;
         });
     };
