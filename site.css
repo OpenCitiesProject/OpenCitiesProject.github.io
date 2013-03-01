@@ -268,6 +268,20 @@ small {
       background-position:-140px -328px;
       margin-right:10px;
       }
+    .close {
+      font-size:22px;
+      font-weight:bold;
+      color:#202020;
+      }
+    .interactive-heading .globals .close {
+      display:none;
+      position:absolute;
+      top:49px;
+      font-size:20px;
+      color:#202020;
+      text-shadow:none;
+      right:20px;
+      }
 
 .dark {
   background:#000;
@@ -772,6 +786,9 @@ small {
   -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.25);
           box-shadow:0 2px 4px rgba(0,0,0,0.25);
   }
+  .interactive-heading.inactive .title-block {
+    display:none;
+    }
   .interactive-heading h2 {
     font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:bold;
@@ -818,7 +835,17 @@ small {
   width:100%;
   height:100%;
   }
-
+.attribution {
+  background:#202020;
+  color:#fff;
+  background:rgba(0,0,0,0.8);
+  font-size:11px;
+  padding:0 8px;
+  position:absolute;
+  z-index:1000;
+  bottom:0;
+  right:0;
+  }
 #toggle {
   display:none;
   position:absolute;
@@ -911,6 +938,7 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
       width:80%;
       }
 
+  .interactive-heading .globals .close,
   #toggle{
     display:block;
     }

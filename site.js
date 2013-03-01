@@ -24,8 +24,12 @@
         // On mobile view this toggles the
         // navigation from the right.
         $toggle.click(function() {
-            console.log('hihi');
             $('body').toggleClass('active-nav');
+            return false;
+        });
+
+        $('.close', '.interactive-heading').click(function() {
+            $('.interactive-heading').toggleClass('inactive');
             return false;
         });
     };
