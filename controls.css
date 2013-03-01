@@ -135,7 +135,8 @@
   .map-legends .map-legend {
     padding:10px;
     height:240px;
-    overflow:scroll;
+    height:auto!important;
+    max-height:240px;
     }
 
 .map-tooltip {
@@ -183,7 +184,5 @@
     .zoomer,
     .map-fullscreen,
     .map-tooltip .close {
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAA8CAYAAABYfzddAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAbrwAAG68BXhqRHAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKJSURBVHic7d1BcptAEEbhaSpH0SkozTq5ldCtovWouIR9l8kmpJSxBCihB35430oLbIGlZ1APZVvOOQDQ1Ky9AwD+HQEDwggYEEbAgDACBoQRMCCMgAFhBAwII2BAGAEDwggYEEbAgDACBoQRMCCMgAFhBAwII2BAGAEDwggYEPZt7R3Yuxjjz5zz9xBCMLNbSunH2vuE5cUYu5zzZWq7+/1uSz6v6xm4bdtT27Ynr+0VDPGWj7EvKaXOzK61n9ct4Bhj1zTNR9M0HzHGbuntga1ZI2KXgNu2PT1eTuScL2NRlpcfOefL3s7EOIbaEVcbYr2KeO5nBwBfuQTc9/3ns99CZcSv4jWza9/3nx77BniqfUJym0KnlLoYYygP5nfEfx6XX2dm15RS57VfgJcy3uEk5hm06zLSWMTPtideqHoW7/BeftbAUqzG/0aac1mhGu/jOu//UlgnPtrxzjEWb7mN1DrwYGoypxpvCMuu7SqsEx/teKfMiTcEv+k0t1ICI95Z/pw6EXmcpKoEPHUJPbVOvGVmdtvi9/JytOOdu/y51lWk+2fgd8bqypfSr5zP579+wEt/BoKv4fUrhlKbiDcE5yn02DpvCF+n0cMS094ihr5Xy59rn3TcAh6Ld2y8TsTYqvK9una8IVS6F3pQHvCryRz3QmPrthBvCBWn0LXH68ARVLkXes54vdyee6GxZVtZOXGdQg+XwXNjfHd7BUyhtZWvX2ntS2nXKfS7Ie4p3IGZ3R7/pM7a+4NlrT10rXIvNAAf3EoJCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8IIGBBGwIAwAgaEETAgjIABYQQMCCNgQBgBA8J+AdGSp6T2TOLKAAAAAElFTkSuQmCC);
-      background-size: 150px 30px;
       }
   }

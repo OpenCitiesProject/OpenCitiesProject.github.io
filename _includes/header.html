@@ -1,6 +1,8 @@
 <div class='globals'>
   <div class='limiter'>
-    <a href='#' id='toggle' class='icon toggle'>Toggle Nav</a>
+    {% unless page.slideshow %}
+      <a href='#' id='toggle' class='icon toggle'>Toggle Nav</a>
+    {% endunless %}
     <div class='nav clearfix'>
       <a href='{{site.baseurl}}/cities' {% if page.url == "/cities" %}class='active'{% endif %}>All Cities</a>
       <a href='{{site.baseurl}}/about' {% if page.url == "/about" %}class='active'{% endif %}>About</a>

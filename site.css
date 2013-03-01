@@ -382,7 +382,7 @@ small {
       position:absolute;
       width:80px;
       height:100%;
-      top:0;
+      bottom:0;
       left:0;
       z-index:2000;
       -webkit-transition:all 100ms linear;
@@ -825,7 +825,7 @@ small {
   opacity:0.5;
   right:20px;
   top:20px;
-  z-index:50000;
+  z-index:9999999999;
   -webkit-border-radius:2px;
           border-radius:2px;
   }
@@ -903,6 +903,9 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
     .header .logo {
       top:20px;
       }
+    .section .title {
+      width:80%;
+      }
     #header .title-block {
       margin-top:30px;
       width:80%;
@@ -915,6 +918,9 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
       opacity:1;
       }
 
+.slide-control {
+  height:80px;
+  }
 .nav {
   display:none;
   }
@@ -978,16 +984,16 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
           }
       .activities .city-desc {
         background:#202020;
+        color:#808080;
         height:auto;
         overflow:auto;
         }
       .activities li a .more {
         top:0;
         height:100%;
-        padding:0 20px;
         line-height:70px;
         margin-top:0;
-        text-align:left;
+        text-align:center;
         border-bottom:1px solid #fff;
         -webkit-box-shadow:none;
                 box-shadow:none;
@@ -995,9 +1001,6 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
         .activities.grid li a .more {
           border:none;
           }
-      .section .partners img {
-        width:120px;
-        }
 
   .prose img {
     float:none;

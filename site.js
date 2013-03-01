@@ -87,7 +87,6 @@
 
     gfdrr.citiesMap = function(el, mapId) {
         var map = mapbox.map(el, mapbox.layer().id(mapId), null, [
-            easey_handlers.TouchHandler(),
             easey_handlers.DragHandler(),
             easey_handlers.DoubleClickHandler()
         ]);
