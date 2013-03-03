@@ -32,6 +32,7 @@
       </a>
       {% for item in page.slideshow %}
       <div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active {% endif %} slide-{{forloop.index}}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
+        <div class='dot-matrix'></div>
         {% include header.html %}
         <div class='limiter'>
           <div class='title-block'>

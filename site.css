@@ -446,6 +446,7 @@ small {
   height:100%;
   position:absolute;
   top:0;left:0;
+  z-index:1;
   }
 .overlay {
   background:url(img/overlay.png) repeat 0 0;
@@ -453,7 +454,11 @@ small {
   height:100%;
   position:absolute;
   top:0;left:0;
+  z-index:1;
   }
+  .project-overlay {
+    z-index:1000;
+    }
 
 .section {
   padding:40px 0;
@@ -546,6 +551,7 @@ small {
       }
     .project:hover .overlay {
       opacity:0;
+      z-index:0;
       }
     .project:hover .button {
       display:inline-block;
@@ -567,72 +573,123 @@ small {
 .activities {
   width:80%;
   margin:0 auto;
+  overflow:hidden;
   }
+  .activities.grid {
+    width:100%;
+    }
   .activities li {
     background-color:#202020;
+    background-repeat:no-repeat;
     display:block;
+    color:#fff;
     width:33.3333%;
     float:left;
+    margin-bottom:1px;
     }
     .activities .city-desc {
-      background:#fff;
-      padding:10px 10px 10px 20px;
       display:block;
-      height:80px;
-      overflow:hidden;
       margin:0;
+      position:relative;
+      font-size:22px;
+      line-height:28px;
+      width:75%;
+      z-index:10;
+      opacity:0;
+      -webkit-animation-fill-mode:both;
+         -moz-animation-fill-mode:both;
+           -o-animation-fill-mode:both;
+              animation-fill-mode:both;
+      -webkit-animation-duration:300ms;
+         -moz-animation-duration:300ms;
+           -o-animation-duration:300ms;
+              animation-duration:300ms;
+      -webkit-animation-name:fadeOutLeft;
+         -moz-animation-name:fadeOutLeft;
+           -o-animation-name:fadeOutLeft;
+              animation-name:fadeOutLeft;
       }
+      .activities a:hover .city-desc {
+        opacity:1;
+        -webkit-animation-delay:300ms;
+           -moz-animation-delay:300ms;
+             -o-animation-delay:300ms;
+                animation-delay:300ms;
+        -webkit-animation-name:fadeInLeft;
+           -moz-animation-name:fadeInLeft;
+             -o-animation-name:fadeInLeft;
+                animation-name:fadeInLeft;
+        }
     .activities.grid li {
-      background-color:transparent;
+      float:none;
+      width:100%;
       }
       .activities.grid li a {
-        background:#202020;
+        background-color:#202020;
         margin:0 1px;
         }
     .activities li a {
+      background-repeat:no-repeat;
+      background-size:cover;
       display:block;
       padding:20px;
-      color:#F0F0F0;
+      color:#fff;
       height:180px;
       position:relative;
+      z-index:100;
       text-shadow:none;
       text-shadow:0 1px 2px rgba(0,0,0,0.5);
+      -webkit-filter:grayscale(1);
+      -webkit-animation-duration:300ms;
+      -webkit-animation-name:colorDown;
       }
       .projects .activities .overlay,
       .activities .overlay {
         opacity:1;
-        -webkit-transition:opacity 600ms;
-           -moz-transition:opacity 600ms;
-             -o-transition:opacity 600ms;
-                transition:opacity 600ms;
+        -webkit-transition:opacity 300ms;
+           -moz-transition:opacity 300ms;
+             -o-transition:opacity 300ms;
+                transition:opacity 300ms;
         }
       .projects .activities a:hover .overlay,
       .activities a:hover .overlay {
-        opacity:0.5;
+        opacity:0.75;
         }
       .activities li a .case-title {
         position:relative;
+        width:75%;
+        z-index:10;
         }
       .activities li a .more {
-        background:#255D91;
+        background-color:#28679B;
         color:#fff;
         font-weight:bold;
         text-shadow:none;
         position:absolute;
-        top:50%;
-        right:0;
+        bottom:0;
+        right:-200px;
         display:inline-block;
-        font-size:13px;
-        height:40px;
-        line-height:40px;
-        margin-top:20px;
+        height:50px;
+        line-height:50px;
         text-align:center;
-        width:80px;
-        -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.5);
-                box-shadow:0 1px 2px rgba(0,0,0,0.5);
+        padding:0 20px;
+        z-index:10;
+        -webkit-transition:right 100ms;
+           -moz-transition:right 100ms;
+             -o-transition:right 100ms;
+                transition:right 100ms;
         }
+        .activities li a:hover .more {
+          right:0;
+          }
+        .activities.grid li a .more {
+          top:0;
+          bottom:auto;
+          }
       .activities li a:hover {
         opacity:1;
+        -webkit-filter:grayscale(0);
+        -webkit-animation-name:colorUp;
         }
 
 .project .activities {
@@ -656,6 +713,15 @@ small {
       display:inline-block;
       margin:0 5px;
       }
+
+@-webkit-keyframes colorUp {
+  0%    { -webkit-filter:grayscale(1); }
+  100%  { -webkit-filter:grayscale(0); }
+  }
+@-webkit-keyframes colorDown {
+  0%    { -webkit-filter:grayscale(0); }
+  100%  { -webkit-filter:grayscale(1); }
+  }
 
 @-webkit-keyframes fadeOutLeft {
   0%    { opacity: 1; -webkit-transform:translateX(0); }
@@ -829,7 +895,7 @@ small {
   width:100%;
   }
 .map {
-  background:#101010;
+  background:#232323;
   position:absolute;
   top:0;left:0;
   width:100%;
@@ -844,7 +910,7 @@ small {
   position:absolute;
   z-index:1000;
   bottom:0;
-  right:0;
+  left:0;
   }
 #toggle {
   display:none;
@@ -1001,8 +1067,6 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
     .activities li {
       width:100%;
       float:none;
-      border-top:1px solid #808080;
-      margin:0;
       }
       .activities li a {
         height:auto;
@@ -1010,22 +1074,6 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
         .activities.grid li a {
           margin:0;
           }
-      .activities .city-desc {
-        background:#202020;
-        color:#808080;
-        height:auto;
-        overflow:auto;
-        }
-      .activities li a .more {
-        top:0;
-        height:100%;
-        line-height:70px;
-        margin-top:0;
-        text-align:center;
-        border-bottom:1px solid #fff;
-        -webkit-box-shadow:none;
-                box-shadow:none;
-        }
         .activities.grid li a .more {
           border:none;
           }

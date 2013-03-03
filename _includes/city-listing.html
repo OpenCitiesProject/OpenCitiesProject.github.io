@@ -1,23 +1,26 @@
 <div class='projects clearfix'>
   {% for item in site.categories.cities %}
-  <div id='{{item.city}}' href='{{site.baseurl}}{{item.url}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");' alt='' />
+  <div id='{{item.city}}' class='project' style='background-image:url("{{site.baseurl}}/img/banners/{{item.preview}}");'>
     <div class='headline'>
       <span class='label'>City</span>
       <h2>{{item.title}}</h2>
       <a href='{{site.baseurl}}{{item.url}}' class='button'>Explore All</a>
     </div>
     <div class='dot-matrix'></div>
-    <div class='overlay'></div>
+    <div class='overlay project-overlay'></div>
+
     <ul class='activities'>
       {% for case in site.categories.casestudy %}
         {% for tag in case.tags %}
           {% if tag == item.city %}
             {% for tag in case.tags %}
               {% if tag == 'featured' %}
-              <li style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/400x300.png");'>
-                <a href='{{site.baseurl}}/{{case.url}}'>
+              <li>
+                <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
                   <div class='overlay'></div>
+                  <div class='dot-matrix'></div>
                   <h4 class='case-title'>{{case.title}}</h4>
+                  <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
                   <span class='more'>More</span>
                 </a>
               </li>

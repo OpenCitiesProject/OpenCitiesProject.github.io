@@ -7,21 +7,23 @@ layout: default
     <h4 class='title'>{{content}}</h4>
   </div>
 
-  <ul class='activities grid clearfix'>
-    {% for case in site.categories.casestudy %}
-      {% for tag in case.tags %}
-        {% if tag == page.city %}
-        <li>
-          <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/400x300.png");'>
-            <div class='overlay'></div>
-            <h4 class='case-title'>{{case.title}}</h4>
-            <span class='more'>More</span>
-          </a>
-          <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
-        </li>
-        {% endif %}
+  <div class='limiter'>
+    <ul class='activities grid clearfix'>
+      {% for case in site.categories.casestudy %}
+        {% for tag in case.tags %}
+          {% if tag == page.city %}
+          <li>
+            <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/400x300.png");'>
+              <div class='overlay'></div>
+              <div class='dot-matrix'></div>
+              <h4 class='case-title'>{{case.title}}</h4>
+              <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
+              <span class='more'>More</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-  </ul>
-
+    </ul>
+  </div>
 </div>

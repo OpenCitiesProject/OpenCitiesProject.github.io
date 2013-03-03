@@ -7,7 +7,7 @@
     var gfdrr = {}
 
     gfdrr.global = function() {
-        var scroll = function(el){
+        function scroll(el){
             $('html, body').animate({
                 scrollTop: $(el).offset().top
             }, 500);
