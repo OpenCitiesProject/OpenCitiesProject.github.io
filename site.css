@@ -90,6 +90,10 @@ body {
   max-width:1600px;
   margin:0px auto;
   }
+  body.interactive {
+    max-width:100%;
+    margin:0;
+    }
   body.active-nav {
     overflow:hidden;
     }
