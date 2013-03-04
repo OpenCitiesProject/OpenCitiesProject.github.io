@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class='section'>
+<div class='section dark'>
   <div class='limiter centered'>
     <h4 class='title'>{{content}}</h4>
   </div>
@@ -15,7 +15,6 @@ layout: default
           <li>
             <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/400x300.png");'>
               <div class='overlay'></div>
-              <div class='dot-matrix'></div>
               <h4 class='case-title'>{{case.title}}</h4>
               <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
               <span class='more'>More</span>

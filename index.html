@@ -19,7 +19,7 @@ slideshow:
   </div>
 </div>
 
-<div class='section'>
+<div class='section dark'>
   <div class='limiter'>
     <h4 class='title centered'>Case Studies<br /> <span class='subtitle'>Discover innovative uses of open data to empower resilient communities</span></h4>
 
@@ -28,7 +28,6 @@ slideshow:
       <li>
         <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
           <div class='overlay'></div>
-          <div class='dot-matrix'></div>
           <div class='label'>
             {% for name in site.categories.cities %}
               {% if name.city == case.city %}

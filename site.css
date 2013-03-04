@@ -288,7 +288,7 @@ small {
       }
 
 .dark {
-  background:#000;
+  background:#101010;
   padding:40px 0;
   }
 .prose {
@@ -497,6 +497,12 @@ small {
   .section.grey {
     background:#eee;
     }
+  .section.dark {
+    background:#101010 url(img/dot-matrix.png) repeat 0 0;
+    }
+    .section.dark .title {
+      color:#fff;
+      }
 
 /* Partners Section on page: About */
 .section .partners a {
@@ -627,6 +633,7 @@ small {
     .activities.grid li {
       float:none;
       width:100%;
+      margin-bottom:10px;
       }
       .activities.grid li a {
         background-color:#202020;
@@ -657,7 +664,7 @@ small {
         }
       .projects .activities a:hover .overlay,
       .activities a:hover .overlay {
-        opacity:0.75;
+        opacity:0.50;
         }
       .activities li a .case-title {
         position:relative;
