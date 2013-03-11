@@ -1,4 +1,4 @@
 auto: true
 server: true
-baseurl: /dhaka
+baseurl: /open-cities
 permalink: /:categories/:title
