@@ -1,0 +1,34 @@
+---
+layout: interactive
+category: casestudy
+city: 'kathmandu'
+title: 'Rapid data contributions'
+subtitle: 'Strong community means local data overnight'
+preview: 'kathmandu.png'
+map: 'villeda.map-vkdm2ff2'
+center:
+  - lat: 27.7062
+    lon: 85.3210
+    zoom: 15
+tags:
+- kathmandu
+- featured
+---
+
+Every node displayed on this map was contributed over the weekend of February 22nd, 2013. Entire communites were mapped in detail by a small number of dedicated OpenStreetMap contributors, creating valuable infrastructure data overnight.
+
+<script>
+var opts = {
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
+  zoom: {
+    defaultZoom:{{ page.center[0].zoom }},
+    max:17,
+    min:13
+    }
+  };
+
+$(function() {
+  gfdrr.generateMap('{{page.map}}', opts);
+});
+</script>
