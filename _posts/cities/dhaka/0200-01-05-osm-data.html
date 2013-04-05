@@ -1,0 +1,35 @@
+---
+layout: interactive
+category: casestudy
+city: 'dhaka'
+title: 'OpenStreetMap Data'
+subtitle: 'Robust street map sourced from local knowledge'
+preview: 'dhaka.png'
+map: 'gfdrr.map-3u5bzuri'
+center: 
+  - lat: 23.74120
+    lon: 90.41128
+    zoom: 17
+tags:
+- dhaka
+- featured
+---
+
+OpenStreetMap provides crucial information about a city's lanscape and layout, presenting vital, local knowledge of infrastructure updated in realtime. OpenStreetMap captures complex realities on the ground while providing free and open access to geographic data.
+
+<script>
+
+var opts = {
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
+  zoom: {
+    defaultZoom:{{ page.center[0].zoom }},
+    max:17,
+    min:10
+    }
+  };
+
+$(function() {
+  gfdrr.generateMap('{{page.map}}', opts);
+});
+</script>
