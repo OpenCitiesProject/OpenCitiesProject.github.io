@@ -19,7 +19,6 @@
 @color13: rgb(113,1,98);
 @color18: rgb(17,1,65);
 
-
 /*#photos[zoom >=10][specified_file_path_1 != '']
 [struse1t_clean != 'noinfo']
 [struse1t_clean != 'noinformation']
