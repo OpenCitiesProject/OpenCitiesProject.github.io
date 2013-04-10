@@ -159,6 +159,10 @@ a {
     -webkit-border-radius:3px 0 0 3px;
             border-radius:3px 0 0 3px;
     }
+  .tabs .middle {
+    -webkit-border-radius:0;
+            border-radius:0;
+    }
   .tabs .last {
     -webkit-border-radius:0 3px 3px 0;
             border-radius:0 3px 3px 0;
@@ -519,6 +523,22 @@ small {
     width:200px;
     display:block;
     margin:0 auto 10px;
+    }
+
+/* Get Involved Section on page: About */
+.section .involved a {
+  display:inline-block;
+  font-weight:bold;
+  font-size: 90%;
+  padding:10px;
+  margin:0 5px 10px 5px;
+  border:1px solid #eee;
+  }
+  .section .involved a:hover {
+    border-color:#404040;
+    }
+.section .involved p {
+    font-weight:normal;
     }
 
 .project {
