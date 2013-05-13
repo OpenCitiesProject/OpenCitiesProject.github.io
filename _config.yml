@@ -1,4 +1,4 @@
 auto: true
 server: true
-baseurl: /open-cities
+baseurl: http://opencitiesproject.com/
 permalink: /:categories/:title
