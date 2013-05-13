@@ -4,7 +4,7 @@
     <div class='headline'>
       <span class='label'>City</span>
       <h2>{{item.title}}</h2>
-      <a href='{{site.baseurl}}/{{item.url}}' class='button'>Explore All</a>
+      <a href='{{site.baseurl}}{{item.url}}' class='button'>Explore All</a>
     </div>
     <div class='dot-matrix'></div>
     <div class='overlay project-overlay'></div>
@@ -16,7 +16,7 @@
             {% for tag in case.tags %}
               {% if tag == 'featured' %}
               <li>
-                <a href='{{site.baseurl}}/{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
+                <a href='{{site.baseurl}}{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
                   <div class='overlay'></div>
                   <h4 class='case-title'>{{case.title}}</h4>
                   <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
