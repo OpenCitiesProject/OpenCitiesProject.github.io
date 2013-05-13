@@ -427,6 +427,7 @@ small {
   top:40px;
   right:20px;
   z-index:2000;
+  font-size: 120%;
   }
   .interactive-heading .nav a,
   .header .nav a {
