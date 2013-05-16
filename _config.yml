@@ -1,4 +1,2 @@
-auto: true
-server: true
 baseurl: 
 permalink: /:categories/:title

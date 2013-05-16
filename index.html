@@ -23,8 +23,7 @@ slideshow:
   <div class='limiter'>
     <h4 class='title centered'>Select Case Studies<br /> <span class='subtitle'>Discover innovative uses of open data to empower resilient communities</span></h4>
     <ul class='activities grid clearfix'>
-
-      {% for case in site.tags.splash limit:3 %}
+      {% for case in site.categories.casestudy limit:3 %}
       <li>
         <a href='{{site.baseurl}}{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
           <div class='overlay'></div>
@@ -36,6 +35,31 @@ slideshow:
             {% endfor %}
           </div>
           <h4 class='case-title'>{{case.title}}</h4>
+          <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
+          <span class='more'>More</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class='centered'>
+      <a href='#' class='button toggle'>Load More</a>
+    </div>
+
+    <ul class='activities grid toggled clearfix'>
+      {% for case in site.categories.casestudy offset:3 %}
+      <li>
+        <a href='{{site.baseurl}}{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
+          <div class='overlay'></div>
+          <div class='label'>
+            {% for name in site.categories.cities %}
+              {% if name.city == case.city %}
+                {{name.title}}
+              {% endif %}
+            {% endfor %}
+          </div>
+          <h4 class='case-title'>
+            {{case.title}}</h4>
           <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
           <span class='more'>More</span>
         </a>
@@ -55,6 +79,12 @@ slideshow:
   map.zoom(4).center({
     lat:22.384,
     lon:90.055
+  });
+
+  $('.toggle').click(function() {
+      $('.toggled').addClass('on');
+      $('.toggle').remove();
+      return false;
   });
 
 </script>
