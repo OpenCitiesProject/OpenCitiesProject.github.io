@@ -84,8 +84,23 @@
             map.ui.legend.add();
             map.ui.refresh();
 
-            // If a callback was provided trigger it here.
             callback;
+
+            map.interaction.on({
+                on: function(o) {
+                    $('img').error(function () {
+                        
+                        var url = $(this).attr('src');
+                        var replace = url.replace('mapbox.com/dhaka/dhaka/','opencitiesproject.com/dhaka/')
+                        $(this).attr('src',replace)
+                        
+                    });
+                },
+                off: function(){
+                    
+                }
+            });
+
         });
     };
 
