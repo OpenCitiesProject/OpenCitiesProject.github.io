@@ -260,10 +260,20 @@ small {
     width:198px;
     height:45px;
     }
+  .icon.hot {
+    background-position:-205px -55px;
+    width:85px;
+    height:50px;
+    }
+  .icon.osm {
+    background-position:-295px -55px;
+    width:60px;
+    height:60px;
+    }
   .icon.ds {
-    background-position:-205px 0;
+    background-position:-205px 5px;
     width:172px;
-    height:40px;
+    height:55px;
     }
   .icon.logo {
     background-position:0 -295px;
