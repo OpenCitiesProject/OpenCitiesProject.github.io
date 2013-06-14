@@ -19,7 +19,7 @@
                 <a href='{{site.baseurl}}{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
                   <div class='overlay'></div>
                   <h4 class='case-title'>{{case.title}}</h4>
-                  <p class='city-desc'>{{case.subtitle | truncate:160}}</p>
+                  <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
                   <span class='more'>More</span>
                 </a>
               </li>
