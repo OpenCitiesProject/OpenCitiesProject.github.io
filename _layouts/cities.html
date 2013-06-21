@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<div class='section dark'>
-  <div class='limiter centered'>
-    <h4 class='title'>{{content}}</h4>
+<div class='prose dark'>
+  <div class='limiter'>
+    <h2>{{page.title}}</h2>
+    {{content}}
   </div>
+</div>
 
+<div class='section dark'>
   <div class='limiter'>
     <ul class='activities grid clearfix'>
       {% for case in site.categories.casestudy %}
