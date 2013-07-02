@@ -86,6 +86,15 @@
 
             callback;
 
+            // fix source in dhaka legends
+            var legendsrc = $('.legend-source').html();
+
+            if ( legendsrc == 'Source: <a href="https://www.gfdrr.org/gfdrr/">GFDRR</a>') {
+                $('.legend-source').html("Source: <a href='http://www.cdmp.org.bd/'>CDMP, Government of Bangladesh</a>");
+            } else {
+                $('.legend-source').html();
+            }
+
             map.interaction.on({
                 on: function(o) {
                     $('img').error(function () {
@@ -95,6 +104,7 @@
                         $(this).attr('src',replace)
                         
                     });
+
                 },
                 off: function(){
                     
