@@ -1,0 +1,112 @@
+{
+  "bounds": [
+    85.2687,
+    27.658,
+    85.3873,
+    27.7523
+  ],
+  "center": [
+    85.3267,
+    27.7062,
+    13
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "schools",
+    "template_teaser": "{{#name}} <b>Name:</b> {{{name}}} <br> {{/name}}",
+    "fields": [
+      "name",
+      "historic"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        85.2747142,
+        27.659863,
+        85.3805766,
+        27.7495264
+      ],
+      "id": "schools",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Documents/dhaka/_data/_site/kat/schools.json",
+        "id": "schools",
+        "project": "kat-poi",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "schools"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        85.2748341,
+        27.6604766,
+        85.385364,
+        27.7501757
+      ],
+      "id": "worship",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Documents/dhaka/_data/_site/kat/worship.json",
+        "id": "worship",
+        "project": "kat-poi",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "worship",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        85.2813074,
+        27.6120932,
+        85.4346522,
+        27.7673844
+      ],
+      "id": "historical",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Documents/dhaka/_data/culture.json",
+        "id": "historical",
+        "project": "kat-poi",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "historical",
+      "status": "off"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "villeda.map-494cqapd",
+  "name": "",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}

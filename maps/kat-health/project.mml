@@ -1,0 +1,150 @@
+{
+  "bounds": [
+    85.2741,
+    27.6516,
+    85.3845,
+    27.7475
+  ],
+  "center": [
+    85.3181,
+    27.7012,
+    14
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "health",
+    "template_teaser": "{{{amenity}}} {{{name}}} {{{emergency}}}",
+    "fields": [
+      "amenity",
+      "name",
+      "emergency"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape",
+        "id": "countries",
+        "project": "kathmandu",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        80.16050720214844,
+        26.737211227416992,
+        88.19925689697266,
+        30.440412521362305
+      ],
+      "id": "contoursdd",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/Contours/Contoursdd.shp",
+        "id": "contoursdd",
+        "project": "kathmandu",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "contoursdd",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        80.07791336569314,
+        26.37824086397424,
+        88.15591708086387,
+        30.370138767815966
+      ],
+      "id": "nplhltfacdohwhowgs84",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Downloads/npl_hltfac_doh_who_wgs84/npl_hltfac_DoH_WHO_wgs84.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "nplhltfacdohwhowgs84",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        85.2754173,
+        27.6527574,
+        85.3837647,
+        27.7458041
+      ],
+      "id": "pharm",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Dropbox/Public/health.json"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "pharm",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        85.2754173,
+        27.6527574,
+        85.3837647,
+        27.7458041
+      ],
+      "id": "health",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Dropbox/Public/health.json",
+        "id": "health",
+        "project": "kat-health",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "health"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        85.2747142,
+        27.659863,
+        85.3805766,
+        27.7495264
+      ],
+      "id": "schools",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/ianvilleda/Documents/dhaka/data/kat/schools.json"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "schools"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "villeda.map-494cqapd",
+  "name": "kat-health",
+  "description": "",
+  "attribution": "",
+  "legend": "<div class=\"emergency\">\n\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC3SURBVEiJ7ZSxDcMgFETvR1kkMxjmYJZMklnSOQs4RTIDjHIpHFnGYINtOfpFTqLgi+OKeyAkcaROh96uJ0CsgxgPMfwuD7GuykuyvNB4th0HtR2Jxtd4awOYqJ8VvUo60BxwjnZiHcAbgEuVW8z0lQZAruDrPkwWaVmrDF1lWtZqQtfPSw54PLff1nvDeCQc/6ZLJfMd78XkIgol/1+y5oCYrgwtc4opmj2V0JXSsitgh9R0sFkfvSm4YBhmw4wAAAAASUVORK5CYII=' /> \n\t<span class=\"\tlabel\">Emergency Centers</span>\n</div>\n\n<div class=\"hospital\">\n\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADeSURBVEiJ1ZVBCsIwEEV/xVUOUIR4A3fWG3RVQY/jITyOgjtvYLvzBgrFA3T7XdRWO01oDLS0DwKdITMD+T9pQBJ9Muu1+xAD5o77FgBWANQnLgDcAeSdlSRdVkydpEREIiJ1kpKMXWpdj0jh+VrXUfmt7Nu/TF/kwV0k3dLFTsQtdwXiJsdYbo8NQf9BhxkelwOAa5WSR6S8mwNGdw0ucgEdZt7dytriNyU1sIscbE6NmLe9YURLZOmiHOb3Rbql4mzJ10z/oo1mQNNdBrfYkC6y4f3DcR3gzWg08OYNntV9Srpo9cwAAAAASUVORK5CYII=' /> \n\t<span class=\"\tlabel\">Hospitals</span>\n</div>\n\n<div class=\"pharm\">\n\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADRSURBVEiJ1ZWxDcIwEEVfEJWL1Ehhg3SsQA3jIMQACDEO1KyQjg1ASk2R1mliZC42OBaJkl/5Ts59yf+dkmit6VOzXqcPYTAPvLcAckA1dQXcgfJfBvnyyPn5YgWQpRSPA7sQg9AnUmY4QHNWX+53NojW9A1kyJKWX9qIukVXIjZ5bdPSVRZdN9OTT6Rih4ObrsFDrrKUInZY821l92QG3pCTPRe71ie2Do9WyJKiEvf6S1qMrp7+W9NftNEYfNDlosUnSZFP0T+cUINojSaDaNULMj9VY6FKLAAAAABJRU5ErkJggg==' /> \n\t<span class=\"\tlabel\">Pharmacies</span>\n</div>"
+}

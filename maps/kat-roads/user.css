@@ -1,0 +1,57 @@
+
+//Map { background-color:#222; } 
+
+#usrstats {
+  line-width:1;
+  line-join:round;
+  [usr='amritkarma']         { line-color: rgb(0,128,255); }
+  [usr='marek kleciak']      { line-color: rgb(0,191,255); }
+  [usr='BFX']                { line-color: rgb(0,255,255); }
+  [usr='Helina']             { line-color: rgb(0,255,190); }
+  [usr='Manoj-OSMNepal']     { line-color: rgb(0,255,125); }
+  [usr='Rub21']              { line-color: rgb(127,255,62);}
+  [usr='shreedhar']          { line-color: rgb(255,255,0); }
+  [usr='Patrick Bous']       { line-color: rgb(255,127,65);}
+  [usr='saese (adyota)']     {	line-color: rgb(255,0,131); }
+  [usr='Aashish Tripathee (Adyota)'] { line-color: rgb(255,0,193); }
+  [usr='shashish']           { line-color: rgb(255,0,255); }
+  [usr='Agile Eye']          { line-color: rgb(191,0,255); }
+  [usr='bkesh14']            { line-color: rgb(128,0,255); }
+  [usr='scvishnu7']          { line-color: rgb(0,128,255); }
+  [usr='LenainKtm']          { line-color: rgb(0,191,255); }
+  [usr='raupach']            { line-color: rgb(0,255,255); }
+  [usr='PlaneMad']           { line-color: rgb(0,255,190); }
+  [usr='prabhasp']           { line-color: rgb(0,255,125); }
+  [usr='prashant_sh']        { line-color: rgb(127,255,62);}
+  [usr='Domschl']            { line-color: rgb(255,255,0); }
+  [usr='MapHimalaya']        { line-color: rgb(255,127,65);}
+  [usr='datalogg']           { line-color: rgb(255,0,131); }
+  [usr='katpatuka']          { line-color: rgb(255,0,193); }
+  [usr='bimal(Adyota)']      { line-color: rgb(255,0,255); }
+  [usr='Nama']               { line-color: rgb(191,0,255); }
+  [usr='sco']                { line-color: rgb(128,0,255); }
+  [usr='bibstha']            { line-color: rgb(0,128,255); }
+  [usr='Anil Pokhrel']       { line-color: rgb(0,191,255); }
+  [usr='ar_sanu']            { line-color: rgb(0,255,255); }
+  [usr='Geofreund1']         { line-color: rgb(0,255,190); }
+  [usr='osmnecbijayaramshrestha'] { line-color: rgb(0,255,125); }
+  [usr='Sakar P']            { line-color: rgb(127,255,62);}
+  [usr='prasanna kc']        { line-color: rgb(255,255,0); }
+  [usr='Sazal(Solaris)']     { line-color: rgb(255,127,65);}
+  [usr='reeha (adyota)']     { line-color: rgb(255,0,131); }
+  [usr='Ryan Sommerville']   { line-color: rgb(255,0,193); }
+  [usr='azimut400gon']       { line-color: rgb(255,0,255); }
+  [usr='ktmdude']            { line-color: rgb(191,0,255); }
+  [usr='RupeshG']            { line-color: rgb(128,0,255); }
+  [usr='Utilisateur anonyme']{ line-color: rgb(0,128,255); }
+  [usr='Kiran shrestha']     { line-color: rgb(0,191,255); }
+  [usr='JeffH']              { line-color: rgb(0,255,255); }
+  [usr='2121vijay(Adyota)']  { line-color: rgb(0,255,190); }
+  [usr='al-yazdi']           { line-color: rgb(0,255,125); }
+  [usr='Monica358msd']       { line-color: rgb(127,255,62);}
+  [usr='tchase']             { line-color: rgb(255,255,0); }
+  [usr='sissou']             { line-color: rgb(255,127,65);}
+  [usr='jake958']            { line-color: rgb(255,0,131); }
+  [usr='Aleks-Berlin']       { line-color: rgb(255,0,193); }
+  [usr='MiBu']               { line-color: rgb(255,0,255); }
+}

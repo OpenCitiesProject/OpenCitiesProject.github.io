@@ -1,0 +1,115 @@
+{
+  "bounds": [
+    79.7813,
+    6.2839,
+    80.4528,
+    7.3502
+  ],
+  "center": [
+    79.9729,
+    6.9257,
+    11
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "adminpop",
+    "template_teaser": "District: {{{District}}}<br>\nNeighborhood: {{{DS_N}}}",
+    "fields": [
+      "District",
+      "DS_N"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "powerplant.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        79.81469064272457,
+        6.324477637848407,
+        80.37935513585812,
+        7.330158840862938
+      ],
+      "id": "adminpop",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/BobbySudekum/Desktop/temp/dis.shp",
+        "id": "adminpop",
+        "project": "colombo",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "adminpop"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        79.81975555419922,
+        6.240082740783692,
+        81.15325927734375,
+        7.565644264221191
+      ],
+      "id": "utline",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/BobbySudekum/Downloads/utline (1)/utline.shp"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "utline"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        79.80936997939202,
+        6.002187108057964,
+        81.68634909196045,
+        8.885822656087402
+      ],
+      "id": "buffer",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/BobbySudekum/Desktop/temp/pow5.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buffer"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        79.8228447086538,
+        6.015587802671675,
+        81.67287436269866,
+        8.872509407251814
+      ],
+      "id": "power",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/BobbySudekum/Documents/projects/dhaka_bobby/colombo/data/projected/power.shp",
+        "id": "power",
+        "project": "colombo",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "power"
+    }
+  ],
+  "scale": 1,
+  "metatile": 1,
+  "_basemap": "bobbysud.map-tz4pkvhu",
+  "name": "powerplant",
+  "description": "",
+  "attribution": "",
+  "legend": "<div class='my-legend'>\n<div class='legend-title'>Population</div>\n<div class='legend-scale'>\n  <ul class='legend-labels'>\n    <li><span style='background:#BD0026;'></span>Greater than 300,000</li>\n    <li><span style='background:#F03B20;'></span>300,000-163,000</li>\n    <li><span style='background:#FD8D3C;'></span>163,000-101,000</li>\n    <li><span style='background:#FECC5C;'></span>101,000-60,000</li>\n    <li><span style='background:#FFFFB2;'></span>Less than 60,000</li>\n<div id=\"image\"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEqSURBVEiJ7ZUxS8NQFIW/VEEwuPgWl/6EUhSkOHcN18EtW0ahawYXl0zdHPMTsuYt2ZwySiE4hf6Dhji+sbgkENLUamsGsWc7cO4997zHfc+K45g+Mei1O3B6SLGIXAKjir5rrT/amkMTjF3XnbuuOwfGXYIvE4jIBXANGK31W5sDdlEUk0pud/XYmkBEhqvVaup53jNw1eY7s21LICInwChJkrswDJ+MMUPgJUkSp8n3MhARG7gNguA+TdPH9Xp9BhAEwbTJK63TMZwDGCDTWpcAVnMPRGQym838PM8fvjthG0qpRRRFvtb6FTbvQC2Xy43JfoKyLG+A85q3DQbNY/gN9L7JR4N/aGCUUotDGlb1pubttyiLosinsSh7wABZTaw//2UeDXbiE/ocboWWfMaHAAAAAElFTkSuQmCC' />\n<span id=\"powerplant\">Power Plant (1.5km Radius)</span></div>\n<div id=\"utility\"><span style=\"color:#999999\">------</span> Utility Line</div>\n<div class='legend-source'>Source: <a href=\"https://gistdata.itos.uga.edu/\">World GIST Data Portal</a></div>\n  </ul>\n\n</div>\n<br>\n\n\n</div>\n\n<style type='text/css'>\n  .wax-legend .legend-title {\n    text-align: left;\n    margin-bottom: 5px;\n    font-weight: bold;\n    font-size: 90%;\n    }\n  .wax-legend .legend-scale ul {\n    margin: 0;\n    margin-bottom: 5px;\n    padding: 0;\n    float: left;\n    list-style: none;\n    }\n  .wax-legend .legend-scale ul li {\n    font-size: 80%;\n    list-style: none;\n    margin-left: 0;\n    line-height: 18px;\n    margin-bottom: 2px;\n    }\n  .wax-legend ul.legend-labels li span {\n    display: block;\n    float: left;\n    height: 16px;\n    width: 30px;\n    margin-right: 5px;\n    margin-left: 0;\n    border: 1px solid #999;\n    }\n  .wax-legend .legend-source {\n    font-size: 70%;\n    color: #999;\n    }\n  .wax-legend a {\n    color: #777;\n    }\n#image{\nfloat:left:\n}\n#powerplant{\nposition:relative;\ntop:-5px;\n}\n\n</style>"
+}
