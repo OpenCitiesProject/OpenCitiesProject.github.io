@@ -1,0 +1,234 @@
+{
+  "bounds": [
+    84.9893,
+    27.5066,
+    85.5359,
+    27.8058
+  ],
+  "center": [
+    85.3231,
+    27.6964,
+    13
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "usrstats",
+    "template_teaser": "<div class=\"tooltip-stats\">\nLast editor: <span class=\"tooltip-num\">{{{usr}}}</span><br />\nLast edit: <span class=\"tooltip-num\">{{{pretty_date}}}</span><br />\nRoad class: <span class=\"tooltip-num\">{{{highway}}}</span>\n\n</div>\n \n<style type='text/css'>\n.wax-tooltip {\n  min-width:175px !important;\n  }\n.tooltip-title, .tooltip-num {\n  font-size: 90%;\n  font-weight:bold;\n  }\n.tooltip-indicator {\n  font-size:13px;\n  margin-top:0px;\n  font-weight:bold;\n  }  \n.tooltip-stats {\n  font-size:11px;\n  line-height:14px;\n  }  \n</style>",
+    "fields": [
+      "usr",
+      "pretty_date",
+      "highway",
+      "ogc_fid"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 17,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "user.css"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "\n( select * from kat_roads where highway in (\n 'tertiary',\n 'tertiary_link',\n 'residential',\n 'road',\n 'living_street' )\n ) as data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres",
+        "id": "residential",
+        "project": "kat-osm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "residential",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "residential"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( select * from kat_roads where highway in (\n 'primary',\n 'primary_link',\n 'secondary',\n 'secondary_link')\n)as data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres"
+      },
+      "id": "major",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "major"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( select * from kat_roads where highway in ('motorway','trunk') ) as data",
+        "key_field": "",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres"
+      },
+      "id": "highway",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "highway"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( select * from kat_roads where highway in (\n 'steps',\n 'pedestrian',\n 'footway',\n 'track',\n 'cycleway',\n 'bridleway',\n 'path' )\n ) as data",
+        "key_field": "",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres"
+      },
+      "id": "pedestrian",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "pedestrian"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( select * from kat_roads where highway in (\n 'unknown',\n 'service'\n 'unclassified',\n 'construction' )\n ) as data \n ",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres"
+      },
+      "id": "other",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "other"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( select initcap(name) as name,geom,highway from kat_roads ) as data",
+        "key_field": "",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres",
+        "id": "katroads",
+        "project": "kat-osm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "katroads",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "katroads"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        84.72658799999996,
+        27.199381899999963,
+        85.53374620000002,
+        27.9041841
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "kat_roads",
+        "key_field": "ogc_fid",
+        "geometry_field": "geom",
+        "extent_cache": "auto",
+        "extent": "9431720.63281148,3148404.04312165,9521573.0726251,3236898.95872375",
+        "dbname": "dhaka",
+        "user": "postgres",
+        "id": "usrstats",
+        "project": "kat-osm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "usrstats",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "usrstats"
+    }
+  ],
+  "scale": 1,
+  "metatile": 4,
+  "_basemap": "",
+  "name": "",
+  "description": "",
+  "attribution": "",
+  "legend": "<div class='legend-titile'>Top 10 Editors of Road Data in Kathmandu</div>\n\n<table>\n<tr>\n<th>User</th><th>Number of ways*</th><th>Kilometers of roads mapped</th></tr>\n\n<tr><td style=\"color:rgb(0,128,255); \"> amritkarma                </td><td>2668</td><td>1203</td></tr>\n<tr><td style=\"color:rgb(0,191,255); \"> marek kleciak             </td><td>456</td><td>163</td></tr>\n<tr><td style=\"color:rgb(0,255,255); \"> BFX                       </td><td>59</td><td>159</td></tr>\n<tr><td style=\"color:rgb(0,255,190); \"> Helina                    </td><td>502</td><td>149</td></tr>\n<tr><td style=\"color:rgb(0,255,125); \"> Manoj-OSMNepal            </td><td>575</td><td>132</td></tr>\n<tr><td style=\"color:rgb(127,255,62);\"> Rub21                    </td><td>595</td><td>121</td></tr>\n<tr><td style=\"color:rgb(255,255,0); \"> shreedhar                 </td><td>5</td><td>81</td></tr>\n<tr><td style=\"color:rgb(255,127,65);\"> Patrick Bous             </td><td>4</td><td>76</td></tr>\n<tr><td style=\"color:rgb(255,0,131); \"> saese (adyota)            </td><td>411</td><td>72</td></tr>\n<tr><td style=\"color:rgb(255,0,193); \"> Aashish Tripathee (Adyota)</td><td>281</td><td>53</td></tr>\n</table>\n\n<div class='legend-note'>ways tagged highway=*</div>\n\n<style type='text/css'>\n  .legend-title {\n    text-align: left;\n    margin-bottom: 5px;\n    font-weight: bold;\n    font-size: 90%;\n    }\n  .legend-note {\n  \tfont-style: italic;\n  \tfont-size: 80%;\n  }\n</style>"
+}
