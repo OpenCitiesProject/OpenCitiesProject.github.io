@@ -456,6 +456,14 @@ small {
   padding:40px 0;
   }
 
+.nav a:before {
+content: " | ";
+}
+
+.nav a:first-child:before {
+content: none;
+}
+
 /* ------------------------------------------
   Site styling ♥
 ---------------------------------------------*/
