@@ -13,33 +13,30 @@ slideshow:
     subtitle: "Adding society-critical datasets to the the free, citizen-powered <a href=\"//openstreetmap.org/?lat=19.5&lon=88&zoom=5&layers=M\">OpenStreetMap</a>, with global coverage and street level detail"
 ---
 
-<div class='section data-coverage'>
-  <h4 class='title centered'>Public contributions improve OpenStreetMap's Global coverage daily</h4>
-  <div class='map' id='data-coverage'>
-    <small class='attribution'>Map visualizes the density of OpenStreetMap contributions.</small>
-  </div>
-</div>
-
 <div class='section dark'>
   <div class='limiter'>
     <h4 class='title centered'>Select Case Studies<br /> <span class='subtitle'>Discover innovative uses of open data to empower resilient communities</span></h4>
     <ul class='activities grid clearfix'>
-      {% for case in site.categories.casestudy limit:3 %}
-      <li>
-        <a href='{{site.baseurl}}{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
-          <div class='overlay'></div>
-          <div class='label'>
-            {% for name in site.categories.cities %}
-              {% if name.city == case.city %}
-                {{name.title}}
-              {% endif %}
-            {% endfor %}
-          </div>
-          <h4 class='case-title'>{{case.title}}</h4>
-          <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
-          <span class='more'>More</span>
-        </a>
-      </li>
+      {% for case in site.categories.casestudy%}
+        {% for tag in case.tags %}
+          {% if tag == 'splash' %}
+            <li>
+              <a href='{{site.baseurl}}{{case.url}}' style='background-image:url("http://api.tiles.mapbox.com/v3/{{case.map}}/{{case.center[0].lon}},{{case.center[0].lat}},{{case.center[0].zoom}}/640x300.png");'>
+                <div class='overlay'></div>
+                <div class='label'>
+                  {% for name in site.categories.cities %}
+                    {% if name.city == case.city %}
+                      {{name.title}}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <h4 class='case-title'>{{case.title}}</h4>
+                <p class='city-desc'>{{case.subtitle | truncate:120}}</p>
+                <span class='more'>More</span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </ul>
 
@@ -67,6 +64,13 @@ slideshow:
       </li>
       {% endfor %}
     </ul>
+  </div>
+</div>
+
+<div class='section data-coverage'>
+  <h4 class='title centered'>Public contributions improve OpenStreetMap's Global coverage daily</h4>
+  <div class='map' id='data-coverage'>
+    <small class='attribution'>Map visualizes the density of OpenStreetMap contributions.</small>
   </div>
 </div>
 
