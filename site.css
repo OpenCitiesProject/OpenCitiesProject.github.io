@@ -280,6 +280,13 @@ small {
     width:132px;
     height:70px;
     }
+  .icon.twitter {
+    background-position:-212px -214px;
+    width:83px;
+    height:84px;
+    position: relative;
+    left: 150px;
+    }
     .interactive-heading .icon.logo {
       width:66px;
       height:32px;
@@ -458,6 +465,7 @@ small {
 
 .nav a:before {
 content: " | ";
+color: #fff;
 }
 
 .nav a:first-child:before {
@@ -1017,7 +1025,7 @@ content: none;
 Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
 .clearfix:after {
   content:'';
-  display:block;
+  display:block;  
   height:0;
   clear:both;
   visibility:hidden;
