@@ -792,6 +792,15 @@ content: none;
       display:inline-block;
       margin:0 5px;
       }
+    .footer .title {
+      font-size: 28px;
+      line-height: 36px;
+      color: #404040;
+      width: 60%;
+      margin: 0 auto 40px;
+      position: relative;
+      z-index: 10;
+    }
 
 @-webkit-keyframes colorUp {
   0%    { -webkit-filter:grayscale(1); }
