@@ -215,7 +215,7 @@ small {
     }
 
 .label {
-  display:block;
+  display:inline-block;
   font-weight:bold;
   position:relative;
   z-index:10;
