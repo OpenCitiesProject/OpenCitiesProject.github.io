@@ -1,0 +1,77 @@
+{
+  "bounds": [
+    85.137,
+    27.5249,
+    85.7591,
+    27.9152
+  ],
+  "center": [
+    85.3303,
+    27.6977,
+    12
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "health",
+    "template_teaser": "Name: {{{name}}} </br>",
+    "fields": [
+      "amenity",
+      "name",
+      "emergency"
+    ]
+  },
+  "minzoom": 11,
+  "maxzoom": 15,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape",
+        "id": "countries",
+        "project": "kathmandu-health",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "extent": [
+        -179.99978348919961,
+        -85.051,
+        180,
+        83.63381093402975
+      ]
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        85.1804835,
+        27.5474016,
+        85.7115226,
+        27.8624652
+      ],
+      "id": "health",
+      "class": "",
+      "Datasource": {
+        "file": "data/kat-health-facilities.geojson",
+        "id": "health",
+        "project": "kathmandu-health",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "health"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "kathmandu-health",
+  "description": "",
+  "attribution": "",
+  "legend": "<div class=\"health_post\">\n\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC3SURBVEiJ7ZSxDcMgFETvR1kkMxjmYJZMklnSOQs4RTIDjHIpHFnGYINtOfpFTqLgi+OKeyAkcaROh96uJ0CsgxgPMfwuD7GuykuyvNB4th0HtR2Jxtd4awOYqJ8VvUo60BxwjnZiHcAbgEuVW8z0lQZAruDrPkwWaVmrDF1lWtZqQtfPSw54PLff1nvDeCQc/6ZLJfMd78XkIgol/1+y5oCYrgwtc4opmj2V0JXSsitgh9R0sFkfvSm4YBhmw4wAAAAASUVORK5CYII=' /> \n\t<span class=\"label\">Health Posts:</span><span class=\"lgdtxt\"> medical centres run by the Government to provide free primary health services to local communities.</span>\n</div>\n\n<div class=\"clinic\">\n\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADRSURBVEiJ1ZWxDcIwEEVfEJWL1Ehhg3SsQA3jIMQACDEO1KyQjg1ASk2R1mliZC42OBaJkl/5Ts59yf+dkmit6VOzXqcPYTAPvLcAckA1dQXcgfJfBvnyyPn5YgWQpRSPA7sQg9AnUmY4QHNWX+53NojW9A1kyJKWX9qIukVXIjZ5bdPSVRZdN9OTT6Rih4ObrsFDrrKUInZY821l92QG3pCTPRe71ie2Do9WyJKiEvf6S1qMrp7+W9NftNEYfNDlosUnSZFP0T+cUINojSaDaNULMj9VY6FKLAAAAABJRU5ErkJggg==' /> \n\t<span class=\"\tlabel\">Clinic:</span><span class=\"lgdtxt\"> private medical centres run by a group of doctors or a single doctor.</span>\n</div>\n\n<div class=\"hospital\">\n\t<img\nsrc='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA6cAAAOnAEHlFPdAAAAB3RJTUUH3QoJFwULpgBqQgAAAYpJREFUSMft1b1KXFEUBeDvxt8iDIrPkCqQYhiZEUyhT2A6A5Z5guQB8gCpLCxEJcSXsEpjk4ADQqJgmkACYmUT0uRHdgq3crkzztyZJo0LNhz22ex1zzrr7Ms9hqAYVhAsYxUtLOIK3Yz3BR/GIgjmsIl1HOIoY6JE9hT7eFnwo/axguXgPDgOnmRuIVjPWMhcM/gcfA/adZvPZfOtYKqU7wSR0Snlp4Od4FvQqEPwLr98qpLvS5B7M8FJ8LaONL9uZKlLkPut4E+a4hYPKnWrOCz4NIYdu/iYPW4xWalr4Sgv8VFl73F5Hb0cX9JlrUESXQTP0ikxYqwFz4OLQRJdpc/HxUT2uFOibh7xDZb6SLSb6xc47SPR6+wxkGCl4NJ1lOUr47S4vtCqxIs4GHQHS8HvoDmGTTvB3+g9eU/hbj7/6REe2mxwFmzXecmNnC07wUyNUTEb7Adfg4d151E7Z8tJpK+D+bTiWjBfIj3L5s1Rx3Ujx/VGvtB+47qNPbwq+Plffjj3GIp/UwDVkiVuS2oAAAAASUVORK5CYII=' /> \n\t<span class=\"\tlabel\">Hospitals</span>\n</div>\n\n\n<div class=\"pharm\">\n<img\nsrc=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVEiJ1ZWhcsJAEIa/K5gYqpA4XCdTsIgq9N2DUIHmAaIxfYI+wUWjKs4WplOH6SBRxJyhk4reUKaTZGkgw/R3uf13/8vu3q6y1tIkbhqNDrQlgnE6RjEmZwDcA31gDaxQLMlZ2FH6VuavqlJknJ4Ac+Eie2BqR+lTkVFKUSIEJ9iTMqMk0BHsIq/xIksC2YlxSnmSwIzvIlZhH3iFqC5gxDOeF6lNifioJ+BJiJjaYXmfm1fdxjMHHv8uABM8D8bpBbAEVnyypkU//M0AGANxXQGCc3z4ap3gcYTrz6IDIm7x9FB0ydkSscGzu5iAHaYZ8H58ZpwW/a7+ks+GlKKMMMiM0ztgA2yBLtD7xaslMONnH3SAuwJO5aioXDjQ8Ea7BP5/F30Bk3lWVB6cgbQAAAAASUVORK5CYII=\" /> <span class=\"label\"> Pharmacy </span> </div>\n\n<div class=\"dentist\">\n<img\nsrc=\"data:image/png;base64,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\" /> <span class=\"label\"> Dentist </span> </div>\n\n"
+}

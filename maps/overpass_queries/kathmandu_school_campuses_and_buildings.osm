@@ -1,0 +1,11 @@
+(
+  way
+    ["amenity"~"college|kindergarten|school|university"]
+    (27.3,84.6,28.3,86);
+  >;
+  way
+    ["building"~"college|kindergarten|school|university"]
+    (27.3,84.6,28.3,86);
+  >;
+);
+out body;

@@ -1,0 +1,11 @@
+(
+  way
+    ["amenity"~"clinic|health_post|dentist|hospital|pharmacy"]
+    (27.3,84.6,28.3,86);
+  >;
+  way
+    ["building"~"clinic|health_post|dentist|hospital|pharmacy"]
+    (27.3,84.6,28.3,86);
+  >;
+);
+out body;
