@@ -973,6 +973,54 @@ content: none;
     position:relative;
     }
 
+  .interactive-heading .download_button {
+    position:absolute;
+    bottom:-35px;
+    right:-200px;
+    z-index:1;
+  }
+
+  .interactive-heading .download_button span {
+    text-align:center;
+    margin:20px 0;
+    width:180px;
+    -webkit-border-radius:3px;
+            border-radius:3px;
+    }
+
+  .interactive-heading .download_menu {
+    display:none;
+    position:absolute;
+    top:40px;
+    right:-210px;
+    padding-top:60px;
+    padding-bottom:20px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:#2C81C2;
+    width:210px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    text-align: left;
+  }
+
+  .interactive-heading .download_menu > a > h2 {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .interactive-heading .download_menu a:hover > h2 {
+    text-decoration: underline;
+  }
+
+  .download_container:hover div:hover + .download_menu, .download_menu:hover {
+    display: block;
+  }
+
+  .download_container:hover .download_button span {
+    background: #28679b;
+  }
+
 .globals {
   position:relative;
   }

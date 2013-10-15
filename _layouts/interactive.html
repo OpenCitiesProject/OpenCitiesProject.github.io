@@ -28,6 +28,18 @@
         {% endif %}
       </h2>
       <div class='prose'>{{content}}</div>
+      {% if page.overpass_link %}
+      <div class='download_container'>
+        <div class='download_button'>
+          <span class='button toggle'>Download the data</span>
+        </div>
+        <div class='download_menu'>
+          <a href="{{site.baseurl}}/data/{{ page.title | url_encode }}.zip"><h2>Get the shapefile generated on {{page.shapefile_date}}</h2></a>
+          </br>
+          <a href='{{page.overpass_link}}' class='overpass_link'><h2>Generate a new OpenStreetMap extract dynamically</h2> </a>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
