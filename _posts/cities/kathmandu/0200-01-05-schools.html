@@ -1,0 +1,37 @@
+---
+layout: interactive
+category: casestudy
+city: 'kathmandu'
+title: 'Educational Facilities'
+subtitle: 'Critical Health Sector Infrastructure'
+preview: 'kathmandu.png'
+map: 'gfdrr.map-dks4ih6b,gfdrr.kathmandu-schools'
+shapefile_date: 'October 15th 2013'
+overpass_link: 'http://overpass-api.de/api/interpreter?data=%28way%5B%22amenity%22%7E%22college%7Ckindergarten%7Cschool%7Cuniversity%22%5D%2827%2E3%2C84%2E6%2C28%2E3%2C86%29%3B%3E%3Bway%5B%22building%22%7E%22college%7Ckindergarten%7Cschool%7Cuniversity%22%5D%2827%2E3%2C84%2E6%2C28%2E3%2C86%29%3B%3E%3B%29%3Bout%20body%3B%0A'
+center:
+  - lat: 27.7243
+    lon: 85.3700
+    zoom: 12
+tags:
+- kathmandu
+- featured
+- splash
+---
+
+As detailed in the context of <a href='{{site.baseurl}}/cities/kathmandu'>Kathmandu</a>, one aspect of the the Open Cities Project engagement is the collection of asset and exposure data in urban areas in order to create a robust asset inventory. The Open Cities Project collects data through open and participatory methods in partnership with local government agencies, universities, technical communities, and the private sector. Open Cities Kathmandu has to date mapped over 100,000 buildings and collected exposure data for 2256 educational and 350 <a href='{{site.baseurl}}/casestudy/health'>health facilities</a> within Kathmandu Valley.
+
+<script>
+var opts = {
+  lat: {{ page.center[0].lat }},
+  lon: {{ page.center[0].lon }},
+  zoom: {
+    defaultZoom:{{ page.center[0].zoom }},
+    max:18,
+    min:11
+    }
+  };
+
+$(function() {
+  gfdrr.generateMap('{{page.map}}', opts);
+});
+</script>
