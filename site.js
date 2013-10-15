@@ -1,6 +1,9 @@
 ---
 ---
 {% include ext/jquery.min.js %}
+{% include ext/Blob/Blob.js %}
+{% include ext/canvas-toBlob/canvas-toBlob.js %}
+{% include ext/FileSaver/FileSaver.js %}
 
 ;(function(context) {
 
@@ -30,6 +33,21 @@
 
         $('.close', '.interactive-heading').click(function() {
             $('.interactive-heading').toggleClass('inactive');
+            return false;
+        });
+
+        $('.overpass_link').click(function() {
+            url = $(this).attr('href');
+
+            $.ajax({
+                url: url,
+                success: function(data) {
+                    xml = (new XMLSerializer()).serializeToString(data);
+                    var blob = new Blob([xml], {type: "application/xml;charset=utf-8"});
+                    saveAs(blob, "export.osm");
+                },
+                dataType: 'xml'
+            });
             return false;
         });
     };
@@ -158,4 +176,12 @@
 
     window.gfdrr = gfdrr;
 })(window);
+
+$( document ).ajaxStart(function() {
+  $( "#loading" ).show();
+});
+$( document ).ajaxStop(function() {
+  $( "#loading" ).hide();
+});
+
 
