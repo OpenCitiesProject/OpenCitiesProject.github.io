@@ -275,6 +275,11 @@ small {
     width:172px;
     height:55px;
     }
+  .icon.usaid {
+    background-position:-225px -300px;
+    width:190px;
+    height:60px;
+    }
   .icon.logo {
     background-position:0 -295px;
     width:132px;
@@ -282,10 +287,9 @@ small {
     }
   .icon.twitter {
     background-position:-212px -214px;
-    width:83px;
-    height:84px;
     position: relative;
-    left: 150px;
+    right: -610px;
+    bottom: 72px;
     }
     .interactive-heading .icon.logo {
       width:66px;
