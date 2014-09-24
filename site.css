@@ -313,7 +313,7 @@ small {
 .prose {
   font:15px/24px Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing:subpixel-antialiased;
-  color:#5C676F;
+  color:#ccc;
   }
   .prose h2,
   .prose h3 {
