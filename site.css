@@ -315,6 +315,9 @@ small {
   -webkit-font-smoothing:subpixel-antialiased;
   color:#ccc;
   }
+	#about.prose {
+	  color:#666;
+	  }
   .prose h2,
   .prose h3 {
     font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
