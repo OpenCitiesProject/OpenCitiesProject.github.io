@@ -868,6 +868,9 @@ content: none;
   .marker.marker-colombo-sri-lanka {
     background-position:-130px -155px;
     }
+  .marker.marker-batticaloa-sri-lanka {
+    background-position:-381px -227px;
+    }
   .marker:hover .popup {
     display:block;
     }
