@@ -141,7 +141,7 @@
         var markerLayer = mapbox.markers.layer().features(poi).factory(function(f) {
             var a = document.createElement('a');
                 a.className = 'marker marker-' + f.properties.klass;
-                a.href = '#' + f.properties.url;
+                a.href = f.properties.url;
                 a.setAttribute('data-scroll', true);
 
                 var city = f.properties.title.split(',')[0],
