@@ -276,8 +276,13 @@ small {
     height:55px;
     }
   .icon.usaid {
-    background-position:-225px -300px;
-    width:190px;
+    background-position:-220px -305px;
+    width:160px;
+    height:60px;
+    }
+  .icon.arc {
+    background-position:-385px -310px;
+    width:160px;
     height:60px;
     }
   .icon.logo {
