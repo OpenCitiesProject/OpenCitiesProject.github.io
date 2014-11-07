@@ -87,7 +87,7 @@ body {
   color:#404040;
   -webkit-font-smoothing:antialiased;
   margin:0; padding:0;
-  max-width:1600px;
+  max-width:1800px;
   margin:0px auto;
   }
   body.interactive {
@@ -284,6 +284,11 @@ small {
     background-position:-385px -310px;
     width:160px;
     height:60px;
+    }
+  .icon.hiu {
+    background-position:-450px -227px;
+    width:160px;
+    height:62px;
     }
   .icon.logo {
     background-position:0 -295px;
