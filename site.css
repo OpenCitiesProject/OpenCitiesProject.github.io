@@ -325,7 +325,8 @@ small {
   -webkit-font-smoothing:subpixel-antialiased;
   color:#ccc;
   }
-	#about.prose {
+	#about.prose,
+  #guide,prose {
 	  color:#666;
 	  }
   .prose h2,
@@ -1283,4 +1284,12 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
               37% 40% no-repeat;
 }
 
+a.cover {
+  display:block;
+}
 
+img#cover {
+  float:right;
+  width:300px;
+  margin:0px 0px 10px 20px;
+}
